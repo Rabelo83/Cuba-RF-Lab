@@ -4,6 +4,8 @@
 
 Research claims must be sourced. Public assumptions are useful, but they are not final engineering facts until verified.
 
+Research and simulations should move the project toward a low-cost public solution for Cuban blackout conditions. Track production cost, repairability, and local substitution alongside RF performance.
+
 ## Priority Research Areas
 
 | Area | Purpose | Repository Source |

@@ -6,6 +6,8 @@ Status: initial planning
 
 Every design should identify local or lower-cost substitutes where performance and safety allow.
 
+The preferred substitute is the one that keeps the system useful while lowering production cost, repair difficulty, or import risk.
+
 ## Candidate Substitution Areas
 
 - aluminum tube vs copper wire for elements
@@ -16,4 +18,3 @@ Every design should identify local or lower-cost substitutes where performance a
 - imported adjustable fixture vs locally built wood or plastic fixture
 
 Substitutions must be documented with expected tradeoffs.
-

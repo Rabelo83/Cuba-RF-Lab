@@ -47,6 +47,22 @@ Prefer:
 - Never invent gain, VSWR, impedance, pattern, or measured performance.
 - Separate facts, assumptions, calculations, simulations, and field measurements.
 
+## Public Benefit And Cost Rules
+
+The project goal is to help Cuban people who need resilient communication during blackouts.
+
+Research, simulations, and blueprints must optimize for the lowest practical production cost that still provides useful, safe, legal, and reliable connectivity. Do not optimize for peak lab performance if the result is too expensive, too fragile, too hard to import, or too hard to repair in Cuba.
+
+When comparing designs, include:
+
+- estimated production cost
+- local material availability
+- import risk
+- repairability
+- required tools
+- number of difficult or precision parts
+- whether cheaper substitutes are possible
+
 ## Public Website Rules
 
 The public website is built with MkDocs from `docs/`.

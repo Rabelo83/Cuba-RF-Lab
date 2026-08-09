@@ -2,6 +2,20 @@
 
 Status: active roadmap
 
+## Guiding Objective
+
+The project is not trying to produce the most impressive laboratory antenna. It is trying to produce the lowest-cost practical communication solution that can help Cuban families during blackouts.
+
+Research and simulations should therefore lead toward:
+
+- useful connectivity
+- low production cost
+- simple fabrication
+- repairability
+- legal passive operation
+- ordinary consumer phones
+- parts that can be sourced, substituted, or fabricated in Cuba
+
 ## Phase 0: Repository and Research Baseline
 
 - Create repository structure.
@@ -50,4 +64,13 @@ Status: active roadmap
 
 - Move only reviewed, calculated, simulated, and tested designs toward approval.
 - Clearly label anything that is not field validated.
+- Include production-cost notes and substitution options.
 
+## Phase 9: Public Production Package
+
+- Create plain-language bilingual build instructions.
+- Create final bill of materials with cost ranges.
+- Identify local substitutes.
+- Separate required parts from optional performance improvements.
+- Document repair steps and replacement parts.
+- Keep the solution as simple and inexpensive as possible while still working.

@@ -31,6 +31,8 @@ Status: topic map
 - weatherproofing
 - safety
 - import considerations
+- production cost
+- repairability and local substitution options
 
 ## Current Status
 

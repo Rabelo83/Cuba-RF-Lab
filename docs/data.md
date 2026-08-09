@@ -40,3 +40,11 @@ Use this CSV template when simulation or calculation results become available:
 [data/templates/antenna_candidate_comparison.csv](https://github.com/Rabelo83/ETECSA-RF-Lab/blob/main/data/templates/antenna_candidate_comparison.csv)
 
 Do not fill it with advertised antenna gain. Use calculated, simulated, measured, or clearly labeled assumption values.
+
+## Production Cost Estimate Template
+
+Use this CSV template when a design starts becoming a public build package:
+
+[data/templates/production_cost_estimate.csv](https://github.com/Rabelo83/ETECSA-RF-Lab/blob/main/data/templates/production_cost_estimate.csv)
+
+Cost estimates should separate required parts from optional improvements and identify local substitutes whenever possible.

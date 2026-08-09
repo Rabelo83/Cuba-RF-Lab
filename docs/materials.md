@@ -22,13 +22,15 @@ Materials are tracked as categories until exact models, availability, and import
 
 - Prefer local fabrication where performance and safety allow.
 - Prefer ordinary parts over specialized carrier equipment.
+- Prefer the lowest production cost that still gives useful, safe connectivity.
 - Document substitutions and their expected tradeoffs.
 - Do not invent component availability or import legality.
+- Track cost ranges and required tools before recommending public build paths.
 
 ## Repository Sources
 
 - [Bill of materials](https://github.com/Rabelo83/ETECSA-RF-Lab/blob/main/materials/bill_of_materials.md)
+- [Cost model](https://github.com/Rabelo83/ETECSA-RF-Lab/blob/main/materials/cost_model.md)
 - [Cuba local materials](https://github.com/Rabelo83/ETECSA-RF-Lab/blob/main/materials/cuba_local_materials.md)
 - [Importable components](https://github.com/Rabelo83/ETECSA-RF-Lab/blob/main/materials/importable_components.md)
 - [Substitutes](https://github.com/Rabelo83/ETECSA-RF-Lab/blob/main/materials/substitutes.md)
-

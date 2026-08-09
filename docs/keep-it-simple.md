@@ -6,11 +6,11 @@
 
 === "English"
 
-    This section is for people who do not want the full engineering notebook. It only shows the simple idea, the materials, and the basic building steps for each project path.
+    This section is for people who do not want the full engineering notebook. It only shows the simple idea, the materials, and the basic building steps for each project path. The goal is a low-cost solution that can help Cuban families during blackouts.
 
 === "Español"
 
-    Esta sección es para personas que no quieren leer todo el cuaderno técnico. Solo muestra la idea simple, los materiales y los pasos básicos de construcción para cada camino del proyecto.
+    Esta sección es para personas que no quieren leer todo el cuaderno técnico. Solo muestra la idea simple, los materiales y los pasos básicos de construcción para cada camino del proyecto. La meta es una solución de bajo costo que pueda ayudar a familias cubanas durante los apagones.
 
 ## Choose A Path / Escoge Un Camino
 
@@ -50,4 +50,3 @@
 === "Español"
 
     Todavía no hay planos finales aprobados. Las páginas simples muestran la dirección más segura por ahora y lo que hay que probar después.
-

@@ -12,6 +12,8 @@ Target installation: Matanzas, Cuba
 
 Primary need: resilient basic communication during blackouts, especially when the house has solar power but ETECSA/Cubacel cellular and Nauta Hogar infrastructure may be impaired.
 
+Broader public objective: develop a practical solution that can help Cuban people struggling with communication during blackouts, with the lowest practical production cost and good real-world efficiency.
+
 ## Current Engineering Direction
 
 The project is proceeding on two parallel tracks:
@@ -48,6 +50,7 @@ Possible ETECSA behavior during outages includes shutting down 4G or 3G while lo
 - Current live deployment path is branch-based Pages from `main`, using committed static MkDocs output at the repository root.
 - Public `Keep It Simple` section added for bilingual plain-language build paths.
 - Antenna selection framework added; LPDA is explicitly only one candidate topology.
+- Public-benefit and low-production-cost objective added to project constraints.
 - Calculation scripts created for wavelength, coax loss, and simple received-signal delta.
 - Measurement CSV template created.
 - No simulation results yet.

@@ -4,6 +4,8 @@ Date: 2026-08-09
 
 The project is ETECSA-RF-Lab, also called Project ETECSA Phoenix. It aims to improve blackout-resilient communications for a house in Matanzas, Cuba, using legal, low-cost, modular, repairable systems centered on ordinary phones, passive antennas, passive couplers, and data transport by USB, Ethernet, or Wi-Fi.
 
+The broader goal is to offer a useful solution for Cuban people struggling with communication during blackouts. Future research and simulation work should lead toward the lowest practical production cost with useful real-world efficiency, not toward expensive lab-only performance.
+
 Critical boundary: do not design active cellular repeaters, RF amplifiers, jammers, IMSI catchers, base station emulators, or anything intended to bypass ETECSA controls.
 
 Current strategy has two tracks:
@@ -30,6 +32,7 @@ Current repository state:
 - `AGENTS.md` and `docs/collaboration.md` now explain the website publishing workflow and `Keep It Simple` rules for future AI/human contributors.
 - Antenna selection must use `antenna/candidate_comparison.md`; the preliminary LPDA is only one candidate and no antenna topology is selected yet.
 - The passive antenna/coupler path must be compared against phone-at-RF-location using net RF improvement after coax, connector, matching, passive-coupler, and miscellaneous losses.
+- Production cost, repairability, local material substitution, import risk, and real-world usefulness are now top-level constraints.
 - Starter scripts were run successfully.
 - Python compile check passed with `PYTHONPYCACHEPREFIX` set to `/private/tmp/etecsa_rf_lab_pycache` because the default macOS bytecode cache path was outside the writable workspace.
 - Site search now indexes bilingual content correctly: `plugins.search.lang` in `mkdocs.yml` is set to `[en, es]` so Spanish terms get proper Lunr stemming (the Spanish and multi-language Lunr modules were already bundled with the theme but unused). Rebuilt and pushed as commit `a2361ac`.

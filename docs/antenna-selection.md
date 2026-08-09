@@ -5,7 +5,7 @@
 
 The project will not assume that the preliminary LPDA idea is the final antenna. It is only one candidate.
 
-The goal is to find the best practical passive antenna system for ETECSA blackout conditions, using comparison, calculation, simulation, and later field testing.
+The goal is to find the best practical passive antenna system for ETECSA blackout conditions, using comparison, calculation, simulation, and later field testing. The winning design must also be low-cost enough to be useful as a public solution, not only technically impressive.
 
 ## Architectures
 
@@ -44,6 +44,8 @@ directional antenna gain
 
 Advertised antenna gain alone is not enough.
 
+If two antennas provide similar useful connectivity, choose the one with lower production cost, easier repair, simpler tools, and better local substitution options.
+
 ## Candidate Ranking
 
 This is a pre-measurement planning rank only.
@@ -75,4 +77,3 @@ No antenna goes into approved blueprints until it has:
 Detailed framework:
 
 [antenna/candidate_comparison.md](https://github.com/Rabelo83/ETECSA-RF-Lab/blob/main/antenna/candidate_comparison.md)
-

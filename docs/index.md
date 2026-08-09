@@ -6,7 +6,7 @@
 
 ETECSA RF Lab is a practical engineering project for low-cost, blackout-resilient communication on ETECSA/Cubacel service in Cuba, especially for a target installation in Matanzas.
 
-The project focuses on ordinary phones, passive antennas, passive phone couplers, safe field testing, and data transport by USB, Ethernet, or Wi-Fi after cellular reception.
+The project exists to help Cuban people who are struggling with communication during blackouts. It focuses on ordinary phones, passive antennas, passive phone couplers, safe field testing, and data transport by USB, Ethernet, or Wi-Fi after cellular reception.
 
 ![Preferred communication architecture](assets/diagrams/system-architecture.svg){ .site-diagram }
 
@@ -17,6 +17,7 @@ This project is a public engineering notebook and manual for:
 - documenting the communication problem during long blackouts
 - testing which ETECSA bands and locations actually work
 - comparing passive antenna and coupler ideas
+- reducing production cost without sacrificing useful connectivity
 - building standard operating procedures for safe field work
 - creating public blueprints only after calculation, simulation, and review
 - helping collaborators continue without relying on chat memory

@@ -53,3 +53,9 @@ Reason: future AI and human collaborators need continuity without relying on cha
 Decision: do not assume the preliminary LPDA concept is final or preferred. Before any fabrication-ready antenna blueprint, compare multiple passive antenna topologies using `antenna/candidate_comparison.md`.
 
 Reason: the real objective is the best practical passive antenna system for ETECSA blackout conditions, not validation of an earlier idea. The winning topology must beat competing designs and must be compared against the simpler phone-at-RF-location architecture after coax, connector, matching, and passive-coupler losses.
+
+## 2026-08-09: Optimize For Public Benefit And Low Production Cost
+
+Decision: research, simulations, materials, and blueprints must lead toward a solution that can be offered publicly at the lowest practical production cost while still working reliably and safely.
+
+Reason: the purpose of the project is to help Cuban people struggling with blackouts and communication loss. A design that performs well in theory but is expensive, fragile, hard to import, or hard to repair does not satisfy the project mission.

@@ -20,6 +20,8 @@ https://rabelo83.github.io/ETECSA-RF-Lab/keep-it-simple/
 
 ETECSA-RF-Lab is an engineering project for low-cost, blackout-resilient communication at a house in Matanzas, Cuba. The goal is to bring usable ETECSA/Cubacel connectivity into the home during long power outages using practical, repairable, legal, and locally adaptable systems.
 
+The broader goal is public benefit: turn the research, simulations, measurements, and blueprints into a solution that can help Cuban people who are struggling with communication during blackouts. Engineering choices must prioritize the lowest practical production cost while still delivering useful, safe, reliable connectivity.
+
 This project is receive-focused and consumer-equipment-focused. It must not design or encourage unauthorized cellular repeaters, power amplifiers, jammers, IMSI catchers, base station emulators, or systems intended to bypass ETECSA network controls.
 
 ## Problem
@@ -85,6 +87,7 @@ Status:
 - Public GitHub Pages documentation site configured.
 - Branch-based Pages output generated from MkDocs and committed at repository root.
 - Bilingual Keep It Simple section created for plain-language public build paths.
+- Public-benefit and low-production-cost objective documented.
 - Engineering rules documented.
 - Measurement templates created.
 - Starter calculation scripts created.

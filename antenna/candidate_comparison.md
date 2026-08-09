@@ -115,16 +115,32 @@ Weights total 100.
 | Criterion | Weight |
 | --- | ---: |
 | Connectivity during an ETECSA blackout | 18 |
-| Useful performance at 900 MHz and/or 1800 MHz | 15 |
-| Stable SINR and useful directivity, not only high RSRP | 12 |
-| Low RF loss after coax, matching, connectors, and coupler | 12 |
-| Compatibility with an ordinary ETECSA phone | 10 |
+| Useful performance at 900 MHz and/or 1800 MHz | 13 |
+| Stable SINR and useful directivity, not only high RSRP | 10 |
+| Low RF loss and high system efficiency after coax, matching, connectors, and coupler | 12 |
+| Compatibility with an ordinary ETECSA phone | 9 |
 | Passive RF operation | 8 |
-| Ability to fabricate or repair in Cuba | 8 |
+| Ability to fabricate or repair in Cuba | 10 |
 | Ability to import individual ordinary components legally | 6 |
-| Reasonable mechanical size | 5 |
-| Low cost | 4 |
+| Low production cost | 8 |
+| Reasonable mechanical size | 4 |
 | Weatherproofing practicality | 2 |
+
+## Production Cost Rule
+
+The best antenna is not automatically the one with the highest simulated peak gain.
+
+For this project, the selected antenna must be cost-effective:
+
+- low material cost
+- low tool requirement
+- simple enough to fabricate repeatedly
+- repairable with ordinary materials
+- tolerant of small construction errors
+- useful after coax, connector, matching, and passive-coupler losses
+- practical for Cuban import and local substitution constraints
+
+If two designs perform similarly, choose the cheaper, simpler, more repairable design.
 
 ## Pre-Measurement Provisional Ranking
 
@@ -159,4 +175,3 @@ No antenna design may move into `blueprints/approved/` until:
 - construction tolerances are documented
 - the passive-coupler implications are documented
 - a reason for selecting that topology is recorded in `DECISIONS.md`
-

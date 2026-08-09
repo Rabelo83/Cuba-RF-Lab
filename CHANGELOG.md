@@ -19,3 +19,5 @@ Added a bilingual `Keep It Simple` site section with plain-language pages for Tr
 Updated collaborator instructions so future AI or human contributors know how the branch-based MkDocs Pages output is published and how to maintain the `Keep It Simple` section.
 
 Added an antenna topology comparison framework, provisional pre-measurement ranking, net RF improvement rule, and candidate comparison CSV template. The LPDA is explicitly treated as one candidate, not the default or final antenna.
+
+Documented the broader public-benefit mission: research and simulations must lead toward a solution useful for Cuban people during blackouts, with the lowest practical production cost, repairability, and real-world efficiency.

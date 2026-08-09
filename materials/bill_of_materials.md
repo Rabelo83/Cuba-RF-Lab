@@ -4,6 +4,8 @@ Status: initial categories only
 
 Do not treat this as a purchase list. Exact models, prices, and sources are not verified.
 
+Cost rule: every future production-ready bill of materials must separate required parts from optional improvements and must estimate the lowest practical production cost for a working system.
+
 ## Cellular Endpoint
 
 - ordinary ETECSA-compatible Android phone
@@ -45,3 +47,15 @@ Do not treat this as a purchase list. Exact models, prices, and sources are not 
 - DC converters
 - weather-resistant wiring
 
+## Production Cost Fields To Add Later
+
+For each final part, record:
+
+- required or optional
+- quantity
+- local substitute
+- estimated local cost
+- estimated import cost
+- required tools
+- repair or replacement difficulty
+- source and date
