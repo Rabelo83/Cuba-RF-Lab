@@ -98,8 +98,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href=".." title="ETECSA RF Lab" class="md-header__button md-logo" aria-label="ETECSA RF Lab" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../assets/images/logo.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -129,7 +128,21 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="amber"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="amber"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
     
   
 </form>
@@ -222,8 +235,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="ETECSA RF Lab" class="md-nav__button md-logo" aria-label="ETECSA RF Lab" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../assets/images/logo.svg" alt="logo">
 
     </a>
     ETECSA RF Lab
@@ -1188,25 +1200,45 @@
 <p><span class="status-badge status-concept">Concept only</span>
 <span class="status-badge status-warning">Not field validated</span>
 <span class="status-badge status-stop">No amplifier</span></p>
+<p><img alt="Passive antenna and coupler path" class="site-diagram" src="../assets/diagrams/system-architecture-b.svg" /></p>
 <h2 id="simple-blueprint-plano-simple">Simple Blueprint / Plano Simple<a class="headerlink" href="#simple-blueprint-plano-simple" title="Permanent link">&para;</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">English</label><label for="__tabbed_1_2">Español</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>This is the passive path to investigate:</p>
 <div class="highlight"><pre><span></span><code>outside directional antenna
 -&gt; short coax cable
 -&gt; passive phone coupler
 -&gt; ordinary phone held in a repeatable position
 </code></pre></div>
+</div>
+<div class="tabbed-block">
 <p>Este es el camino pasivo que se va a investigar:</p>
 <div class="highlight"><pre><span></span><code>antena direccional exterior
 -&gt; cable coaxial corto
 -&gt; acoplador pasivo para teléfono
 -&gt; teléfono normal puesto en una posición repetible
 </code></pre></div>
+</div>
+</div>
+</div>
 <h2 id="current-status-estado-actual">Current Status / Estado Actual<a class="headerlink" href="#current-status-estado-actual" title="Permanent link">&para;</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">English</label><label for="__tabbed_2_2">Español</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>No final dimensions are approved yet.</p>
-<p>Todavía no hay dimensiones finales aprobadas.</p>
 <p>The first simple goal is not to build the perfect antenna. The first goal is to learn whether a passive antenna and coupler really help the phone in a repeatable way.</p>
+</div>
+<div class="tabbed-block">
+<p>Todavía no hay dimensiones finales aprobadas.</p>
 <p>La primera meta simple no es construir la antena perfecta. La primera meta es saber si una antena pasiva y un acoplador realmente ayudan al teléfono de forma repetible.</p>
+</div>
+</div>
+</div>
 <h2 id="materials-materiales">Materials / Materiales<a class="headerlink" href="#materials-materiales" title="Permanent link">&para;</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">English</label><label for="__tabbed_3_2">Español</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>Possible simple materials:</p>
 <ul>
 <li>aluminum rod or tube for antenna elements</li>
@@ -1221,6 +1253,8 @@
 <li>ruler or measuring tape</li>
 <li>compass or phone compass app</li>
 </ul>
+</div>
+<div class="tabbed-block">
 <p>Materiales simples posibles:</p>
 <ul>
 <li>varilla o tubo de aluminio para los elementos de antena</li>
@@ -1235,7 +1269,13 @@
 <li>regla o cinta de medir</li>
 <li>brújula o aplicación de brújula en el teléfono</li>
 </ul>
+</div>
+</div>
+</div>
 <h2 id="building-instructions-instrucciones-de-construccion">Building Instructions / Instrucciones De Construcción<a class="headerlink" href="#building-instructions-instrucciones-de-construccion" title="Permanent link">&para;</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">English</label><label for="__tabbed_4_2">Español</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>Use these steps only for experiments until a real blueprint is approved:</p>
 <ol>
 <li>Choose a safe outdoor place with better signal.</li>
@@ -1248,7 +1288,8 @@
 <li>Record the best direction and phone position.</li>
 <li>Compare with the phone alone in the same place.</li>
 </ol>
-<p>Español:</p>
+</div>
+<div class="tabbed-block">
 <p>Usa estos pasos solo para experimentos hasta que exista un plano real aprobado:</p>
 <ol>
 <li>Escoge un lugar exterior seguro con mejor señal.</li>
@@ -1261,7 +1302,13 @@
 <li>Anota la mejor dirección y posición del teléfono.</li>
 <li>Compara con el teléfono solo en el mismo lugar.</li>
 </ol>
+</div>
+</div>
+</div>
 <h2 id="simple-test-prueba-simple">Simple Test / Prueba Simple<a class="headerlink" href="#simple-test-prueba-simple" title="Permanent link">&para;</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">English</label><label for="__tabbed_5_2">Español</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>For each antenna direction and phone position, record:</p>
 <ul>
 <li>place</li>
@@ -1276,6 +1323,8 @@
 <li>IMO call: yes or no</li>
 <li>notes</li>
 </ul>
+</div>
+<div class="tabbed-block">
 <p>Para cada dirección de antena y posición del teléfono, anota:</p>
 <ul>
 <li>lugar</li>
@@ -1290,7 +1339,13 @@
 <li>llamada por IMO: sí o no</li>
 <li>notas</li>
 </ul>
+</div>
+</div>
+</div>
 <h2 id="do-not-use-no-usar">Do Not Use / No Usar<a class="headerlink" href="#do-not-use-no-usar" title="Permanent link">&para;</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">English</label><label for="__tabbed_6_2">Español</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <ul>
 <li>active cellular repeater</li>
 <li>cellular amplifier</li>
@@ -1299,7 +1354,8 @@
 <li>hidden or unknown RF electronics</li>
 <li>metal phone holder touching the phone antenna area</li>
 </ul>
-<p>Español:</p>
+</div>
+<div class="tabbed-block">
 <ul>
 <li>repetidor celular activo</li>
 <li>amplificador celular</li>
@@ -1308,6 +1364,9 @@
 <li>electrónica RF oculta o desconocida</li>
 <li>soporte metálico tocando el área de antena del teléfono</li>
 </ul>
+</div>
+</div>
+</div>
 
 
 

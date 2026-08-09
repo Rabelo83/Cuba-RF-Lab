@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 420" role="img" aria-labelledby="title-b desc-b">
+  <title id="title-b">ETECSA RF Lab passive antenna and coupler path</title>
+  <desc id="desc-b">Diagram showing a directional antenna, short coax, a passive phone coupler, and an ordinary phone.</desc>
+  <rect width="1120" height="420" fill="#f8fafc"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#0f172a">
+    <text x="560" y="42" text-anchor="middle" font-size="28" font-weight="700">Passive Antenna Path (Track B)</text>
+    <text x="560" y="72" text-anchor="middle" font-size="16" fill="#475569">Concept only. Not field validated. No amplifier anywhere in this chain.</text>
+  </g>
+  <g stroke="#0f766e" stroke-width="3" fill="none" marker-end="url(#arrow-b)">
+    <path d="M190 210 H330"/>
+    <path d="M470 210 H610"/>
+    <path d="M750 210 H890"/>
+  </g>
+  <defs>
+    <marker id="arrow-b" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#0f766e"/>
+    </marker>
+  </defs>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <g transform="translate(55 135)">
+      <rect width="150" height="150" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+      <path d="M75 108 V50" stroke="#0f766e" stroke-width="5" stroke-linecap="round"/>
+      <path d="M75 50 L48 62" stroke="#0f766e" stroke-width="5" stroke-linecap="round"/>
+      <path d="M75 66 L54 76" stroke="#0f766e" stroke-width="5" stroke-linecap="round"/>
+      <path d="M75 82 L60 90" stroke="#0f766e" stroke-width="5" stroke-linecap="round"/>
+      <path d="M75 98 L66 103" stroke="#0f766e" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="75" cy="108" r="4" fill="#0f766e"/>
+      <text x="75" y="122" text-anchor="middle" font-size="15" font-weight="700" fill="#134e4a">Directional</text>
+      <text x="75" y="143" text-anchor="middle" font-size="13" fill="#475569">rooftop antenna</text>
+    </g>
+    <g transform="translate(335 135)">
+      <rect width="150" height="150" rx="8" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+      <path d="M45 100 Q60 70,75 100 T105 100" stroke="#0284c7" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <circle cx="45" cy="100" r="6" fill="#0284c7"/>
+      <circle cx="105" cy="100" r="6" fill="#0284c7"/>
+      <text x="75" y="122" text-anchor="middle" font-size="17" font-weight="700" fill="#075985">Short Coax</text>
+      <text x="75" y="143" text-anchor="middle" font-size="13" fill="#475569">as little cable as possible</text>
+    </g>
+    <g transform="translate(615 135)">
+      <rect width="150" height="150" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+      <path d="M45 45 V95 Q45 105,55 105 H95 Q105 105,105 95 V45" stroke="#d97706" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <rect x="60" y="55" width="30" height="46" rx="5" fill="#fff7ed" stroke="#d97706" stroke-width="3"/>
+      <text x="75" y="122" text-anchor="middle" font-size="17" font-weight="700" fill="#92400e">Passive Coupler</text>
+      <text x="75" y="143" text-anchor="middle" font-size="13" fill="#475569">nonmetal, repeatable position</text>
+    </g>
+    <g transform="translate(895 135)">
+      <rect width="170" height="150" rx="8" fill="#ecfccb" stroke="#65a30d" stroke-width="2"/>
+      <rect x="60" y="30" width="50" height="82" rx="8" fill="#f7fee7" stroke="#65a30d" stroke-width="3"/>
+      <circle cx="85" cy="102" r="4" fill="#65a30d"/>
+      <text x="85" y="122" text-anchor="middle" font-size="17" font-weight="700" fill="#365314">Ordinary Phone</text>
+      <text x="85" y="143" text-anchor="middle" font-size="13" fill="#475569">held near the coupler</text>
+    </g>
+    <text x="400" y="330" text-anchor="middle" font-size="15" fill="#475569">Useful only if measurement proves repeatable benefit.</text>
+    <text x="720" y="330" text-anchor="middle" font-size="15" fill="#475569">No amplifier, no active repeater.</text>
+  </g>
+</svg>
