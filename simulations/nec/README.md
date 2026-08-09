@@ -10,4 +10,10 @@ First-pass queue:
 
 - `first_pass_queue.md`
 
-The queue starts with 900 MHz and 1800 MHz Yagi seeds, then LPDA and biquad references. The local environment does not currently include an NEC solver, so this folder is prepared for model generation and later execution.
+The queue starts with 900 MHz and 1800 MHz Yagi seeds, then LPDA and biquad references. Python `necpp` is installed in `.venv` and is the first working NEC2 path for this project.
+
+Smoke test:
+
+```bash
+.venv/bin/python scripts/nec_smoke_test.py
+```

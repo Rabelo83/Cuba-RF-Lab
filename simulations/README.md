@@ -12,14 +12,20 @@ Current first-pass queue:
 - `../calculations/preliminary_antenna_geometry.md`
 - `../data/processed/antenna_candidate_first_pass.csv`
 
-Local solver status on 2026-08-09: `xnec2c`, `nec2c`, and `openEMS` were not found in the local environment. The next simulation step is to install or choose a solver, then generate model files from the pre-simulation geometry seeds.
+Local solver status on 2026-08-09:
+
+- Python `necpp` 2.2.5 is installed in `.venv` and the NEC smoke test passes.
+- `xnec2c`, `nec2c`, and `openEMS` were not found in the local environment.
+
+The next simulation step is to generate first-pass model files and result summaries using the Python `necpp` workflow. GUI or standalone solver installs can be added later if they improve review or visualization.
 
 Candidate tools:
 
+- Python `necpp` / `nec2++`
 - NEC2 or NEC4-compatible modeling
-- xnec2c
-- 4NEC2 file generation
-- OpenEMS
+- xnec2c, optional GUI/reference tool
+- 4NEC2 file generation, optional external review format
+- OpenEMS, later for patch/panel concepts if needed
 - Python geometry generation
 
 Record:

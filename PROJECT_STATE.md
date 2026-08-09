@@ -72,7 +72,9 @@ Because local measurement is temporarily unavailable, frequency choices are now 
 - First pre-simulation antenna geometry seeds added in `calculations/preliminary_antenna_geometry.md` and `calculations/preliminary_antenna_geometry.py`.
 - First antenna candidate worksheet added in `data/processed/antenna_candidate_first_pass.csv`.
 - First NEC simulation queue added in `simulations/nec/first_pass_queue.md`.
-- Local solver check found no `xnec2c`, `nec2c`, or `openEMS` installed as of 2026-08-09.
+- Python `necpp` 2.2.5 NEC2 solver installed in `.venv`; `scripts/nec_smoke_test.py` passed on 2026-08-09.
+- Scientific Python support installed in `.venv`: `numpy`, `pandas`, `matplotlib`, and `scipy`; pinned in `requirements-engineering.txt`.
+- Standalone/GUI solvers `xnec2c`, `nec2c`, and `openEMS` were not found in Homebrew/local checks as of 2026-08-09.
 - Measurement CSV template created.
 - No simulation results yet.
 - No CAD files yet.
@@ -82,7 +84,7 @@ Because local measurement is temporarily unavailable, frequency choices are now 
 
 ## Immediate Next Work
 
-1. Choose or install an EM solver, then generate NEC/openEMS model files from the first-pass geometry seeds.
+1. Generate first NEC model/sweep scripts from the first-pass geometry seeds using Python `necpp`.
 2. Search for current official ETECSA or Cuban regulatory source text to improve the band and import-rule evidence.
 3. Build a source-backed list of realistic phones, coax, connectors, routers, coupler materials, and antenna materials that may be obtainable by Cuban users.
 4. Simulate 900 MHz Yagi, 1800 MHz Yagi, broadband LPDA, and dual-band/nested concepts before any blueprint dimensions are approved.

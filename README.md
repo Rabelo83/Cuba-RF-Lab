@@ -92,6 +92,7 @@ Status:
 - First public-source network/coax/passive-coupler evidence added.
 - First desktop link-budget scenarios added for phone-first and passive antenna/coupler paths.
 - First antenna pre-simulation geometry seeds and NEC simulation queue added.
+- Python `necpp` NEC2 solver and scientific Python toolchain installed in `.venv`.
 - Measurement templates created.
 - Starter calculation scripts created.
 - Local owner-side field measurement and material collection are temporarily unavailable, but expected later.
@@ -105,3 +106,23 @@ Status:
 3. Build desktop material and component availability notes from public sources while local observations are unavailable.
 4. Choose or install an EM solver and simulate candidate antennas using realistic materials, feed assumptions, and tolerances.
 5. Compare every passive antenna path against the phone-at-best-RF-location baseline before any fabrication dimensions are promoted to buildable status.
+
+## Local Engineering Toolchain
+
+Install or refresh the local engineering tools with:
+
+```bash
+.venv/bin/pip install -r requirements-engineering.txt
+```
+
+Verify the NEC solver with:
+
+```bash
+.venv/bin/python scripts/nec_smoke_test.py
+```
+
+For scripts that use plotting libraries, run with:
+
+```bash
+MPLCONFIGDIR=.cache/matplotlib .venv/bin/python <script>
+```

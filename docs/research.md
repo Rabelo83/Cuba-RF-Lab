@@ -15,6 +15,7 @@ Current desktop baseline added on 2026-08-09:
 - Coax and passive-coupler losses are large enough that passive antenna gain must be evaluated as a complete system.
 - The phone-at-best-RF-location architecture remains the baseline to beat.
 - First antenna geometry seeds and a NEC simulation queue are ready, but no EM simulation has been run yet.
+- Python `necpp` NEC2 solver is installed and smoke-tested for the first simulation pass.
 
 ## Priority Research Areas
 

@@ -35,3 +35,5 @@ Added the first desktop public-source RF baseline: source-backed 900 MHz and 180
 Added a public `Sources / Fuentes` website page with direct links to the network, coax, passive-coupler, and project-decision sources used by the desktop research baseline.
 
 Added the first antenna pre-simulation pass: geometry seed generator, preliminary geometry worksheet, first-pass antenna candidate CSV, and NEC simulation queue for 900 MHz Yagi, 1800 MHz Yagi, LPDA, and biquad candidates.
+
+Installed and documented the first local engineering solver toolchain: Python `necpp` NEC2 solver plus `numpy`, `pandas`, `matplotlib`, and `scipy`, with a reproducible NEC smoke-test script.

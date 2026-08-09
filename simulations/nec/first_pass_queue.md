@@ -1,10 +1,16 @@
 # NEC First-Pass Simulation Queue
 
-Status: queue ready, solver not installed locally
+Status: queue ready, Python NEC solver installed
 
 Date: 2026-08-09
 
-Local check on 2026-08-09 did not find `xnec2c`, `nec2c`, or `openEMS` installed. This file defines the first simulation pass so a solver can be installed later without changing the engineering target.
+Local check on 2026-08-09:
+
+- Python `necpp` 2.2.5 installed in `.venv`.
+- `scripts/nec_smoke_test.py` passed with a simple 900 MHz dipole model.
+- `xnec2c`, `nec2c`, and `openEMS` were not found.
+
+This file defines the first simulation pass so model generation and results stay aligned with the engineering target.
 
 ## Input Geometry
 

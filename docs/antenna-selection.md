@@ -82,6 +82,12 @@ Current order:
 
 These are simulation inputs only. They are not approved build dimensions.
 
+Current local solver:
+
+- Python `necpp` NEC2 solver installed in `.venv`
+- smoke test: `.venv/bin/python scripts/nec_smoke_test.py`
+- optional standalone tools `xnec2c`, `nec2c`, and `openEMS` are not installed locally
+
 ## Candidate Ranking
 
 This is a pre-measurement planning rank only.

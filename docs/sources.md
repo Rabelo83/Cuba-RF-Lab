@@ -40,6 +40,14 @@ Access date for the first source pass: 2026-08-09.
 | [OnWireless patch cable and cradle guide](https://remoteone.com.au/support/patch-cable-cradle-guide/) | Order-of-magnitude passive cradle and passive patch loss assumptions; placement sensitivity warning. | E | Medium; vendor guidance, not project measurement. |
 | [OnWireless passive antenna coupler product page](https://remoteone.com.au/product/universal-passive-antenna-coupler-for-mobile-phones/) | Practical warning that inductive patches are less effective than direct connections and depend on placement near the phone antenna. | E | Medium; product/vendor claim. |
 
+## Simulation Tools / Herramientas De Simulacion
+
+| Source | What it supports | Class | Confidence |
+| --- | --- | --- | --- |
+| [necpp PyPI package](https://pypi.org/project/necpp/) | Python NEC2/nec2++ solver package installed in the local `.venv` for first-pass antenna simulations. | E | High for package identity and installation target. |
+| [python-necpp GitHub repository](https://github.com/tmolteno/python-necpp) | Upstream Python wrapper repository for the NEC2/nec2++ toolchain. | E | High for project identity. |
+| [xnec2c project page](https://www.xnec2c.org/) | Optional future GUI/reference NEC2 tool; local Homebrew check did not find an installable formula. | E | Medium; useful as a future cross-check path. |
+
 ## Project Decisions / Decisiones Del Proyecto
 
 | Source | What it supports | Class | Confidence |
