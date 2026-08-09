@@ -18,12 +18,14 @@ Primary need: resilient basic communication during blackouts, especially when th
 
 Broader public objective: develop a practical solution that can help Cuban people struggling with communication during blackouts, with the lowest practical production cost and good real-world efficiency.
 
+Current data constraint: the project owner cannot collect local measurements or material availability observations from Cuba at this time. Until a local collaborator contributes data, the project must rely on public sources, manufacturer data, calculations, simulations, conservative assumptions, and sensitivity analysis.
+
 ## Current Engineering Direction
 
 The project is proceeding on two parallel tracks:
 
 1. Track A: place an ordinary ETECSA-compatible phone at the best RF location, then bring data into the house over USB, Ethernet, Wi-Fi, or a bridge.
-2. Track B: improve a local passive antenna-plus-phone-coupler concept using calculations, simulation, and measurements.
+2. Track B: improve a local passive antenna-plus-phone-coupler concept using calculations, simulation, sourced material constraints, and later external field measurements if available.
 
 ## Existing Local Passive Concept
 
@@ -45,7 +47,9 @@ Current priority assumptions:
 - 1800 MHz second priority for LTE Band 3 performance
 - Optional broadband research from about 800 MHz to 2200 MHz
 
-Possible ETECSA behavior during outages includes shutting down 4G or 3G while lower-power or legacy service survives longer. This must be measured locally.
+Possible ETECSA behavior during outages includes shutting down 4G or 3G while lower-power or legacy service survives longer. This must eventually be measured locally by a collaborator before any final field-validated claim.
+
+Because local measurement is not currently available, frequency choices must be ranked by current public sources and simulated as scenarios. No band-specific design may be called field validated until local measurements are contributed.
 
 ## Current Repository Status
 
@@ -58,6 +62,7 @@ Possible ETECSA behavior during outages includes shutting down 4G or 3G while lo
 - Public-production guardrails propagated across requirements, research, routerless architecture, coupler work, simulations, calculations, tests, materials, legal notes, CAD placeholders, images, data, and results documentation.
 - Antenna comparison weights updated so low production cost and Cuban fabrication/repairability carry stronger decision weight while blackout connectivity remains the top priority.
 - Cuba material availability now has a raw CSV ledger and template so owner-provided local observations can be saved as dated project data.
+- Project roadmap shifted to desktop research and simulation first because owner-side local measurement/material collection is not currently possible.
 - Calculation scripts created for wavelength, coax loss, and simple received-signal delta.
 - Measurement CSV template created.
 - No simulation results yet.
@@ -69,7 +74,7 @@ Possible ETECSA behavior during outages includes shutting down 4G or 3G while lo
 ## Immediate Next Work
 
 1. Verify current ETECSA band information with dated sources.
-2. Measure phone signal in the target locations.
-3. Confirm the phone model and supported bands.
-4. Research realistic coax and connector availability.
-5. Prepare first antenna models for simulation.
+2. Build a source-backed list of realistic phones, coax, connectors, routers, coupler materials, and antenna materials that may be obtainable by Cuban users.
+3. Create conservative link-budget scenarios for phone-first and passive antenna/coupler architectures.
+4. Prepare first antenna models for simulation using realistic materials and tolerance ranges.
+5. Keep field measurement and local availability data as an external validation gate, not a prerequisite for desktop engineering progress.

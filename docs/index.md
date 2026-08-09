@@ -102,6 +102,7 @@ This track is useful only if measurement proves the passive coupler and antenna 
 - Version: 0.1.0 research baseline
 - No field-validated antenna design exists yet.
 - No approved blueprint exists yet.
-- The first priority is source verification and field measurement.
+- Local owner-side field measurement is not currently available.
+- The first priority is source verification, conservative modeling, and simulation.
 
-The recommended next engineering task is to verify current ETECSA band sources, then collect first field measurements using the blackout measurement CSV template.
+The recommended next engineering task is to verify current ETECSA band sources, then build conservative phone-first and passive antenna/coupler scenarios for simulation. Field validation remains required before any final public blueprint.

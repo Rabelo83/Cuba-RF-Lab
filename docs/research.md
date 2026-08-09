@@ -6,6 +6,8 @@ Research claims must be sourced. Public assumptions are useful, but they are not
 
 Research and simulations should move the project toward a low-cost public solution for Cuban blackout conditions. Track production cost, repairability, and local substitution alongside RF performance.
 
+Current mode: local owner-side measurements are not available. Research must rely on dated public sources, manufacturer data, conservative assumptions, and scenario modeling until an external collaborator contributes field measurements.
+
 ## Priority Research Areas
 
 | Area | Purpose | Repository Source |
@@ -36,7 +38,9 @@ Research and simulations should move the project toward a low-cost public soluti
 2. 1800 MHz
 3. Optional broadband coverage from about 800 MHz to 2200 MHz
 
-This priority is a working baseline. It must be verified with current sources and local measurements.
+This priority is a working baseline. It must be verified with current sources now and local measurements later if a collaborator can provide them.
+
+Until local measurements exist, treat this priority as a scenario set rather than a confirmed local truth.
 
 The preliminary LPDA is not selected by default. Antenna candidates must be compared with the weighted decision process in the antenna selection framework.
 

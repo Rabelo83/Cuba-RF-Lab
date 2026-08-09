@@ -27,3 +27,5 @@ Propagated the public-production objective across requirements, research, router
 Added a Cuba material availability raw ledger and CSV template so local observations about materials, prices, sources, quality, substitutions, and confidence can be preserved as project data.
 
 Changed the public display name to Cuba RF Lab while keeping the GitHub repository path as `ETECSA-RF-Lab`.
+
+Documented the current no-local-data constraint: owner-side RF measurements and material observations are unavailable, so the project will proceed with public sources, manufacturer data, conservative assumptions, calculations, simulations, and sensitivity analysis until external field validation exists.

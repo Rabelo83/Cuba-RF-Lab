@@ -91,13 +91,14 @@ Status:
 - Engineering rules documented.
 - Measurement templates created.
 - Starter calculation scripts created.
+- Local owner-side field measurement and material collection are not currently available.
 - No antenna blueprint is approved.
 - No gain, VSWR, impedance, or field performance is claimed.
 
 ## Next Milestones
 
 1. Verify which ETECSA bands are active in the target Matanzas area during normal power and during blackouts.
-2. Identify available phone model, supported bands, and practical tethering options.
-3. Measure signal at indoor, outdoor, roof, window, and street-corner locations.
-4. Build research baseline for coax, antennas, passive phone coupling, and Cuban import constraints.
+2. Identify realistic low-cost reference phones, supported bands, and practical tethering options from public sources and manufacturer specs.
+3. Build conservative RF scenarios for indoor, outdoor, roof, window, and street-corner placements because local measurements are not currently available.
+4. Build research baseline for coax, antennas, passive phone coupling, Cuban import constraints, and likely material availability.
 5. Model candidate antennas before any fabrication dimensions are promoted to buildable status.

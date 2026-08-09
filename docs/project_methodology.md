@@ -16,6 +16,19 @@ Research and simulations should therefore lead toward:
 - ordinary consumer phones
 - parts that can be sourced, substituted, or fabricated in Cuba
 
+## Current Data Mode
+
+The project owner cannot currently collect local RF measurements or local material availability observations from Cuba. The active engineering mode is therefore desktop research and simulation first.
+
+That means:
+
+- use dated public sources
+- use manufacturer specifications where possible
+- model conservative low, medium, and high loss scenarios
+- run sensitivity analysis instead of claiming certainty
+- keep all designs marked as not field validated
+- treat local field data as an external validation gate
+
 ## Phase 0: Repository and Research Baseline
 
 - Create repository structure.
@@ -24,9 +37,10 @@ Research and simulations should therefore lead toward:
 
 ## Phase 1: Verify ETECSA RF Environment
 
-- Measure indoor, outdoor, window, roof, and street-corner signal.
-- Record network type, band, RSRP, RSRQ, SINR, ping, upload, download, and app success.
-- Repeat during normal power and blackout.
+- Gather current dated sources for ETECSA/Cubacel bands and blackout behavior.
+- Build conservative RF scenarios for indoor, outdoor, window, roof, and street-corner placements.
+- Record which questions still require external local measurements.
+- Do not claim field performance until collaborator measurements exist.
 
 ## Phase 2: Model Antennas
 
@@ -52,12 +66,14 @@ Research and simulations should therefore lead toward:
 
 ## Phase 6: Blackout Field Testing
 
-- Test real communication performance during outages.
+- Hold this as a validation phase for future local collaborators.
+- Test real communication performance during outages only when safe local data becomes available.
 - Record app-level success, not just signal strength.
 
 ## Phase 7: Optimize
 
-- Compare measured results to simulation.
+- Compare measured results to simulation when measurements exist.
+- Before measurements exist, optimize only across conservative scenarios and clearly documented assumptions.
 - Revise antenna, coupler, feedline, and placement.
 
 ## Phase 8: Create Final Blueprints
