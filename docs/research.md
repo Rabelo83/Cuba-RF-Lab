@@ -67,4 +67,12 @@ See:
 
 ## Research Ledger
 
-All source-backed claims should be entered in [research/sources.md](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/research/sources.md).
+Public website source links:
+
+- [Sources / Fuentes](sources.md)
+
+Repository source ledger:
+
+- [research/sources.md](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/research/sources.md)
+
+All source-backed claims should be entered in the repository source ledger first, then summarized on the public website when they affect engineering decisions.

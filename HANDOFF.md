@@ -41,6 +41,7 @@ Current repository state:
   - `research/passive_coupling.md` now records several-dB passive coupling loss as the key uncertainty.
 - First desktop link-budget scenario pass has been added in `calculations/desktop_link_budget_scenarios.md` and `data/processed/desktop_link_budget_scenarios.csv`.
 - New decision recorded: phone-at-best-RF-location is the baseline to beat until the passive antenna/coax/coupler path proves enough net margin.
+- Public website now includes `docs/sources.md` as `Sources / Fuentes`, with direct clickable source links grouped by network/bands, coax/feedline, passive coupling, and project decisions.
 - Production cost, repairability, local material substitution, import risk, and real-world usefulness are now top-level constraints.
 - A project-wide documentation pass propagated the public mission into requirements, research, routerless, coupler, simulation, calculation, testing, material, legal, CAD, image, data, result, and website-collaboration notes.
 - Antenna candidate weighting now gives stronger explicit weight to low production cost and ability to fabricate or repair in Cuba while keeping blackout connectivity as the highest-weight criterion.
