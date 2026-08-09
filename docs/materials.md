@@ -33,18 +33,18 @@ Availability in Cuba must be saved as project data, not only remembered from cha
 
 Use this raw data file for local availability inputs:
 
-[data/raw/material_availability_cuba.csv](https://github.com/Rabelo83/ETECSA-RF-Lab/blob/main/data/raw/material_availability_cuba.csv)
+[data/raw/material_availability_cuba.csv](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/data/raw/material_availability_cuba.csv)
 
 Use this template for the required columns:
 
-[data/templates/material_availability_cuba.csv](https://github.com/Rabelo83/ETECSA-RF-Lab/blob/main/data/templates/material_availability_cuba.csv)
+[data/templates/material_availability_cuba.csv](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/data/templates/material_availability_cuba.csv)
 
 Record one dated row per observation. Keep old rows when price or availability changes, because supply stability matters for public production.
 
 ## Repository Sources
 
-- [Bill of materials](https://github.com/Rabelo83/ETECSA-RF-Lab/blob/main/materials/bill_of_materials.md)
-- [Cost model](https://github.com/Rabelo83/ETECSA-RF-Lab/blob/main/materials/cost_model.md)
-- [Cuba local materials](https://github.com/Rabelo83/ETECSA-RF-Lab/blob/main/materials/cuba_local_materials.md)
-- [Importable components](https://github.com/Rabelo83/ETECSA-RF-Lab/blob/main/materials/importable_components.md)
-- [Substitutes](https://github.com/Rabelo83/ETECSA-RF-Lab/blob/main/materials/substitutes.md)
+- [Bill of materials](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/materials/bill_of_materials.md)
+- [Cost model](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/materials/cost_model.md)
+- [Cuba local materials](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/materials/cuba_local_materials.md)
+- [Importable components](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/materials/importable_components.md)
+- [Substitutes](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/materials/substitutes.md)

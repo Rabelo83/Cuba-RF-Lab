@@ -7,7 +7,7 @@ This repository includes a MkDocs site and a GitHub Actions workflow for validat
 Expected public URL:
 
 ```text
-https://rabelo83.github.io/ETECSA-RF-Lab/
+https://rabelo83.github.io/Cuba-RF-Lab/
 ```
 
 ## How The Site Publishes Now

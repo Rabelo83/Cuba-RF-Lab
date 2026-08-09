@@ -67,7 +67,7 @@ NOT FIELD VALIDATED
 
 ## Repository Locations
 
-- [Draft blueprints](https://github.com/Rabelo83/ETECSA-RF-Lab/tree/main/blueprints/draft)
-- [Approved blueprints](https://github.com/Rabelo83/ETECSA-RF-Lab/tree/main/blueprints/approved)
-- [Antenna design folders](https://github.com/Rabelo83/ETECSA-RF-Lab/tree/main/antenna)
-- [Coupler design folders](https://github.com/Rabelo83/ETECSA-RF-Lab/tree/main/coupler)
+- [Draft blueprints](https://github.com/Rabelo83/Cuba-RF-Lab/tree/main/blueprints/draft)
+- [Approved blueprints](https://github.com/Rabelo83/Cuba-RF-Lab/tree/main/blueprints/approved)
+- [Antenna design folders](https://github.com/Rabelo83/Cuba-RF-Lab/tree/main/antenna)
+- [Coupler design folders](https://github.com/Rabelo83/Cuba-RF-Lab/tree/main/coupler)

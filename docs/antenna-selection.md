@@ -76,4 +76,4 @@ No antenna goes into approved blueprints until it has:
 
 Detailed framework:
 
-[antenna/candidate_comparison.md](https://github.com/Rabelo83/ETECSA-RF-Lab/blob/main/antenna/candidate_comparison.md)
+[antenna/candidate_comparison.md](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/antenna/candidate_comparison.md)

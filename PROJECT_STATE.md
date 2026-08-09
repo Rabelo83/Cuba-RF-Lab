@@ -10,7 +10,7 @@ Project owner: Alfredo
 
 Public display name: Cuba RF Lab
 
-Repository name: `ETECSA-RF-Lab`
+Repository name: `Cuba-RF-Lab`
 
 Target installation: Matanzas, Cuba
 

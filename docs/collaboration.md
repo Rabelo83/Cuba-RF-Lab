@@ -10,13 +10,13 @@ The shared mission is public benefit for Cuban families during blackouts. Contri
 
 Before meaningful work, read:
 
-1. [README.md](https://github.com/Rabelo83/ETECSA-RF-Lab/blob/main/README.md)
-2. [AGENTS.md](https://github.com/Rabelo83/ETECSA-RF-Lab/blob/main/AGENTS.md)
-3. [PROJECT_STATE.md](https://github.com/Rabelo83/ETECSA-RF-Lab/blob/main/PROJECT_STATE.md)
-4. [DECISIONS.md](https://github.com/Rabelo83/ETECSA-RF-Lab/blob/main/DECISIONS.md)
-5. [ASSUMPTIONS.md](https://github.com/Rabelo83/ETECSA-RF-Lab/blob/main/ASSUMPTIONS.md)
-6. [OPEN_QUESTIONS.md](https://github.com/Rabelo83/ETECSA-RF-Lab/blob/main/OPEN_QUESTIONS.md)
-7. [HANDOFF.md](https://github.com/Rabelo83/ETECSA-RF-Lab/blob/main/HANDOFF.md)
+1. [README.md](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/README.md)
+2. [AGENTS.md](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/AGENTS.md)
+3. [PROJECT_STATE.md](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/PROJECT_STATE.md)
+4. [DECISIONS.md](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/DECISIONS.md)
+5. [ASSUMPTIONS.md](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/ASSUMPTIONS.md)
+6. [OPEN_QUESTIONS.md](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/OPEN_QUESTIONS.md)
+7. [HANDOFF.md](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/HANDOFF.md)
 
 ## Contribution Rules
 

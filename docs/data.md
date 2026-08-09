@@ -8,7 +8,7 @@ The project needs real measurements more than guesses. Store raw measurements in
 
 Use this CSV template:
 
-[data/templates/blackout_measurement.csv](https://github.com/Rabelo83/ETECSA-RF-Lab/blob/main/data/templates/blackout_measurement.csv)
+[data/templates/blackout_measurement.csv](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/data/templates/blackout_measurement.csv)
 
 Required columns:
 
@@ -37,7 +37,7 @@ date,time,location,phone_model,network_type,band,earfcn,rsrp_dbm,rsrq_db,sinr_db
 
 Use this CSV template when simulation or calculation results become available:
 
-[data/templates/antenna_candidate_comparison.csv](https://github.com/Rabelo83/ETECSA-RF-Lab/blob/main/data/templates/antenna_candidate_comparison.csv)
+[data/templates/antenna_candidate_comparison.csv](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/data/templates/antenna_candidate_comparison.csv)
 
 Do not fill it with advertised antenna gain. Use calculated, simulated, measured, or clearly labeled assumption values.
 
@@ -45,7 +45,7 @@ Do not fill it with advertised antenna gain. Use calculated, simulated, measured
 
 Use this CSV template when a design starts becoming a public build package:
 
-[data/templates/production_cost_estimate.csv](https://github.com/Rabelo83/ETECSA-RF-Lab/blob/main/data/templates/production_cost_estimate.csv)
+[data/templates/production_cost_estimate.csv](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/data/templates/production_cost_estimate.csv)
 
 Cost estimates should separate required parts from optional improvements and identify local substitutes whenever possible.
 
@@ -53,10 +53,10 @@ Cost estimates should separate required parts from optional improvements and ide
 
 Use this CSV template when local availability information is provided from Cuba:
 
-[data/templates/material_availability_cuba.csv](https://github.com/Rabelo83/ETECSA-RF-Lab/blob/main/data/templates/material_availability_cuba.csv)
+[data/templates/material_availability_cuba.csv](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/data/templates/material_availability_cuba.csv)
 
 Append raw observations here:
 
-[data/raw/material_availability_cuba.csv](https://github.com/Rabelo83/ETECSA-RF-Lab/blob/main/data/raw/material_availability_cuba.csv)
+[data/raw/material_availability_cuba.csv](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/data/raw/material_availability_cuba.csv)
 
 Record one dated row per material, seller/source type, location, price, availability status, and quality note. Do not publish private contact details unless the project owner explicitly approves it.

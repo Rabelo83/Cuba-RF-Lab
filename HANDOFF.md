@@ -2,7 +2,7 @@
 
 Date: 2026-08-09
 
-The project is Cuba RF Lab. The GitHub repository name remains `ETECSA-RF-Lab`. It aims to improve blackout-resilient communications for a house in Matanzas, Cuba, using legal, low-cost, modular, repairable systems centered on ordinary phones, passive antennas, passive couplers, and data transport by USB, Ethernet, or Wi-Fi.
+The project is Cuba RF Lab. The GitHub repository name remains `Cuba-RF-Lab`. It aims to improve blackout-resilient communications for a house in Matanzas, Cuba, using legal, low-cost, modular, repairable systems centered on ordinary phones, passive antennas, passive couplers, and data transport by USB, Ethernet, or Wi-Fi.
 
 The broader goal is to offer a useful solution for Cuban people struggling with communication during blackouts. Future research and simulation work should lead toward the lowest practical production cost with useful real-world efficiency, not toward expensive lab-only performance.
 
@@ -22,11 +22,11 @@ No buildable antenna blueprint exists yet. Do not create final fabrication dimen
 Current repository state:
 
 - Local git repository initialized on branch `main`.
-- GitHub remote: `https://github.com/Rabelo83/ETECSA-RF-Lab.git`.
+- GitHub remote: `https://github.com/Rabelo83/Cuba-RF-Lab.git`.
 - Initial project baseline committed and pushed.
 - GitHub Pages site configured with MkDocs in `mkdocs.yml`.
 - Validation workflow added at `.github/workflows/pages.yml`.
-- Expected public site URL: `https://rabelo83.github.io/ETECSA-RF-Lab/`.
+- Expected public site URL: `https://rabelo83.github.io/Cuba-RF-Lab/`.
 - GitHub Pages was observed serving branch/Jekyll output from `README.md`, which looked different from local MkDocs.
 - Current fix: commit generated MkDocs static output at repository root and use `.nojekyll`, so branch-based GitHub Pages from `main` matches local.
 - Public `Keep It Simple` section added in `docs/keep-it-simple.md`, `docs/simple-path-a-phone.md`, and `docs/simple-path-b-passive.md`.

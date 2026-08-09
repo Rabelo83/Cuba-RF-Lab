@@ -11,10 +11,10 @@ Because the final goal is a public low-cost solution, SOPs should record not onl
 
 | SOP | Purpose | Repository Source |
 | --- | --- | --- |
-| Blackout test protocol | Measure what communication options survive during outages. | [tests/blackout_test_protocol.md](https://github.com/Rabelo83/ETECSA-RF-Lab/blob/main/tests/blackout_test_protocol.md) |
-| Antenna test protocol | Compare placements and prototypes without inventing gain. | [tests/antenna_test_protocol.md](https://github.com/Rabelo83/ETECSA-RF-Lab/blob/main/tests/antenna_test_protocol.md) |
-| Phone coupler test protocol | Sweep passive coupler positions and record repeatability. | [tests/phone_coupler_test_protocol.md](https://github.com/Rabelo83/ETECSA-RF-Lab/blob/main/tests/phone_coupler_test_protocol.md) |
-| NanoVNA test protocol | Measure matching, S11, SWR, and return loss. | [tests/nanovna_test_protocol.md](https://github.com/Rabelo83/ETECSA-RF-Lab/blob/main/tests/nanovna_test_protocol.md) |
+| Blackout test protocol | Measure what communication options survive during outages. | [tests/blackout_test_protocol.md](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/tests/blackout_test_protocol.md) |
+| Antenna test protocol | Compare placements and prototypes without inventing gain. | [tests/antenna_test_protocol.md](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/tests/antenna_test_protocol.md) |
+| Phone coupler test protocol | Sweep passive coupler positions and record repeatability. | [tests/phone_coupler_test_protocol.md](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/tests/phone_coupler_test_protocol.md) |
+| NanoVNA test protocol | Measure matching, S11, SWR, and return loss. | [tests/nanovna_test_protocol.md](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/tests/nanovna_test_protocol.md) |
 
 ## Minimum Field Safety Rules
 

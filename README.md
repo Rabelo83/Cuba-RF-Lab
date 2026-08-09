@@ -1,11 +1,11 @@
 # Cuba RF Lab
 
-Repository name: `ETECSA-RF-Lab`
+Repository name: `Cuba-RF-Lab`
 
 Public documentation site:
 
 ```text
-https://rabelo83.github.io/ETECSA-RF-Lab/
+https://rabelo83.github.io/Cuba-RF-Lab/
 ```
 
 The site source lives in `docs/` and is built with MkDocs. Because this repository is currently using branch-based GitHub Pages from `main`, the generated static site is also committed at the repository root so the public site matches the local MkDocs preview.
@@ -13,7 +13,7 @@ The site source lives in `docs/` and is built with MkDocs. Because this reposito
 Plain-language public build paths:
 
 ```text
-https://rabelo83.github.io/ETECSA-RF-Lab/keep-it-simple/
+https://rabelo83.github.io/Cuba-RF-Lab/keep-it-simple/
 ```
 
 ## Mission
