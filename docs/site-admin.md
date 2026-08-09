@@ -2,7 +2,7 @@
 
 <span class="status-badge status-concept">GitHub Pages setup</span>
 
-This repository includes a GitHub Actions workflow for publishing the website.
+This repository includes a MkDocs site and a GitHub Actions workflow for validating the website build.
 
 Expected public URL:
 
@@ -10,40 +10,37 @@ Expected public URL:
 https://rabelo83.github.io/ETECSA-RF-Lab/
 ```
 
-## How The Site Publishes
+## How The Site Publishes Now
 
-The workflow at `.github/workflows/pages.yml`:
+The repository is currently using branch-based GitHub Pages from `main`.
 
-1. runs on pushes to `main`
-2. installs documentation dependencies from `requirements-docs.txt`
-3. builds the MkDocs site with `mkdocs build --strict`
-4. uploads the generated `site/` folder
-5. deploys the artifact to GitHub Pages
+To make that deployment match the local MkDocs preview, the generated MkDocs static output is committed at the repository root:
+
+```text
+index.html
+assets/
+search/
+architecture/
+sops/
+...
+```
+
+The `.nojekyll` file tells GitHub Pages to serve these files as plain static output.
+
+The workflow at `.github/workflows/pages.yml` validates the MkDocs build on pushes to `main`, but it does not deploy.
 
 ## Repository Settings Needed
 
-If the first deployment does not appear, check GitHub repository settings:
+For the current branch-based setup:
 
 1. Go to Settings.
 2. Open Pages.
-3. Under Build and deployment, set Source to GitHub Actions.
-4. Make sure Actions are enabled for the repository.
+3. Under Build and deployment, use Deploy from a branch.
+4. Select branch `main`.
+5. Select folder `/root`.
+6. Save.
 
 For a public project site, the repository should be public or otherwise on a GitHub plan that allows Pages for the repository visibility.
-
-## If The Workflow Fails At Configure GitHub Pages
-
-This usually means Pages has not been enabled for the repository yet.
-
-Fix:
-
-1. Open repository Settings.
-2. Open Pages.
-3. Set Source to GitHub Actions.
-4. Save.
-5. Go to Actions.
-6. Open Deploy GitHub Pages.
-7. Run the workflow manually, or push a new normal commit to `main`.
 
 ## Local Preview
 
@@ -59,3 +56,14 @@ Then open:
 ```text
 http://127.0.0.1:8000/
 ```
+
+## Updating The Public Static Output
+
+After editing `docs/`, rebuild and copy the MkDocs output to the repository root:
+
+```bash
+mkdocs build --strict
+cp -R site/. .
+```
+
+Then commit both the source documentation changes and the generated static output.

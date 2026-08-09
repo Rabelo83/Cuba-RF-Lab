@@ -11,3 +11,5 @@ Created the initial repository structure, collaboration rules, project state, as
 No antenna design is approved in this release.
 
 Added a MkDocs-based GitHub Pages public documentation site with curated pages for project overview, SOPs, blueprint status, research, materials, data templates, collaboration, and site administration.
+
+Adjusted the Pages strategy so the public branch-based GitHub Pages site serves committed MkDocs static output, matching the local MkDocs preview.

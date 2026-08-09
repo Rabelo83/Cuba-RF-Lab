@@ -21,9 +21,10 @@ Current repository state:
 - GitHub remote: `https://github.com/Rabelo83/ETECSA-RF-Lab.git`.
 - Initial project baseline committed and pushed.
 - GitHub Pages site configured with MkDocs in `mkdocs.yml`.
-- Pages deployment workflow added at `.github/workflows/pages.yml`.
+- Validation workflow added at `.github/workflows/pages.yml`.
 - Expected public site URL: `https://rabelo83.github.io/ETECSA-RF-Lab/`.
-- First Pages workflow run `31320108396` triggered but failed at `Configure GitHub Pages`; repository admin likely needs to set Pages source to GitHub Actions, then rerun the workflow.
+- GitHub Pages was observed serving branch/Jekyll output from `README.md`, which looked different from local MkDocs.
+- Current fix: commit generated MkDocs static output at repository root and use `.nojekyll`, so branch-based GitHub Pages from `main` matches local.
 - Starter scripts were run successfully.
 - Python compile check passed with `PYTHONPYCACHEPREFIX` set to `/private/tmp/etecsa_rf_lab_pycache` because the default macOS bytecode cache path was outside the writable workspace.
 

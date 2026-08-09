@@ -8,7 +8,7 @@ Public documentation site:
 https://rabelo83.github.io/ETECSA-RF-Lab/
 ```
 
-The site is built from `docs/` with MkDocs and deployed by GitHub Actions.
+The site source lives in `docs/` and is built with MkDocs. Because this repository is currently using branch-based GitHub Pages from `main`, the generated static site is also committed at the repository root so the public site matches the local MkDocs preview.
 
 ## Mission
 
@@ -77,6 +77,7 @@ Status:
 
 - Repository structure initialized.
 - Public GitHub Pages documentation site configured.
+- Branch-based Pages output generated from MkDocs and committed at repository root.
 - Engineering rules documented.
 - Measurement templates created.
 - Starter calculation scripts created.
