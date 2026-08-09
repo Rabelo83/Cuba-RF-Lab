@@ -15,5 +15,12 @@ Priority bands are currently assumed to be 900 MHz and 1800 MHz, with optional r
 
 No buildable antenna blueprint exists yet. Do not create final fabrication dimensions until research, calculations, and simulation are ready.
 
-Recommended next task: fill `research/sources.md` and `research/etecsa_network.md` with dated source citations for current ETECSA bands, then perform first local signal measurements using `data/templates/blackout_measurement.csv`.
+Current repository state:
 
+- Local git repository initialized on branch `main`.
+- GitHub remote: `https://github.com/Rabelo83/ETECSA-RF-Lab.git`.
+- Initial project baseline committed and pushed.
+- Starter scripts were run successfully.
+- Python compile check passed with `PYTHONPYCACHEPREFIX` set to `/private/tmp/etecsa_rf_lab_pycache` because the default macOS bytecode cache path was outside the writable workspace.
+
+Recommended next task: fill `research/sources.md` and `research/etecsa_network.md` with dated source citations for current ETECSA bands, then perform first local signal measurements using `data/templates/blackout_measurement.csv`.
