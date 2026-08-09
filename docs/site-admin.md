@@ -31,6 +31,20 @@ If the first deployment does not appear, check GitHub repository settings:
 
 For a public project site, the repository should be public or otherwise on a GitHub plan that allows Pages for the repository visibility.
 
+## If The Workflow Fails At Configure GitHub Pages
+
+This usually means Pages has not been enabled for the repository yet.
+
+Fix:
+
+1. Open repository Settings.
+2. Open Pages.
+3. Set Source to GitHub Actions.
+4. Save.
+5. Go to Actions.
+6. Open Deploy GitHub Pages.
+7. Run the workflow manually, or push a new normal commit to `main`.
+
 ## Local Preview
 
 Install docs dependencies, then run:
@@ -45,4 +59,3 @@ Then open:
 ```text
 http://127.0.0.1:8000/
 ```
-
