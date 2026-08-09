@@ -1,0 +1,2 @@
+date,time,location,phone_model,network_type,band,earfcn,rsrp_dbm,rsrq_db,sinr_db,rssi_dbm,ping_ms,download_mbps,upload_mbps,whatsapp_text,whatsapp_call,imo_call,antenna_type,antenna_azimuth,antenna_height_m,blackout_duration,notes
+

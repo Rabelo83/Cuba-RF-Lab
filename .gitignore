@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local outputs
+*.log
+*.tmp
+.DS_Store
+
+# Simulation and generated artifacts
+simulations/results/*.csv
+simulations/results/*.json
+simulations/results/*.png
+results/generated/
+
+# CAD generated exports can be large; keep source files unless intentionally added.
+cad/stl/generated/
+cad/step/generated/
+cad/dxf/generated/
+
