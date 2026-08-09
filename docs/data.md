@@ -4,6 +4,8 @@
 
 The project needs real measurements more than guesses. Store raw measurements in `data/raw/` and keep processed summaries in `data/processed/`.
 
+Local owner-side data collection is temporarily unavailable, so the current phase also stores clearly labeled desktop scenario data. Desktop data must never be described as measured field performance.
+
 ## Blackout Measurement Template
 
 Use this CSV template:
@@ -40,6 +42,14 @@ Use this CSV template when simulation or calculation results become available:
 [data/templates/antenna_candidate_comparison.csv](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/data/templates/antenna_candidate_comparison.csv)
 
 Do not fill it with advertised antenna gain. Use calculated, simulated, measured, or clearly labeled assumption values.
+
+## Desktop Link-Budget Scenario Data
+
+Current processed scenario table:
+
+[data/processed/desktop_link_budget_scenarios.csv](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/data/processed/desktop_link_budget_scenarios.csv)
+
+This table compares the phone-at-RF-location architecture against passive antenna/coax/coupler paths using public-source coax benchmarks and conservative passive-coupler assumptions.
 
 ## Production Cost Estimate Template
 

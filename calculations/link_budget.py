@@ -13,6 +13,7 @@ class LinkBudget:
     antenna_gain_dbi: float
     coax_loss_db: float
     connector_loss_db: float
+    matching_loss_db: float
     coupler_loss_db: float
     miscellaneous_loss_db: float = 0.0
 
@@ -21,6 +22,7 @@ class LinkBudget:
         return (
             self.coax_loss_db
             + self.connector_loss_db
+            + self.matching_loss_db
             + self.coupler_loss_db
             + self.miscellaneous_loss_db
         )
@@ -39,6 +41,7 @@ def calculate_budget(
     antenna_gain_dbi: float,
     coax_loss_db: float,
     connector_loss_db: float,
+    matching_loss_db: float,
     coupler_loss_db: float,
     miscellaneous_loss_db: float = 0.0,
 ) -> LinkBudget:
@@ -47,6 +50,7 @@ def calculate_budget(
     losses = {
         "coax_loss_db": coax_loss_db,
         "connector_loss_db": connector_loss_db,
+        "matching_loss_db": matching_loss_db,
         "coupler_loss_db": coupler_loss_db,
         "miscellaneous_loss_db": miscellaneous_loss_db,
     }
@@ -59,6 +63,7 @@ def calculate_budget(
         antenna_gain_dbi=antenna_gain_dbi,
         coax_loss_db=coax_loss_db,
         connector_loss_db=connector_loss_db,
+        matching_loss_db=matching_loss_db,
         coupler_loss_db=coupler_loss_db,
         miscellaneous_loss_db=miscellaneous_loss_db,
     )
@@ -72,11 +77,13 @@ def main() -> None:
         antenna_gain_dbi=0,
         coax_loss_db=0,
         connector_loss_db=0,
+        matching_loss_db=0,
         coupler_loss_db=0,
     )
     print("Example only. Replace all values with sourced or measured data.")
     print(f"Baseline phone signal: {budget.baseline_phone_signal_dbm:.1f} dBm")
     print(f"Antenna gain: {budget.antenna_gain_dbi:.1f} dBi")
+    print(f"Matching loss: {budget.matching_loss_db:.1f} dB")
     print(f"Total loss: {budget.total_loss_db:.1f} dB")
     print(f"Net improvement: {budget.net_improvement_db:.1f} dB")
     print(f"Expected signal: {budget.expected_signal_dbm:.1f} dBm")

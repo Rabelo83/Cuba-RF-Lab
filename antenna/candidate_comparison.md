@@ -53,6 +53,22 @@ directional antenna gain
 
 If net RF improvement is not enough to beat the ordinary phone placed at the best RF location, the passive antenna system is not the practical winner.
 
+## First Desktop Link-Budget Screen
+
+The first scenario table is recorded in:
+
+`calculations/desktop_link_budget_scenarios.md`
+
+Current pre-measurement result:
+
+- A good-case 900 MHz passive Yagi chain is approximately break-even versus placing the phone at the same RF location.
+- A typical-risk 900 MHz passive chain loses badly if RG-58-class coax and high passive-coupler loss are used.
+- A good-case 1800 MHz passive Yagi chain can produce a small RF-power win, but this is not enough by itself to select it.
+- A strong 1800 MHz passive win appears possible only with short low-loss coax, low matching loss, a very good passive coupler, and cost/availability proof.
+- Directivity may still improve SINR even when net RSRP improvement is small, so simulation must include radiation pattern, beamwidth, front-to-back ratio, and expected interference environment.
+
+Engineering consequence: Architecture 2 remains the baseline to beat until the passive chain can prove enough margin after real losses.
+
 ## Required Candidate Set
 
 | ID | Candidate | Status |
@@ -144,9 +160,9 @@ If two designs perform similarly, choose the cheaper, simpler, more repairable d
 
 A topology should not win on antenna score alone if the complete system is harder or more expensive to reproduce publicly than the phone-at-RF-location architecture.
 
-## Pre-Measurement Provisional Ranking
+## Pre-Measurement Provisional Research Ranking
 
-This is a planning rank only. It is not antenna selection and not blueprint approval.
+This is a planning rank only. It is not antenna selection and not blueprint approval. The ranking expresses what to study first, not what to fabricate.
 
 | Rank | Candidate | Provisional score | Why it ranks here before measurement |
 | ---: | --- | ---: | --- |

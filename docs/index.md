@@ -103,6 +103,8 @@ This track is useful only if measurement proves the passive coupler and antenna 
 - No field-validated antenna design exists yet.
 - No approved blueprint exists yet.
 - Local owner-side field measurement is temporarily unavailable, but expected later.
-- The first priority is source verification, conservative modeling, and simulation.
+- First public-source network, coax, and passive-coupler evidence has been added.
+- First desktop link-budget scenarios have been added.
+- The first priority now is official/regulatory source improvement, component/material desktop research, and antenna simulation.
 
-The recommended next engineering task is to verify current ETECSA band sources, then build conservative phone-first and passive antenna/coupler scenarios for simulation. Field validation remains required before any final public blueprint.
+The recommended next engineering task is to simulate candidate antennas and compare each passive path against the phone-at-best-RF-location baseline. Field validation remains required before any final public blueprint.

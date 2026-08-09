@@ -29,3 +29,5 @@ Added a Cuba material availability raw ledger and CSV template so local observat
 Changed the public display name to Cuba RF Lab and updated documentation links to the `Cuba-RF-Lab` repository path.
 
 Documented the current temporary no-local-data constraint: owner-side RF measurements and material observations are unavailable in the current phase, so the project will proceed with public sources, manufacturer data, conservative assumptions, calculations, simulations, and sensitivity analysis until later field validation exists.
+
+Added the first desktop public-source RF baseline: source-backed 900 MHz and 1800 MHz working bands, secondary 700/2100 MHz awareness, coax attenuation benchmarks, passive-coupler loss assumptions, and conservative link-budget scenarios comparing phone-at-RF-location against passive antenna/coax/coupler paths.

@@ -15,7 +15,7 @@ Current strategy has two tracks:
 1. Track A: place an ETECSA-compatible Android phone at the best RF location and bring data into the house.
 2. Track B: improve a local passive directional antenna plus phone-coupler concept through calculation, simulation, and later external measurement if available.
 
-Priority bands are currently assumed to be 900 MHz and 1800 MHz, with optional research from roughly 800 to 2200 MHz. This still needs current source verification now, and later local measurements when the owner or a collaborator can collect them.
+Priority bands are currently source-backed as a desktop baseline: 900 MHz and 1800 MHz are the main working targets, with 2100 MHz included for broadband awareness and 700 MHz tracked as a secondary possible LTE path. This still needs current direct ETECSA/regulatory source verification where possible, and later local measurements when the owner or a collaborator can collect them.
 
 No buildable antenna blueprint exists yet. Do not create final fabrication dimensions until research, calculations, and simulation are ready.
 
@@ -34,6 +34,13 @@ Current repository state:
 - `AGENTS.md` and `docs/collaboration.md` now explain the website publishing workflow and `Keep It Simple` rules for future AI/human contributors.
 - Antenna selection must use `antenna/candidate_comparison.md`; the preliminary LPDA is only one candidate and no antenna topology is selected yet.
 - The passive antenna/coupler path must be compared against phone-at-RF-location using net RF improvement after coax, connector, matching, passive-coupler, and miscellaneous losses.
+- First desktop RF source pass has been added:
+  - `research/sources.md` records Cuba.Travel, Granma/ETECSA forum, Powertec, coax manufacturer/reseller pages, and passive-coupler guidance.
+  - `research/etecsa_network.md` now treats 900 MHz and 1800 MHz as source-backed baseline bands, with 700/2100 as secondary awareness.
+  - `research/coax.md` now records RG-58, LMR-240, and LMR-400 benchmark losses.
+  - `research/passive_coupling.md` now records several-dB passive coupling loss as the key uncertainty.
+- First desktop link-budget scenario pass has been added in `calculations/desktop_link_budget_scenarios.md` and `data/processed/desktop_link_budget_scenarios.csv`.
+- New decision recorded: phone-at-best-RF-location is the baseline to beat until the passive antenna/coax/coupler path proves enough net margin.
 - Production cost, repairability, local material substitution, import risk, and real-world usefulness are now top-level constraints.
 - A project-wide documentation pass propagated the public mission into requirements, research, routerless, coupler, simulation, calculation, testing, material, legal, CAD, image, data, result, and website-collaboration notes.
 - Antenna candidate weighting now gives stronger explicit weight to low production cost and ability to fabricate or repair in Cuba while keeping blackout connectivity as the highest-weight criterion.
@@ -45,4 +52,4 @@ Current repository state:
 - A suspected mobile-layout overflow bug on the homepage architecture diagram was investigated and ruled out: initial headless-Chrome screenshots looked clipped, but that was a testing artifact (headless Chrome clamps its internal window below ~500px while still saving the screenshot at the requested smaller size). Verified with real Chrome DevTools Protocol mobile emulation (390x844, `mobile: true`) that `document.documentElement.scrollWidth` equals `window.innerWidth` with no overflow. No site change was needed or made for this.
 - Remaining known gap in bilingual handling: `<html lang="en">` is hardcoded site-wide even though `Keep It Simple` pages are roughly half Spanish, and no Spanish text is wrapped in `lang="es"`. Not fixed yet; affects screen-reader pronunciation and language-based SEO.
 
-Recommended next task: fill `research/sources.md` and `research/etecsa_network.md` with dated source citations for current ETECSA bands, then create conservative desktop link-budget scenarios for phone-first and passive antenna/coupler paths. Do not wait for local measurements to begin simulation, but do not call any design field validated without them.
+Recommended next task: improve official import-rule and current ETECSA/regulatory source coverage, then start first antenna simulations for 900 MHz Yagi, 1800 MHz Yagi, broadband LPDA, and dual-band/nested concepts using realistic material and tolerance assumptions. Do not wait for local measurements to begin simulation, but do not call any design field validated without them.

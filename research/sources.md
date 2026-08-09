@@ -1,11 +1,22 @@
 # Sources
 
-Status: empty source ledger
+Status: active source ledger
 
 Use this file to record all claims that affect engineering decisions.
 
 | Claim | Source URL | Source Date | Access Date | Source Class | Confidence | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| ETECSA priority bands include 900 MHz and 1800 MHz. | TODO | TODO | TODO | TODO | Medium | Working baseline only. |
+| Cuba.Travel lists phone compatibility for Cuba as 3G Band 8 at 900 MHz and 4G Band 3 at 1800 MHz. | https://www.cuba.travel/en/useful-information/communications | Undated page | 2026-08-09 | B | High | Strong public compatibility baseline; not blackout-specific and not local to Matanzas. |
+| A 2018 Granma/ETECSA forum says Cuba's 2G network used 900 MHz and 3G reused 900 MHz for faster deployment. | https://www.granma.cu/cuba/2018-06-14/forodebate-tecnologia-movil-digital-en-cuba-14-06-2018-15-06-01?page=25 | 2018-06-14 | 2026-08-09 | B | High for historical baseline | Official publication with ETECSA participants; too old to prove 2026 local outage behavior. |
+| A 2018 Granma/ETECSA forum says future 4G would use 1800 MHz Band 3. | https://www.granma.cu/cuba/2018-06-14/forodebate-tecnologia-movil-digital-en-cuba-14-06-2018-15-06-01?page=25 | 2018-06-14 | 2026-08-09 | B | Medium | Historical ETECSA statement; supported by current Cuba.Travel compatibility data and technical third-party lists. |
+| Powertec lists ETECSA/Cubacel 3G Band 8 900 MHz active and LTE Band 3 1800 MHz launched in 2019. | https://portal.powertec.com.au/industry-resources/companies/etecsa | Undated technical page | 2026-08-09 | E | Medium | Useful current third-party baseline; requires official or field confirmation. |
+| Powertec lists LTE B1 2100 MHz, B28 700 MHz, and B8 900 MHz additions in 2023. | https://portal.powertec.com.au/industry-resources/companies/etecsa | Undated technical page | 2026-08-09 | E | Medium | Include in broadband awareness; do not make first low-cost blueprint depend on these bands without local measurement. |
+| RG-58 class coax can lose about 51.2 dB/100 m at 900 MHz and 73.5 dB/100 m at 1800 MHz. | https://www.mcgillmicrowave.com/rg58/ | Undated product page | 2026-08-09 | C | Medium | Product-specific benchmark; use as conservative RG-58-class scenario data. |
+| Belden 8240 RG-58 lists 13.7 dB/100 ft attenuation at 900 MHz and nominal impedance about 52 ohms. | https://www.belden.com/products/cable/coax-triax-cable/50-ohm-coax-cable/8240 | Product page revision shown as 2026-02-20 | 2026-08-09 | C | High | Manufacturer product data; no 1800 MHz value on page. |
+| LMR-240 typical attenuation is about 24.8 dB/100 m at 900 MHz and 35.6 dB/100 m at 1800 MHz. | https://www.digikey.com/en/htmldatasheets/production/3391245/0/0/1/lmr-240 | Undated Times Microwave datasheet mirror | 2026-08-09 | C | High | Manufacturer datasheet mirrored by DigiKey; availability in Cuba unknown. |
+| LMR-400 assembly attenuation guide lists about 12.8 dB/100 m at 900 MHz and 18.6 dB/100 m at 1800 MHz. | https://www.crossrf.com/flexible-cables-c-433_322/times-microwave-lmr400-cable-assembly-p-844.html | Undated product page | 2026-08-09 | E | Medium | Technical reseller product page; useful for scenario modeling, not local availability. |
+| Times Microwave explains that larger-diameter coax generally reduces attenuation but increases mass and bend-radius constraints. | https://timesmicrowave.com/attenuation/ | Undated engineering page | 2026-08-09 | C | High | Principle supports the low-loss versus cost/handling tradeoff. |
+| Passive phone couplers and cradles have several dB of loss and depend strongly on placement near the phone antenna. | https://remoteone.com.au/support/patch-cable-cradle-guide/ | Page metadata seen by search as about 2.9 years old | 2026-08-09 | E | Medium | Use as order-of-magnitude guidance only; homemade coupler must be measured. |
+| Universal passive antenna coupler vendor guidance says inductive patches are less effective than direct connections, placement-dependent, and should be used with antennas above about 6 dBi. | https://remoteone.com.au/product/universal-passive-antenna-coupler-for-mobile-phones/ | Undated product page | 2026-08-09 | E | Medium | Useful practical warning; product/vendor claim, not project measurement. |
 | Cuban Resolucion 1/2026 may affect telecom equipment imports. | TODO | TODO | TODO | TODO | Medium | Needs official text. |
 | Lowest-cost public production path is preferred when connectivity is similar. | Project decision | 2026-08-09 | 2026-08-09 | Internal | High | See `DECISIONS.md`; external prices still require sourcing. |

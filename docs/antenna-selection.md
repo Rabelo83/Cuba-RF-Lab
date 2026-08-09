@@ -46,6 +46,22 @@ Advertised antenna gain alone is not enough.
 
 If two antennas provide similar useful connectivity, choose the one with lower production cost, easier repair, simpler tools, and better local substitution options.
 
+## Current Desktop Finding
+
+The first conservative link-budget scenarios show that the passive antenna path is dominated by coax loss and passive-coupler loss.
+
+Current interpretation:
+
+- phone-at-best-RF-location is the baseline to beat
+- 900 MHz remains important for blackout resilience, but a 900 MHz passive chain can lose its gain in the coupler and coax
+- 1800 MHz passive designs can be physically smaller and may produce a small RF-power win in good cases
+- no passive antenna wins on advertised gain alone
+- SINR improvement from directionality may still be valuable and must be simulated
+
+Scenario details:
+
+[calculations/desktop_link_budget_scenarios.md](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/calculations/desktop_link_budget_scenarios.md)
+
 ## Candidate Ranking
 
 This is a pre-measurement planning rank only.

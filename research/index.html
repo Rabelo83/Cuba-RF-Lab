@@ -921,6 +921,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#current-desktop-link-budget-finding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Current Desktop Link-Budget Finding
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#research-ledger" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1150,6 +1161,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#current-desktop-link-budget-finding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Current Desktop Link-Budget Finding
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#research-ledger" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1185,6 +1207,13 @@
 <p>Research claims must be sourced. Public assumptions are useful, but they are not final engineering facts until verified.</p>
 <p>Research and simulations should move the project toward a low-cost public solution for Cuban blackout conditions. Track production cost, repairability, and local substitution alongside RF performance.</p>
 <p>Current mode: local owner-side measurements are temporarily unavailable. Research must rely on dated public sources, manufacturer data, conservative assumptions, and scenario modeling until the owner or a collaborator can contribute field measurements later.</p>
+<p>Current desktop baseline added on 2026-08-09:</p>
+<ul>
+<li>Public sources support 900 MHz and 1800 MHz as the main working bands.</li>
+<li>700 MHz and 2100 MHz remain secondary awareness bands until stronger local or official evidence exists.</li>
+<li>Coax and passive-coupler losses are large enough that passive antenna gain must be evaluated as a complete system.</li>
+<li>The phone-at-best-RF-location architecture remains the baseline to beat.</li>
+</ul>
 <h2 id="priority-research-areas">Priority Research Areas<a class="headerlink" href="#priority-research-areas" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -1278,9 +1307,22 @@
 <li>1800 MHz</li>
 <li>Optional broadband coverage from about 800 MHz to 2200 MHz</li>
 </ol>
-<p>This priority is a working baseline. It must be verified with current sources now and local measurements later when the owner or a collaborator can provide them.</p>
+<p>This priority is now supported by a first public-source pass, but it must still be verified with local measurements later when the owner or a collaborator can provide them.</p>
 <p>Until local measurements exist, treat this priority as a scenario set rather than a confirmed local truth.</p>
 <p>The preliminary LPDA is not selected by default. Antenna candidates must be compared with the weighted decision process in the antenna selection framework.</p>
+<h2 id="current-desktop-link-budget-finding">Current Desktop Link-Budget Finding<a class="headerlink" href="#current-desktop-link-budget-finding" title="Permanent link">&para;</a></h2>
+<p>The first desktop scenario set indicates that passive antenna/coax/coupler designs are most sensitive to:</p>
+<ul>
+<li>passive-coupler loss</li>
+<li>coax type and length</li>
+<li>matching loss</li>
+<li>whether directivity improves SINR enough to matter</li>
+</ul>
+<p>See:</p>
+<ul>
+<li><a href="https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/calculations/desktop_link_budget_scenarios.md">Desktop link-budget scenarios</a></li>
+<li><a href="https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/data/processed/desktop_link_budget_scenarios.csv">Processed scenario CSV</a></li>
+</ul>
 <h2 id="research-ledger">Research Ledger<a class="headerlink" href="#research-ledger" title="Permanent link">&para;</a></h2>
 <p>All source-backed claims should be entered in <a href="https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/research/sources.md">research/sources.md</a>.</p>
 

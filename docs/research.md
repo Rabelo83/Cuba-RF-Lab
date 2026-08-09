@@ -8,6 +8,13 @@ Research and simulations should move the project toward a low-cost public soluti
 
 Current mode: local owner-side measurements are temporarily unavailable. Research must rely on dated public sources, manufacturer data, conservative assumptions, and scenario modeling until the owner or a collaborator can contribute field measurements later.
 
+Current desktop baseline added on 2026-08-09:
+
+- Public sources support 900 MHz and 1800 MHz as the main working bands.
+- 700 MHz and 2100 MHz remain secondary awareness bands until stronger local or official evidence exists.
+- Coax and passive-coupler losses are large enough that passive antenna gain must be evaluated as a complete system.
+- The phone-at-best-RF-location architecture remains the baseline to beat.
+
 ## Priority Research Areas
 
 | Area | Purpose | Repository Source |
@@ -38,11 +45,25 @@ Current mode: local owner-side measurements are temporarily unavailable. Researc
 2. 1800 MHz
 3. Optional broadband coverage from about 800 MHz to 2200 MHz
 
-This priority is a working baseline. It must be verified with current sources now and local measurements later when the owner or a collaborator can provide them.
+This priority is now supported by a first public-source pass, but it must still be verified with local measurements later when the owner or a collaborator can provide them.
 
 Until local measurements exist, treat this priority as a scenario set rather than a confirmed local truth.
 
 The preliminary LPDA is not selected by default. Antenna candidates must be compared with the weighted decision process in the antenna selection framework.
+
+## Current Desktop Link-Budget Finding
+
+The first desktop scenario set indicates that passive antenna/coax/coupler designs are most sensitive to:
+
+- passive-coupler loss
+- coax type and length
+- matching loss
+- whether directivity improves SINR enough to matter
+
+See:
+
+- [Desktop link-budget scenarios](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/calculations/desktop_link_budget_scenarios.md)
+- [Processed scenario CSV](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/data/processed/desktop_link_budget_scenarios.csv)
 
 ## Research Ledger
 

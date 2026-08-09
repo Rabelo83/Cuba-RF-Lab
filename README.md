@@ -68,14 +68,14 @@ This path is valuable because it avoids an active repeater and can use ordinary 
 
 ## ETECSA-Specific Baseline
 
-Current public baseline assumptions to verify:
+Current public-source desktop baseline:
 
 - Priority bands: 900 MHz and 1800 MHz
 - Likely 900 MHz use: GSM and UMTS Band 8
 - Likely 1800 MHz use: LTE Band 3
 - Possible additional bands: 700 MHz and 2100 MHz in some areas
 
-These are not final facts. The repository must keep source URLs, source dates, source classes, and confidence levels in `research/`.
+These are not final field facts. The repository keeps source URLs, source dates, source classes, and confidence levels in `research/`, and local blackout measurements remain required before any final public blueprint.
 
 ## Current Status
 
@@ -89,6 +89,8 @@ Status:
 - Bilingual Keep It Simple section created for plain-language public build paths.
 - Public-benefit and low-production-cost objective documented.
 - Engineering rules documented.
+- First public-source network/coax/passive-coupler evidence added.
+- First desktop link-budget scenarios added for phone-first and passive antenna/coupler paths.
 - Measurement templates created.
 - Starter calculation scripts created.
 - Local owner-side field measurement and material collection are temporarily unavailable, but expected later.
@@ -97,8 +99,8 @@ Status:
 
 ## Next Milestones
 
-1. Verify which ETECSA bands are active in the target Matanzas area during normal power and during blackouts.
+1. Improve direct official ETECSA/regulatory source coverage for current bands and import constraints.
 2. Identify realistic low-cost reference phones, supported bands, and practical tethering options from public sources and manufacturer specs.
-3. Build conservative RF scenarios for indoor, outdoor, roof, window, and street-corner placements while local measurements are temporarily unavailable.
-4. Build research baseline for coax, antennas, passive phone coupling, Cuban import constraints, and likely material availability.
-5. Model candidate antennas before any fabrication dimensions are promoted to buildable status.
+3. Build desktop material and component availability notes from public sources while local observations are unavailable.
+4. Simulate candidate antennas using realistic materials, feed assumptions, and tolerances.
+5. Compare every passive antenna path against the phone-at-best-RF-location baseline before any fabrication dimensions are promoted to buildable status.

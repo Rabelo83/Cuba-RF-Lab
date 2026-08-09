@@ -10,10 +10,10 @@ Confidence levels:
 
 | Assumption | Confidence | Notes |
 | --- | --- | --- |
-| ETECSA/Cubacel service in the area includes 900 MHz operation. | Medium | Requires current source and local phone measurements. |
-| ETECSA/Cubacel service in the area includes LTE Band 3 around 1800 MHz. | Medium | Requires current source and local phone measurements. |
-| 700 MHz or 2100 MHz may exist in some network areas. | Low | Do not design around these until verified locally. |
-| During long blackouts, 4G may be less available than 2G or 3G. | Medium | Must be measured during actual outages. |
+| ETECSA/Cubacel service in Cuba includes 900 MHz operation. | High | Supported by Cuba.Travel, Granma/ETECSA 2018 forum, and Powertec. Still requires local phone measurements before site-specific claims. |
+| ETECSA/Cubacel service in Cuba includes LTE Band 3 around 1800 MHz. | High | Supported by Cuba.Travel and third-party technical band records. Still requires local blackout measurements before design approval. |
+| 700 MHz or 2100 MHz may exist in some network areas. | Medium | Supported by public/third-party sources, but not yet enough to drive the first low-cost blueprint. Include in broadband awareness. |
+| During long blackouts, 4G may be less available than 2G or 3G. | Low | Plausible but not source-backed for the target site. Must be measured during actual outages before using as a design fact. |
 
 ## Site
 
@@ -29,8 +29,9 @@ Confidence levels:
 | Assumption | Confidence | Notes |
 | --- | --- | --- |
 | An ordinary Android phone can serve as the primary cellular endpoint. | Medium | Depends on phone bands, battery behavior, tethering support, and thermal limits. |
-| A passive phone coupler can improve reception for some phone positions. | Low | Coupler loss and repeatability are unknown. |
-| Locally available coax may not be low-loss 50-ohm cable. | Medium | Must identify actual cable type and attenuation. |
+| A passive phone coupler can improve reception for some phone positions. | Low | Public guidance suggests several dB of coupling loss and strong placement sensitivity. Homemade coupler loss and repeatability are unknown. |
+| Locally available coax may not be low-loss 50-ohm cable. | Medium | Source-backed benchmarks show RG-58 class losses are high at cellular frequencies. Actual Cuban availability remains unknown. |
+| A phone placed at the best RF location may outperform a passive antenna/coupler chain. | Medium | Desktop link-budget scenarios show passive coupler and coax losses can erase antenna gain. Needs later field validation. |
 
 ## Regulatory
 

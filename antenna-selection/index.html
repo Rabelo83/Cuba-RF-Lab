@@ -910,6 +910,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#current-desktop-finding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Current Desktop Finding
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#candidate-ranking" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1195,6 +1206,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#current-desktop-finding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Current Desktop Finding
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#candidate-ranking" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1267,6 +1289,18 @@ directional antenna gain
 </code></pre></div>
 <p>Advertised antenna gain alone is not enough.</p>
 <p>If two antennas provide similar useful connectivity, choose the one with lower production cost, easier repair, simpler tools, and better local substitution options.</p>
+<h2 id="current-desktop-finding">Current Desktop Finding<a class="headerlink" href="#current-desktop-finding" title="Permanent link">&para;</a></h2>
+<p>The first conservative link-budget scenarios show that the passive antenna path is dominated by coax loss and passive-coupler loss.</p>
+<p>Current interpretation:</p>
+<ul>
+<li>phone-at-best-RF-location is the baseline to beat</li>
+<li>900 MHz remains important for blackout resilience, but a 900 MHz passive chain can lose its gain in the coupler and coax</li>
+<li>1800 MHz passive designs can be physically smaller and may produce a small RF-power win in good cases</li>
+<li>no passive antenna wins on advertised gain alone</li>
+<li>SINR improvement from directionality may still be valuable and must be simulated</li>
+</ul>
+<p>Scenario details:</p>
+<p><a href="https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/calculations/desktop_link_budget_scenarios.md">calculations/desktop_link_budget_scenarios.md</a></p>
 <h2 id="candidate-ranking">Candidate Ranking<a class="headerlink" href="#candidate-ranking" title="Permanent link">&para;</a></h2>
 <p>This is a pre-measurement planning rank only.</p>
 <table>

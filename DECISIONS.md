@@ -59,3 +59,9 @@ Reason: the real objective is the best practical passive antenna system for ETEC
 Decision: research, simulations, materials, and blueprints must lead toward a solution that can be offered publicly at the lowest practical production cost while still working reliably and safely.
 
 Reason: the purpose of the project is to help Cuban people struggling with blackouts and communication loss. A design that performs well in theory but is expensive, fragile, hard to import, or hard to repair does not satisfy the project mission.
+
+## 2026-08-09: Treat Phone-At-RF-Location As The Baseline To Beat
+
+Decision: until measured or simulated passive-system losses prove otherwise, the phone-at-best-RF-location architecture is the baseline comparison for all passive antenna/coupler proposals.
+
+Reason: first desktop link-budget scenarios show that coax, connector, matching, passive-coupler, and implementation losses can erase the gain of a directional antenna. A passive antenna may still win if it improves SINR, uses low-loss short coax, and couples efficiently into an ordinary phone, but advertised antenna gain alone is not sufficient evidence.
