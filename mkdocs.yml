@@ -69,6 +69,7 @@ nav:
       - Data Templates: data.md
   - Engineering:
       - Blueprints: blueprints.md
+      - Antenna Selection: antenna-selection.md
       - Research: research.md
       - Materials: materials.md
   - Collaboration:

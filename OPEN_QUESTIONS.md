@@ -20,6 +20,8 @@
 - Which topology is best for 800 to 2200 MHz broadband coverage under local material constraints?
 - Is a narrow 1800 MHz antenna worthwhile if LTE is often unavailable during blackout?
 - Is a dedicated 900 MHz antenna required for blackout resilience?
+- Does any passive antenna/coupler system beat simply placing the phone at the best RF location after all losses are counted?
+- Which candidate ranks highest after simulation: LPDA, 900 MHz Yagi, 1800 MHz Yagi, dual-band/nested antenna, biquad, panel/patch, or another passive design?
 - What polarization is used by the reachable serving sites?
 - What antenna height is safe and useful?
 
@@ -36,4 +38,3 @@
 - Which parts can be imported without technical authorization?
 - Which parts may require UPTCER authorization?
 - What substitutes are available for low-loss coax, connectors, waterproof enclosures, and routers?
-

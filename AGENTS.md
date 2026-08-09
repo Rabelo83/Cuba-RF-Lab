@@ -73,6 +73,38 @@ For those pages:
 - clearly mark concept or not-field-validated work
 - do not publish final dimensions unless the matching engineering files support them
 
+## Antenna Selection Rules
+
+Do not assume the preliminary LPDA concept is final or preferred. Treat it only as one candidate.
+
+Before any fabrication-ready antenna blueprint is produced, update and use `antenna/candidate_comparison.md`.
+
+Every antenna proposal must be compared against:
+
+- broadband LPDA around 800-2200 MHz
+- high-gain 1800 MHz Yagi
+- high-gain 900 MHz Yagi
+- dual-band or nested 900/1800 MHz directional antenna
+- biquad or double-biquad where technically appropriate
+- panel or patch-array concepts
+- any other passive directional design that simulation suggests may outperform these
+
+Compare each passive antenna/coupler system against the simpler phone-at-RF-location architecture.
+
+Use this relationship:
+
+```text
+Net RF improvement =
+directional antenna gain
+- coax loss
+- connector loss
+- matching loss
+- passive coupling loss
+- miscellaneous implementation loss
+```
+
+Never use advertised antenna gain alone as evidence of superior performance.
+
 ## Blueprint Status
 
 Allowed status values:
@@ -85,6 +117,8 @@ Allowed status values:
 - APPROVED
 
 Nothing may enter `blueprints/approved/` unless it has calculations, simulation, and review notes. If it has not been field tested, it must clearly say `NOT FIELD VALIDATED`.
+
+No antenna may enter `blueprints/approved/` unless it has also been compared against competing antenna topologies and the topology-selection reason is recorded in `DECISIONS.md`.
 
 ## Preferred Workflow
 

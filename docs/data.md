@@ -33,3 +33,10 @@ date,time,location,phone_model,network_type,band,earfcn,rsrp_dbm,rsrq_db,sinr_db
 - Record app-level success, not just signal strength.
 - Do not optimize only for strongest RSRP if SINR becomes worse.
 
+## Antenna Candidate Comparison Template
+
+Use this CSV template when simulation or calculation results become available:
+
+[data/templates/antenna_candidate_comparison.csv](https://github.com/Rabelo83/ETECSA-RF-Lab/blob/main/data/templates/antenna_candidate_comparison.csv)
+
+Do not fill it with advertised antenna gain. Use calculated, simulated, measured, or clearly labeled assumption values.

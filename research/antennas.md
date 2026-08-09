@@ -36,3 +36,9 @@ Status: topic map
 
 No antenna topology is selected for final build. LPDA, 900 MHz Yagi, and 1800 MHz Yagi are the first structured research paths.
 
+The LPDA is not preferred by default. Use `antenna/candidate_comparison.md` before selecting any antenna topology for fabrication-ready blueprints.
+
+Detailed comparison framework:
+
+- `antenna/candidate_comparison.md`
+- `data/templates/antenna_candidate_comparison.csv`

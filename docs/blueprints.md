@@ -26,6 +26,8 @@ The project is intentionally not jumping straight to final fabrication dimension
 
 For plain-language build paths, use [Keep It Simple](keep-it-simple.md). That section avoids RF math and shows only the simple blueprint, materials, and build/test steps for each project path.
 
+For antenna topology selection, use [Antenna Selection](antenna-selection.md). The LPDA is one candidate only, not the default winner.
+
 ## Public Blueprint Rule
 
 Every public blueprint must include:
@@ -48,6 +50,8 @@ Every public blueprint must include:
 - limitations
 - testing procedure
 - revision history
+
+Antenna blueprints must also include topology comparison against competing antenna candidates and a written selection reason in `DECISIONS.md`.
 
 If it has not been field tested, it must say:
 

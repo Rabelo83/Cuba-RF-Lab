@@ -6,6 +6,8 @@ Status: CONCEPT
 
 Investigate a log-periodic directional antenna that can cover roughly 800 to 2200 MHz for resilience across possible ETECSA bands.
 
+The LPDA is not the selected or preferred antenna by default. It must compete against the other candidates in `antenna/candidate_comparison.md`.
+
 ## Current Notes
 
 An early conceptual LPDA discussion used approximate values around:
@@ -23,4 +25,3 @@ These numbers are not approved blueprints. They are not build data and must not 
 - Is broadband gain sufficient compared with narrower antennas?
 - What coax length is unavoidable?
 - Does the phone or passive coupler limit the antenna benefit?
-

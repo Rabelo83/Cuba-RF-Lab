@@ -17,3 +17,5 @@ Adjusted the Pages strategy so the public branch-based GitHub Pages site serves 
 Added a bilingual `Keep It Simple` site section with plain-language pages for Track A phone-first architecture and Track B passive antenna/coupler experiments.
 
 Updated collaborator instructions so future AI or human contributors know how the branch-based MkDocs Pages output is published and how to maintain the `Keep It Simple` section.
+
+Added an antenna topology comparison framework, provisional pre-measurement ranking, net RF improvement rule, and candidate comparison CSV template. The LPDA is explicitly treated as one candidate, not the default or final antenna.

@@ -48,3 +48,8 @@ Decision: all important project knowledge must live in repository files.
 
 Reason: future AI and human collaborators need continuity without relying on chat history.
 
+## 2026-08-09: Antenna Topology Must Be Selected By Comparison
+
+Decision: do not assume the preliminary LPDA concept is final or preferred. Before any fabrication-ready antenna blueprint, compare multiple passive antenna topologies using `antenna/candidate_comparison.md`.
+
+Reason: the real objective is the best practical passive antenna system for ETECSA blackout conditions, not validation of an earlier idea. The winning topology must beat competing designs and must be compared against the simpler phone-at-RF-location architecture after coax, connector, matching, and passive-coupler losses.

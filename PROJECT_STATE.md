@@ -47,12 +47,14 @@ Possible ETECSA behavior during outages includes shutting down 4G or 3G while lo
 - Public GitHub Pages site configured with MkDocs.
 - Current live deployment path is branch-based Pages from `main`, using committed static MkDocs output at the repository root.
 - Public `Keep It Simple` section added for bilingual plain-language build paths.
+- Antenna selection framework added; LPDA is explicitly only one candidate topology.
 - Calculation scripts created for wavelength, coax loss, and simple received-signal delta.
 - Measurement CSV template created.
 - No simulation results yet.
 - No CAD files yet.
 - No final dimensions yet.
 - No approved blueprints yet.
+- No antenna topology has been selected for fabrication-ready blueprints.
 
 ## Immediate Next Work
 
