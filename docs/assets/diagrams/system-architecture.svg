@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="420" viewBox="0 0 1120 420" role="img" aria-labelledby="title desc">
+  <title id="title">ETECSA RF Lab preferred communication architecture</title>
+  <desc id="desc">Diagram showing ETECSA network, best RF location, ordinary phone, data transport, router, and house Wi-Fi.</desc>
+  <rect width="1120" height="420" fill="#f8fafc"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#0f172a">
+    <text x="560" y="42" text-anchor="middle" font-size="28" font-weight="700">Preferred Blackout-Resilient Path</text>
+    <text x="560" y="72" text-anchor="middle" font-size="16" fill="#475569">Convert cellular RF to data as close to the best signal location as practical.</text>
+  </g>
+  <g stroke="#0f766e" stroke-width="3" fill="none" marker-end="url(#arrow)">
+    <path d="M190 210 H330"/>
+    <path d="M470 210 H610"/>
+    <path d="M750 210 H890"/>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#0f766e"/>
+    </marker>
+  </defs>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <g transform="translate(55 135)">
+      <rect width="150" height="150" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+      <path d="M75 100 V38" stroke="#0f766e" stroke-width="6" stroke-linecap="round"/>
+      <path d="M52 65 C45 53,45 44,52 32" stroke="#0f766e" stroke-width="4" fill="none"/>
+      <path d="M98 65 C105 53,105 44,98 32" stroke="#0f766e" stroke-width="4" fill="none"/>
+      <path d="M38 78 C24 55,24 36,38 18" stroke="#0f766e" stroke-width="3" fill="none"/>
+      <path d="M112 78 C126 55,126 36,112 18" stroke="#0f766e" stroke-width="3" fill="none"/>
+      <text x="75" y="122" text-anchor="middle" font-size="17" font-weight="700" fill="#134e4a">ETECSA</text>
+      <text x="75" y="143" text-anchor="middle" font-size="13" fill="#475569">surviving site</text>
+    </g>
+    <g transform="translate(335 135)">
+      <rect width="150" height="150" rx="8" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+      <path d="M40 90 L75 35 L110 90 Z" fill="#bae6fd" stroke="#0284c7" stroke-width="3"/>
+      <circle cx="75" cy="92" r="12" fill="#0284c7"/>
+      <text x="75" y="122" text-anchor="middle" font-size="17" font-weight="700" fill="#075985">Best RF</text>
+      <text x="75" y="143" text-anchor="middle" font-size="13" fill="#475569">window, roof, corner</text>
+    </g>
+    <g transform="translate(615 135)">
+      <rect width="150" height="150" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+      <rect x="50" y="25" width="50" height="82" rx="8" fill="#fff7ed" stroke="#d97706" stroke-width="3"/>
+      <circle cx="75" cy="97" r="4" fill="#d97706"/>
+      <text x="75" y="122" text-anchor="middle" font-size="17" font-weight="700" fill="#92400e">Phone</text>
+      <text x="75" y="143" text-anchor="middle" font-size="13" fill="#475569">ordinary SIM device</text>
+    </g>
+    <g transform="translate(895 135)">
+      <rect width="170" height="150" rx="8" fill="#ecfccb" stroke="#65a30d" stroke-width="2"/>
+      <rect x="45" y="45" width="80" height="42" rx="6" fill="#f7fee7" stroke="#65a30d" stroke-width="3"/>
+      <path d="M58 45 L46 25 M112 45 L124 25" stroke="#65a30d" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="65" cy="66" r="4" fill="#65a30d"/>
+      <circle cx="85" cy="66" r="4" fill="#65a30d"/>
+      <circle cx="105" cy="66" r="4" fill="#65a30d"/>
+      <text x="85" y="122" text-anchor="middle" font-size="17" font-weight="700" fill="#365314">House Wi-Fi</text>
+      <text x="85" y="143" text-anchor="middle" font-size="13" fill="#475569">USB, Ethernet, bridge</text>
+    </g>
+    <text x="400" y="330" text-anchor="middle" font-size="15" fill="#475569">Minimize long cellular-frequency coax.</text>
+    <text x="720" y="330" text-anchor="middle" font-size="15" fill="#475569">Transport data after reception.</text>
+  </g>
+</svg>
+

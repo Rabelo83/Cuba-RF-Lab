@@ -44,6 +44,7 @@ Possible ETECSA behavior during outages includes shutting down 4G or 3G while lo
 ## Current Repository Status
 
 - Documentation baseline created.
+- Public GitHub Pages site configured with MkDocs and GitHub Actions.
 - Calculation scripts created for wavelength, coax loss, and simple received-signal delta.
 - Measurement CSV template created.
 - No simulation results yet.
@@ -58,4 +59,3 @@ Possible ETECSA behavior during outages includes shutting down 4G or 3G while lo
 3. Confirm the phone model and supported bands.
 4. Research realistic coax and connector availability.
 5. Prepare first antenna models for simulation.
-

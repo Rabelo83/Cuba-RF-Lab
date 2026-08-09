@@ -1,0 +1,59 @@
+site_name: ETECSA RF Lab
+site_description: Low-cost, blackout-resilient communication engineering notes for ETECSA/Cubacel conditions in Cuba.
+site_url: https://rabelo83.github.io/ETECSA-RF-Lab/
+repo_url: https://github.com/Rabelo83/ETECSA-RF-Lab
+repo_name: Rabelo83/ETECSA-RF-Lab
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  palette:
+    - scheme: default
+      primary: teal
+      accent: amber
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - Project:
+      - Architecture: architecture.md
+      - Methodology: project_methodology.md
+      - Safety: safety.md
+      - Glossary: glossary.md
+  - Field Work:
+      - SOPs: sops.md
+      - Data Templates: data.md
+  - Engineering:
+      - Blueprints: blueprints.md
+      - Research: research.md
+      - Materials: materials.md
+  - Collaboration:
+      - How To Collaborate: collaboration.md
+      - Site Admin: site-admin.md
+
+copyright: Copyright 2026 Alfredo. Project documentation is public for collaboration; designs remain subject to safety, legal, and validation limits.
+

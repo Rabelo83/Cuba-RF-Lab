@@ -2,6 +2,14 @@
 
 Alternate name: Project ETECSA Phoenix
 
+Public documentation site:
+
+```text
+https://rabelo83.github.io/ETECSA-RF-Lab/
+```
+
+The site is built from `docs/` with MkDocs and deployed by GitHub Actions.
+
 ## Mission
 
 ETECSA-RF-Lab is an engineering project for low-cost, blackout-resilient communication at a house in Matanzas, Cuba. The goal is to bring usable ETECSA/Cubacel connectivity into the home during long power outages using practical, repairable, legal, and locally adaptable systems.
@@ -68,6 +76,7 @@ Version: 0.1.0 research baseline
 Status:
 
 - Repository structure initialized.
+- Public GitHub Pages documentation site configured.
 - Engineering rules documented.
 - Measurement templates created.
 - Starter calculation scripts created.
@@ -81,4 +90,3 @@ Status:
 3. Measure signal at indoor, outdoor, roof, window, and street-corner locations.
 4. Build research baseline for coax, antennas, passive phone coupling, and Cuban import constraints.
 5. Model candidate antennas before any fabrication dimensions are promoted to buildable status.
-

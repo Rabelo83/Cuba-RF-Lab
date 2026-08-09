@@ -20,6 +20,9 @@ Current repository state:
 - Local git repository initialized on branch `main`.
 - GitHub remote: `https://github.com/Rabelo83/ETECSA-RF-Lab.git`.
 - Initial project baseline committed and pushed.
+- GitHub Pages site configured with MkDocs in `mkdocs.yml`.
+- Pages deployment workflow added at `.github/workflows/pages.yml`.
+- Expected public site URL: `https://rabelo83.github.io/ETECSA-RF-Lab/`.
 - Starter scripts were run successfully.
 - Python compile check passed with `PYTHONPYCACHEPREFIX` set to `/private/tmp/etecsa_rf_lab_pycache` because the default macOS bytecode cache path was outside the writable workspace.
 
