@@ -115,16 +115,16 @@ Weights total 100.
 | Criterion | Weight |
 | --- | ---: |
 | Connectivity during an ETECSA blackout | 18 |
-| Useful performance at 900 MHz and/or 1800 MHz | 13 |
+| Useful performance at 900 MHz and/or 1800 MHz | 12 |
 | Stable SINR and useful directivity, not only high RSRP | 10 |
-| Low RF loss and high system efficiency after coax, matching, connectors, and coupler | 12 |
+| Low RF loss and high system efficiency after coax, matching, connectors, and coupler | 10 |
 | Compatibility with an ordinary ETECSA phone | 9 |
-| Passive RF operation | 8 |
-| Ability to fabricate or repair in Cuba | 10 |
+| Passive RF operation | 7 |
+| Ability to fabricate or repair in Cuba | 12 |
 | Ability to import individual ordinary components legally | 6 |
-| Low production cost | 8 |
-| Reasonable mechanical size | 4 |
-| Weatherproofing practicality | 2 |
+| Low production cost | 12 |
+| Reasonable mechanical size | 3 |
+| Weatherproofing practicality | 1 |
 
 ## Production Cost Rule
 
@@ -141,6 +141,8 @@ For this project, the selected antenna must be cost-effective:
 - practical for Cuban import and local substitution constraints
 
 If two designs perform similarly, choose the cheaper, simpler, more repairable design.
+
+A topology should not win on antenna score alone if the complete system is harder or more expensive to reproduce publicly than the phone-at-RF-location architecture.
 
 ## Pre-Measurement Provisional Ranking
 

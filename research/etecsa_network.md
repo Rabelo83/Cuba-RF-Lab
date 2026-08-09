@@ -15,6 +15,8 @@ Engineering interpretation to verify:
 - 1800 MHz may support LTE Band 3 service.
 - 2100 MHz and 700 MHz may exist in some places but are not yet primary design targets.
 
+Band selection affects cost. A narrow, cheap antenna is useful only if that band remains available during blackouts at the target location.
+
 ## Required Source Record
 
 Every network claim must record:
@@ -49,10 +51,11 @@ When using a phone or field-test app, record:
 - serving cell identity if available
 - test location
 - blackout state
+- whether basic communication worked
+- minimum equipment used
 
 ## Current Gaps
 
 - No dated official source has been added yet.
 - No Matanzas field measurements have been added yet.
 - No blackout-specific local band data has been added yet.
-

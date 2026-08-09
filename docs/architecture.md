@@ -6,6 +6,8 @@ Status: CONCEPT
 
 Bring usable ETECSA/Cubacel connectivity into the house during blackouts while avoiding unauthorized active cellular RF systems.
 
+The public goal is broader than one house: develop a solution that can be offered to Cuban families at the lowest practical production cost while still being safe, legal, repairable, and useful.
+
 ## Preferred Architecture
 
 ```text
@@ -25,6 +27,8 @@ ETECSA surviving tower
 - Keep the system modular and repairable.
 - Prefer parts that can be replaced independently.
 - Avoid designs that require specialized carrier service unless all low-cost paths fail.
+- Compare total working-system cost, including phone, router, coax, coupler, weatherproofing, tools, and replacement parts.
+- Prefer the cheapest architecture that works reliably enough for real communication.
 
 ## Passive RF Alternative
 
@@ -32,3 +36,4 @@ The passive antenna and phone-coupler track may be useful when the phone cannot 
 
 This alternative is still research-stage and requires measured coupler performance.
 
+It must also prove that antenna gain can overcome coax, connector, mismatch, and passive-coupler losses at a production cost lower than other practical options.

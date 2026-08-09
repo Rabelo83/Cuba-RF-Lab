@@ -14,4 +14,4 @@ Investigate a directional antenna optimized near 1800 MHz for LTE Band 3 perform
 - Document feed and balun arrangement.
 - Include connector and coax loss in the system budget.
 - Label the design as not field validated until tested.
-
+- Compare lower material cost and smaller size against blackout availability risk.

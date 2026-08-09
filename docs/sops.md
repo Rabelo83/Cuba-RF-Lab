@@ -5,6 +5,8 @@
 
 These SOPs are intended to keep measurements repeatable and safe. They are not a substitute for local safety judgment.
 
+Because the final goal is a public low-cost solution, SOPs should record not only what works, but also what tools, materials, time, and replacement parts were needed.
+
 ## Available SOPs
 
 | SOP | Purpose | Repository Source |
@@ -35,4 +37,3 @@ These SOPs are intended to keep measurements repeatable and safe. They are not a
 ## RF Reporting Rule
 
 Phone signal improvement is a system result. Do not call it antenna gain unless gain was measured with a method appropriate for antenna gain.
-

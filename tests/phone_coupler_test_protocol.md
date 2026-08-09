@@ -6,6 +6,8 @@ Status: initial protocol
 
 Find whether a passive coupler improves phone reception and whether the improvement is repeatable.
 
+Also determine whether the improvement is large enough to justify the coupler as a low-cost public component.
+
 ## Variables
 
 - phone model
@@ -31,4 +33,9 @@ Test gaps from about 2 mm to 30 mm. Record indexed positions so the best result 
 - SINR
 - app success
 - notes on handling sensitivity
+- material cost and required tools
+- comparison with the same phone alone at the same location
 
+## Public Release Rule
+
+A coupler should not be promoted unless ordinary users can place it repeatably, repair it, and build it from low-cost materials without hidden precision requirements.

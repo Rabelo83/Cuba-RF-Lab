@@ -4,6 +4,8 @@
 
 The repository is designed so humans and AI agents can continue the project without relying on chat memory.
 
+The shared mission is public benefit for Cuban families during blackouts. Contributors should optimize toward the lowest practical production cost that still gives useful, safe, legal, and repeatable communication.
+
 ## Required Reading for Contributors
 
 Before meaningful work, read:
@@ -25,6 +27,7 @@ Before meaningful work, read:
 - Put new raw measurements in `data/raw/`.
 - Put source-backed research in `research/sources.md`.
 - Keep public pages clear about design status.
+- Record cost, local material availability, tool requirements, and repairability when comparing solutions.
 
 ## Website Contribution Rules
 

@@ -16,6 +16,8 @@ ETECSA/Cubacel network
 
 This path avoids transporting weak cellular RF through long coax. It also avoids specialized LTE router service and keeps the cellular device easy to replace.
 
+For the public mission, this is the cost baseline. Any passive antenna/coupler design must be compared against the total cost and reliability of simply placing an ordinary phone at the best RF location and moving data by USB, Ethernet, or Wi-Fi.
+
 ## Candidate Placements
 
 - high indoor window
@@ -34,3 +36,10 @@ This path avoids transporting weak cellular RF through long coax. It also avoids
 - Wi-Fi path blocked by walls or metal roof
 - phone band support mismatch
 
+## Public Release Criteria
+
+- Use ordinary phones and consumer networking parts where possible.
+- Record total working-system cost, not only router cost.
+- Separate minimum required parts from optional improvements.
+- Prefer setups that can be repaired with common cables, chargers, and enclosures.
+- Document whether this path works during real blackouts before recommending it publicly.

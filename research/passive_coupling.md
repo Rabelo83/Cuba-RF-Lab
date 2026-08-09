@@ -6,6 +6,8 @@ Status: research plan
 
 Design a repeatable passive coupler test fixture that can improve signal transfer to an ordinary phone without using an active cellular repeater.
 
+The coupler should remain in the project only if measured improvement is repeatable, low-cost, repairable, and better than simply placing the phone at the stronger RF location.
+
 ## Candidate Coupler Geometries
 
 - small loop
@@ -35,3 +37,4 @@ Initial gap sweep target: about 2 mm to 30 mm.
 
 Do not assume the best position. Measure it and record repeatability.
 
+Also record whether the result is sensitive to small placement errors, because a public build must work outside a lab.

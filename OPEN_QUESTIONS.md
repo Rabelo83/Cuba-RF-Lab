@@ -7,6 +7,8 @@
 3. What signal exists at the roof, high window, outside wall, and nearby street corner during normal power and blackout conditions?
 4. What exact coax type is used in the observed Cuban passive antenna kit?
 5. What is the passive coupler loss and how sensitive is it to phone position?
+6. What is the lowest production cost for a system that still works well enough to help families?
+7. Which parts can be sourced, fabricated, repaired, or substituted inside Cuba?
 
 ## Network
 
@@ -38,3 +40,6 @@
 - Which parts can be imported without technical authorization?
 - Which parts may require UPTCER authorization?
 - What substitutes are available for low-loss coax, connectors, waterproof enclosures, and routers?
+- What is the realistic cost range for each path?
+- Which components are required for a minimum working system, and which are optional improvements?
+- Which design is cheapest to repair after weather damage or normal wear?

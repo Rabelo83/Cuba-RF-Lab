@@ -6,6 +6,8 @@ Status: baseline research plan
 
 Shorten cellular-frequency coax whenever possible. At 900 to 2100 MHz, feedline loss can erase much of the benefit from an antenna.
 
+For public production, coax is both an RF loss and a cost risk. A cheaper phone-at-RF-location setup may outperform a high-gain antenna if the antenna requires long or poor-quality coax.
+
 ## Cable Types to Research
 
 - RG-58
@@ -35,4 +37,6 @@ For each cable, document:
 - connector compatibility
 - availability
 - import status if known
-
+- estimated cost
+- practical minimum usable length
+- local substitutes and their expected loss

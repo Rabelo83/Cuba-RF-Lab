@@ -13,4 +13,4 @@ Investigate a directional antenna near 900 MHz for lower-band blackout resilienc
 - Account for larger antenna size and roof safety.
 - Simulate before fabrication.
 - Include feedline loss and mechanical constraints.
-
+- Include production cost, local material availability, and repairability.

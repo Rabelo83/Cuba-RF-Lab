@@ -38,3 +38,10 @@ Confidence levels:
 | Passive antennas and ordinary phones are safer regulatory choices than active repeaters. | Medium | Exact Cuban rules need official citation. |
 | Some routers or telecommunications equipment may require UPTCER authorization under Cuban rules. | Medium | Needs exact official text and practical interpretation. |
 
+## Public Production
+
+| Assumption | Confidence | Notes |
+| --- | --- | --- |
+| A useful public solution must be cheaper and easier to repair than specialized telecom equipment. | High | This is a project constraint, not a measured RF fact. |
+| Designs using ordinary phones and locally substitutable materials are more likely to help Cuban families at scale. | Medium | Must be checked against real availability, cost, and performance. |
+| The best final design may be the lowest-cost design that works reliably, not the highest-gain design. | High | This should guide antenna and architecture selection. |

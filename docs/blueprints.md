@@ -4,6 +4,8 @@
 
 The project is intentionally not jumping straight to final fabrication dimensions. Blueprints move through documented status levels.
 
+Blueprints are not only technical drawings. A public-ready blueprint must also show how the design can be built at low cost, repaired, and adapted with locally available materials.
+
 ## Status Levels
 
 | Status | Meaning |
@@ -48,6 +50,10 @@ Every public blueprint must include:
 - construction tolerance
 - weatherproofing
 - limitations
+- production cost estimate
+- required versus optional parts
+- local substitutes
+- repair notes
 - testing procedure
 - revision history
 

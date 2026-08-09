@@ -29,7 +29,7 @@
 
 === "English"
 
-    Use simple, replaceable parts:
+    Use simple, replaceable parts. Start with parts the family already has before buying anything:
 
     - ordinary Android phone that works with ETECSA/Cubacel
     - ETECSA SIM
@@ -43,7 +43,7 @@
 
 === "Español"
 
-    Usa piezas simples y reemplazables:
+    Usa piezas simples y reemplazables. Empieza con piezas que la familia ya tenga antes de comprar algo:
 
     - teléfono Android normal que funcione con ETECSA/Cubacel
     - SIM de ETECSA
@@ -67,6 +67,7 @@
     6. Connect the house devices to the router Wi-Fi.
     7. Test WhatsApp text, WhatsApp call, IMO call, and basic Internet.
     8. Write down the signal and what worked.
+    9. Write down which parts were really needed and which were optional.
 
 === "Español"
 
@@ -78,6 +79,7 @@
     6. Conecta los equipos de la casa al Wi-Fi del router.
     7. Prueba texto por WhatsApp, llamada por WhatsApp, llamada por IMO e Internet básico.
     8. Anota la señal y lo que funcionó.
+    9. Anota qué piezas hicieron falta de verdad y cuáles fueron opcionales.
 
 ## Plain Test / Prueba Simple
 
@@ -130,4 +132,3 @@
     - jammer
     - equipo RF de alta potencia desconocido
     - cable coaxial celular largo si existe otra opción
-

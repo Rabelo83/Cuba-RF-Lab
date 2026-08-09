@@ -36,13 +36,13 @@
 
     No final dimensions are approved yet.
 
-    The first simple goal is not to build the perfect antenna. The first goal is to learn whether a passive antenna and coupler really help the phone in a repeatable way.
+    The first simple goal is not to build the perfect antenna. The first goal is to learn whether a passive antenna and coupler really help the phone in a repeatable way, at a cost that makes sense.
 
 === "Español"
 
     Todavía no hay dimensiones finales aprobadas.
 
-    La primera meta simple no es construir la antena perfecta. La primera meta es saber si una antena pasiva y un acoplador realmente ayudan al teléfono de forma repetible.
+    La primera meta simple no es construir la antena perfecta. La primera meta es saber si una antena pasiva y un acoplador realmente ayudan al teléfono de forma repetible, con un costo que tenga sentido.
 
 ## Materials / Materiales
 
@@ -62,6 +62,8 @@
     - ruler or measuring tape
     - compass or phone compass app
 
+    Do not buy expensive RF parts until the phone-alone test and the passive-coupler test show that they are needed.
+
 === "Español"
 
     Materiales simples posibles:
@@ -77,6 +79,8 @@
     - soporte no metálico para el teléfono
     - regla o cinta de medir
     - brújula o aplicación de brújula en el teléfono
+
+    No compres piezas RF caras hasta que la prueba con el teléfono solo y la prueba con acoplador pasivo demuestren que hacen falta.
 
 ## Building Instructions / Instrucciones De Construcción
 
@@ -161,4 +165,3 @@
     - transmisor de alta potencia
     - electrónica RF oculta o desconocida
     - soporte metálico tocando el área de antena del teléfono
-

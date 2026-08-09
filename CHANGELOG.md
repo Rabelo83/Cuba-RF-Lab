@@ -21,3 +21,5 @@ Updated collaborator instructions so future AI or human contributors know how th
 Added an antenna topology comparison framework, provisional pre-measurement ranking, net RF improvement rule, and candidate comparison CSV template. The LPDA is explicitly treated as one candidate, not the default or final antenna.
 
 Documented the broader public-benefit mission: research and simulations must lead toward a solution useful for Cuban people during blackouts, with the lowest practical production cost, repairability, and real-world efficiency.
+
+Propagated the public-production objective across requirements, research, routerless, coupler, simulation, calculation, testing, material, legal, CAD, image, data, result, and collaboration documentation. Updated antenna comparison weights so low production cost and Cuba-based fabrication/repairability carry stronger decision weight.

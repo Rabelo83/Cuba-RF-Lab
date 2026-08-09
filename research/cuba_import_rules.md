@@ -6,6 +6,8 @@ Status: placeholder requiring official citations
 
 The project must consider Cuban import and telecommunications restrictions. Cuban Resolucion 1/2026 may require technical authorization from UPTCER for routers or certain telecommunications equipment. This needs exact official citation and careful interpretation.
 
+Public instructions must not depend on uncertain or difficult-to-import equipment unless the uncertainty is clearly documented and no lower-cost ordinary-component path works.
+
 ## Preferred Low-Risk Categories
 
 These categories are likely more appropriate for this project, but availability and import status must still be verified:
@@ -42,5 +44,5 @@ These categories are likely more appropriate for this project, but availability 
 - Whether consumer routers need UPTCER authorization.
 - Whether passive antennas are treated differently from active telecom equipment.
 - How imported components are classified when imported individually.
+- Which low-cost components are easiest to import or replace locally.
 - Practical local experience, clearly labeled as anecdotal.
-

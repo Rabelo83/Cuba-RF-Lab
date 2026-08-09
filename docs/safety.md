@@ -6,6 +6,8 @@ Status: baseline safety notes
 
 This project is receive-focused and must use ordinary phones operating normally on the ETECSA/Cubacel network. Do not design or build unauthorized active cellular repeaters, amplifiers, transmitters, base stations, or interference devices.
 
+Low cost must never be used as a reason to ignore safety, legal limits, lightning risk, battery hazards, or weatherproofing.
+
 ## Roof and Mast Work
 
 - Do not work on roofs during rain, wind, lightning, or poor visibility.
@@ -38,4 +40,3 @@ This project is receive-focused and must use ordinary phones operating normally 
 - Do not climb or adjust antennas alone.
 - Log test conditions so results can be repeated.
 - Stop testing if the installation becomes unsafe.
-

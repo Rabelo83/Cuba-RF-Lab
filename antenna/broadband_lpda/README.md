@@ -25,3 +25,4 @@ These numbers are not approved blueprints. They are not build data and must not 
 - Is broadband gain sufficient compared with narrower antennas?
 - What coax length is unavoidable?
 - Does the phone or passive coupler limit the antenna benefit?
+- Does broadband coverage justify higher fabrication complexity and cost compared with simpler narrowband antennas?

@@ -6,6 +6,8 @@ Status: research plan
 
 Design and test a passive coupler that transfers energy from an antenna/feed structure to an ordinary phone internal antenna without active cellular retransmission.
 
+The coupler is only useful for the public project if it gives repeatable real-world improvement after antenna gain, coax loss, connector loss, mismatch loss, and coupling loss are all counted. It must also be cheap and repairable enough to compete with simply placing the phone at the best RF location.
+
 ## Fixture Requirements
 
 - vertical phone adjustment
@@ -34,3 +36,4 @@ Initial gap sweep: about 2 mm to 30 mm.
 
 Do not assume the coupler works. Compare phone signal and app performance with and without the coupler at repeatable positions.
 
+Record material cost, required tools, fabrication time, and sensitivity to phone placement for every coupler experiment.

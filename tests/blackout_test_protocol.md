@@ -6,6 +6,8 @@ Status: initial protocol
 
 Measure what communication options actually survive during outages at the target Matanzas location.
 
+The public goal is to identify the cheapest repeatable setup that restores useful communication, not only the strongest signal reading.
+
 ## Safety
 
 Do not climb, work on roofs, or handle outdoor wiring during unsafe weather or darkness. Do not test near power lines.
@@ -55,3 +57,9 @@ Required fields include:
 6. Record phone signal at the best safe elevated point.
 7. Test WhatsApp and IMO.
 
+## Cost And Simplicity Notes
+
+- Record the minimum equipment used for each successful test.
+- Record whether the phone-alone placement works before adding antenna hardware.
+- Record any special tools, extra batteries, chargers, routers, or cables required.
+- Prefer repeatable app-level success over a more expensive setup with only slightly better signal.

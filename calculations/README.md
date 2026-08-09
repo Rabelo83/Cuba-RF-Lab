@@ -12,3 +12,4 @@ Current scripts:
 
 These scripts do not replace RF simulation or field measurement.
 
+Calculation notes must include system-level losses and production-cost implications where relevant. A design with good element dimensions is still not practical if coax, connector, matching, passive-coupler, or material costs erase the benefit.

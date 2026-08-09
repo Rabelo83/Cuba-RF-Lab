@@ -6,6 +6,8 @@ Status: research plan
 
 An ordinary ETECSA-compatible Android phone is the preferred cellular endpoint when practical.
 
+For public use, prioritize phone models that are common, low-cost, reusable, compatible with local bands, and able to share data without special carrier equipment.
+
 ## Information Needed
 
 - phone model
@@ -26,4 +28,4 @@ An ordinary ETECSA-compatible Android phone is the preferred cellular endpoint w
 - Does the phone detune when placed near metal?
 - Does a case affect reception?
 - Can the phone operate safely in a weatherproof enclosure?
-
+- Can a low-cost or older phone remain stable during long outages?

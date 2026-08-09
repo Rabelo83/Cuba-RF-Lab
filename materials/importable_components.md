@@ -4,6 +4,8 @@ Status: research required
 
 This file will track candidate imported components and any known authorization requirements.
 
+Imported components should be used only when they provide a necessary reliability or efficiency benefit that cannot be reached with local materials. Track cost, import uncertainty, and ordinary-use classification before recommending them publicly.
+
 | Component | Candidate Use | Regulatory Status | Source | Notes |
 | --- | --- | --- | --- | --- |
 | Android phone | cellular endpoint | Unknown | TODO | Must support local ETECSA bands. |
@@ -12,3 +14,4 @@ This file will track candidate imported components and any known authorization r
 | RF connectors | antenna assembly | Unknown | TODO | Need correct impedance and weatherproofing. |
 | NanoVNA | measurement | Unknown | TODO | Useful for S11, not gain. |
 
+For final public instructions, separate required imported components from optional measurement or convenience tools.

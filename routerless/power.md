@@ -17,4 +17,6 @@ Status: research plan
 - fuse circuits appropriately
 - prevent water ingress
 - avoid phone overheating
-
+- prefer reused or locally available power parts when safe
+- record total energy draw so the battery and solar requirement is not oversized
+- separate minimum power parts from optional runtime improvements
