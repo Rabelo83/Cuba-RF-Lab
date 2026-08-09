@@ -26,6 +26,30 @@ Before meaningful work, read:
 - Put source-backed research in `research/sources.md`.
 - Keep public pages clear about design status.
 
+## Website Contribution Rules
+
+The public website source lives in `docs/` and is built with MkDocs.
+
+If you edit website source files or `mkdocs.yml`:
+
+1. Run `mkdocs build --strict`.
+2. Copy the generated output to the repository root with `cp -R site/. .`.
+3. Commit both the source files and generated root output.
+
+GitHub Pages currently serves the repository root from `main`. Do not assume the ignored `site/` folder is published.
+
+## Keep It Simple Rules
+
+The `Keep It Simple` section is for public, plain-language instructions. Keep it bilingual and focused on:
+
+- simple blueprints
+- materials
+- building instructions
+- simple test steps
+- clear status labels
+
+Do not add RF math, unresolved engineering debate, or unapproved final dimensions there.
+
 ## Good First Contributions
 
 - Add official or reputable sources for current ETECSA band information.
@@ -33,4 +57,3 @@ Before meaningful work, read:
 - Add first field measurements from the target locations.
 - Identify the available Android phone model and supported bands.
 - Add manufacturer attenuation data for realistic coax options.
-

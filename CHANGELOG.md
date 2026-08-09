@@ -15,3 +15,5 @@ Added a MkDocs-based GitHub Pages public documentation site with curated pages f
 Adjusted the Pages strategy so the public branch-based GitHub Pages site serves committed MkDocs static output, matching the local MkDocs preview.
 
 Added a bilingual `Keep It Simple` site section with plain-language pages for Track A phone-first architecture and Track B passive antenna/coupler experiments.
+
+Updated collaborator instructions so future AI or human contributors know how the branch-based MkDocs Pages output is published and how to maintain the `Keep It Simple` section.

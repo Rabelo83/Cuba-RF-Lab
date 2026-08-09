@@ -47,6 +47,32 @@ Prefer:
 - Never invent gain, VSWR, impedance, pattern, or measured performance.
 - Separate facts, assumptions, calculations, simulations, and field measurements.
 
+## Public Website Rules
+
+The public website is built with MkDocs from `docs/`.
+
+Current GitHub Pages deployment is branch-based from `main` using generated static output committed at the repository root. After changing any file under `docs/` or `mkdocs.yml`, run:
+
+```bash
+mkdocs build --strict
+cp -R site/. .
+```
+
+Then commit both the source documentation and the generated root output. The generated `site/` directory remains ignored; the root `index.html`, section folders, `assets/`, `search/`, `sitemap.xml`, and `.nojekyll` are the files GitHub Pages serves.
+
+## Keep It Simple Rules
+
+`docs/keep-it-simple.md`, `docs/simple-path-a-phone.md`, and `docs/simple-path-b-passive.md` are the public plain-language layer.
+
+For those pages:
+
+- keep text bilingual: English and Spanish
+- use plain language
+- show only simple blueprints, materials, build steps, and test steps
+- avoid RF math and deep engineering discussion
+- clearly mark concept or not-field-validated work
+- do not publish final dimensions unless the matching engineering files support them
+
 ## Blueprint Status
 
 Allowed status values:
@@ -81,4 +107,3 @@ research
 - docstrings
 - type hints where practical
 - no unnecessary dependencies
-

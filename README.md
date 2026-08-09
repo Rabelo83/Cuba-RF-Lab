@@ -10,6 +10,12 @@ https://rabelo83.github.io/ETECSA-RF-Lab/
 
 The site source lives in `docs/` and is built with MkDocs. Because this repository is currently using branch-based GitHub Pages from `main`, the generated static site is also committed at the repository root so the public site matches the local MkDocs preview.
 
+Plain-language public build paths:
+
+```text
+https://rabelo83.github.io/ETECSA-RF-Lab/keep-it-simple/
+```
+
 ## Mission
 
 ETECSA-RF-Lab is an engineering project for low-cost, blackout-resilient communication at a house in Matanzas, Cuba. The goal is to bring usable ETECSA/Cubacel connectivity into the home during long power outages using practical, repairable, legal, and locally adaptable systems.
@@ -78,6 +84,7 @@ Status:
 - Repository structure initialized.
 - Public GitHub Pages documentation site configured.
 - Branch-based Pages output generated from MkDocs and committed at repository root.
+- Bilingual Keep It Simple section created for plain-language public build paths.
 - Engineering rules documented.
 - Measurement templates created.
 - Starter calculation scripts created.
