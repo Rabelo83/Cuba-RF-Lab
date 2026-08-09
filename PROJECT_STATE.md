@@ -8,6 +8,10 @@ Version: 0.1.0 research baseline
 
 Project owner: Alfredo
 
+Public display name: Cuba RF Lab
+
+Repository name: `ETECSA-RF-Lab`
+
 Target installation: Matanzas, Cuba
 
 Primary need: resilient basic communication during blackouts, especially when the house has solar power but ETECSA/Cubacel cellular and Nauta Hogar infrastructure may be impaired.

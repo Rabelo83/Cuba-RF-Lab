@@ -2,7 +2,7 @@
 
 Date: 2026-08-09
 
-The project is ETECSA-RF-Lab, also called Project ETECSA Phoenix. It aims to improve blackout-resilient communications for a house in Matanzas, Cuba, using legal, low-cost, modular, repairable systems centered on ordinary phones, passive antennas, passive couplers, and data transport by USB, Ethernet, or Wi-Fi.
+The project is Cuba RF Lab. The GitHub repository name remains `ETECSA-RF-Lab`. It aims to improve blackout-resilient communications for a house in Matanzas, Cuba, using legal, low-cost, modular, repairable systems centered on ordinary phones, passive antennas, passive couplers, and data transport by USB, Ethernet, or Wi-Fi.
 
 The broader goal is to offer a useful solution for Cuban people struggling with communication during blackouts. Future research and simulation work should lead toward the lowest practical production cost with useful real-world efficiency, not toward expensive lab-only performance.
 

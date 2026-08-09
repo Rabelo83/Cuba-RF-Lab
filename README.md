@@ -1,6 +1,6 @@
-# ETECSA-RF-Lab
+# Cuba RF Lab
 
-Alternate name: Project ETECSA Phoenix
+Repository name: `ETECSA-RF-Lab`
 
 Public documentation site:
 
@@ -18,7 +18,7 @@ https://rabelo83.github.io/ETECSA-RF-Lab/keep-it-simple/
 
 ## Mission
 
-ETECSA-RF-Lab is an engineering project for low-cost, blackout-resilient communication at a house in Matanzas, Cuba. The goal is to bring usable ETECSA/Cubacel connectivity into the home during long power outages using practical, repairable, legal, and locally adaptable systems.
+Cuba RF Lab is an engineering project for low-cost, blackout-resilient communication at a house in Matanzas, Cuba. The goal is to bring usable ETECSA/Cubacel connectivity into the home during long power outages using practical, repairable, legal, and locally adaptable systems.
 
 The broader goal is public benefit: turn the research, simulations, measurements, and blueprints into a solution that can help Cuban people who are struggling with communication during blackouts. Engineering choices must prioritize the lowest practical production cost while still delivering useful, safe, reliable connectivity.
 

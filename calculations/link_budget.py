@@ -1,4 +1,4 @@
-"""Simple received-signal delta calculator for the ETECSA-RF-Lab project."""
+"""Simple received-signal delta calculator for the Cuba RF Lab project."""
 
 from __future__ import annotations
 
@@ -84,4 +84,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

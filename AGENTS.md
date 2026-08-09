@@ -1,6 +1,6 @@
 # AGENTS.md
 
-This repository is the source of truth for ETECSA-RF-Lab. Do not rely on chat memory when continuing the project.
+This repository is the source of truth for Cuba RF Lab. The GitHub repository name remains `ETECSA-RF-Lab`. Do not rely on chat memory when continuing the project.
 
 ## Required Reading
 

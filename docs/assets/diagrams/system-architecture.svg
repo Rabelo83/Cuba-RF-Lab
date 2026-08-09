@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1120" height="420" viewBox="0 0 1120 420" role="img" aria-labelledby="title desc">
-  <title id="title">ETECSA RF Lab preferred communication architecture</title>
+  <title id="title">Cuba RF Lab preferred communication architecture</title>
   <desc id="desc">Diagram showing ETECSA network, best RF location, ordinary phone, data transport, router, and house Wi-Fi.</desc>
   <rect width="1120" height="420" fill="#f8fafc"/>
   <g font-family="Arial, Helvetica, sans-serif" fill="#0f172a">
@@ -55,4 +55,3 @@
     <text x="720" y="330" text-anchor="middle" font-size="15" fill="#475569">Transport data after reception.</text>
   </g>
 </svg>
-

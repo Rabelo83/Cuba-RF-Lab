@@ -25,3 +25,5 @@ Documented the broader public-benefit mission: research and simulations must lea
 Propagated the public-production objective across requirements, research, routerless, coupler, simulation, calculation, testing, material, legal, CAD, image, data, result, and collaboration documentation. Updated antenna comparison weights so low production cost and Cuba-based fabrication/repairability carry stronger decision weight.
 
 Added a Cuba material availability raw ledger and CSV template so local observations about materials, prices, sources, quality, substitutions, and confidence can be preserved as project data.
+
+Changed the public display name to Cuba RF Lab while keeping the GitHub repository path as `ETECSA-RF-Lab`.

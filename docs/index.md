@@ -1,10 +1,10 @@
-# ETECSA RF Lab
+# Cuba RF Lab
 
 <span class="status-badge status-concept">Research baseline</span>
 <span class="status-badge status-warning">No approved antenna blueprint yet</span>
 <span class="status-badge status-stop">No active cellular repeater designs</span>
 
-ETECSA RF Lab is a practical engineering project for low-cost, blackout-resilient communication on ETECSA/Cubacel service in Cuba, especially for a target installation in Matanzas.
+Cuba RF Lab is a practical engineering project for low-cost, blackout-resilient communication on ETECSA/Cubacel service in Cuba, especially for a target installation in Matanzas.
 
 The project exists to help Cuban people who are struggling with communication during blackouts. It focuses on ordinary phones, passive antennas, passive phone couplers, safe field testing, and data transport by USB, Ethernet, or Wi-Fi after cellular reception.
 
