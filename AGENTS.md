@@ -43,6 +43,7 @@ Prefer:
 - Every unresolved research or measurement gap belongs in `OPEN_QUESTIONS.md`.
 - Every meaningful work session must update `HANDOFF.md`.
 - Every user-provided measurement must be stored under `data/raw/`.
+- Every user-provided Cuba material availability observation must be appended to `data/raw/material_availability_cuba.csv`.
 - Never label a design as optimized without calculations or simulation.
 - Never invent gain, VSWR, impedance, pattern, or measured performance.
 - Separate facts, assumptions, calculations, simulations, and field measurements.
@@ -62,6 +63,8 @@ When comparing designs, include:
 - required tools
 - number of difficult or precision parts
 - whether cheaper substitutes are possible
+
+When the owner provides local availability from Cuba, preserve it as dated data before summarizing it. Do not replace old prices or availability observations; add new rows so supply changes remain visible.
 
 ## Public Website Rules
 

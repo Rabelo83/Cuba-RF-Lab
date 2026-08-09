@@ -48,3 +48,15 @@ Use this CSV template when a design starts becoming a public build package:
 [data/templates/production_cost_estimate.csv](https://github.com/Rabelo83/ETECSA-RF-Lab/blob/main/data/templates/production_cost_estimate.csv)
 
 Cost estimates should separate required parts from optional improvements and identify local substitutes whenever possible.
+
+## Cuba Material Availability Template
+
+Use this CSV template when local availability information is provided from Cuba:
+
+[data/templates/material_availability_cuba.csv](https://github.com/Rabelo83/ETECSA-RF-Lab/blob/main/data/templates/material_availability_cuba.csv)
+
+Append raw observations here:
+
+[data/raw/material_availability_cuba.csv](https://github.com/Rabelo83/ETECSA-RF-Lab/blob/main/data/raw/material_availability_cuba.csv)
+
+Record one dated row per material, seller/source type, location, price, availability status, and quality note. Do not publish private contact details unless the project owner explicitly approves it.

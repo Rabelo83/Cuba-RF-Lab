@@ -35,6 +35,7 @@ Current repository state:
 - Production cost, repairability, local material substitution, import risk, and real-world usefulness are now top-level constraints.
 - A project-wide documentation pass propagated the public mission into requirements, research, routerless, coupler, simulation, calculation, testing, material, legal, CAD, image, data, result, and website-collaboration notes.
 - Antenna candidate weighting now gives stronger explicit weight to low production cost and ability to fabricate or repair in Cuba while keeping blackout connectivity as the highest-weight criterion.
+- Owner-provided material availability in Cuba should be appended to `data/raw/material_availability_cuba.csv` using the columns in `data/templates/material_availability_cuba.csv`; keep dated rows rather than replacing old observations.
 - Starter scripts were run successfully.
 - Python compile check passed with `PYTHONPYCACHEPREFIX` set to `/private/tmp/etecsa_rf_lab_pycache` because the default macOS bytecode cache path was outside the writable workspace.
 - Site search now indexes bilingual content correctly: `plugins.search.lang` in `mkdocs.yml` is set to `[en, es]` so Spanish terms get proper Lunr stemming (the Spanish and multi-language Lunr modules were already bundled with the theme but unused). Rebuilt and pushed as commit `a2361ac`.

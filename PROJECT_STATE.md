@@ -53,6 +53,7 @@ Possible ETECSA behavior during outages includes shutting down 4G or 3G while lo
 - Public-benefit and low-production-cost objective added to project constraints.
 - Public-production guardrails propagated across requirements, research, routerless architecture, coupler work, simulations, calculations, tests, materials, legal notes, CAD placeholders, images, data, and results documentation.
 - Antenna comparison weights updated so low production cost and Cuban fabrication/repairability carry stronger decision weight while blackout connectivity remains the top priority.
+- Cuba material availability now has a raw CSV ledger and template so owner-provided local observations can be saved as dated project data.
 - Calculation scripts created for wavelength, coax loss, and simple received-signal delta.
 - Measurement CSV template created.
 - No simulation results yet.

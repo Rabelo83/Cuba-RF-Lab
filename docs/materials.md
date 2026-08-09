@@ -4,6 +4,8 @@
 
 Materials are tracked as categories until exact models, availability, and import status are verified.
 
+Availability in Cuba must be saved as project data, not only remembered from chat. When local information is provided, add it to the raw material availability ledger first, then update summary docs only when the evidence supports it.
+
 ## Candidate Local Materials
 
 | Material | Possible Use | Current Availability Status |
@@ -26,6 +28,18 @@ Materials are tracked as categories until exact models, availability, and import
 - Document substitutions and their expected tradeoffs.
 - Do not invent component availability or import legality.
 - Track cost ranges and required tools before recommending public build paths.
+
+## Cuba Availability Ledger
+
+Use this raw data file for local availability inputs:
+
+[data/raw/material_availability_cuba.csv](https://github.com/Rabelo83/ETECSA-RF-Lab/blob/main/data/raw/material_availability_cuba.csv)
+
+Use this template for the required columns:
+
+[data/templates/material_availability_cuba.csv](https://github.com/Rabelo83/ETECSA-RF-Lab/blob/main/data/templates/material_availability_cuba.csv)
+
+Record one dated row per observation. Keep old rows when price or availability changes, because supply stability matters for public production.
 
 ## Repository Sources
 

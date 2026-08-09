@@ -23,3 +23,5 @@ Added an antenna topology comparison framework, provisional pre-measurement rank
 Documented the broader public-benefit mission: research and simulations must lead toward a solution useful for Cuban people during blackouts, with the lowest practical production cost, repairability, and real-world efficiency.
 
 Propagated the public-production objective across requirements, research, routerless, coupler, simulation, calculation, testing, material, legal, CAD, image, data, result, and collaboration documentation. Updated antenna comparison weights so low production cost and Cuba-based fabrication/repairability carry stronger decision weight.
+
+Added a Cuba material availability raw ledger and CSV template so local observations about materials, prices, sources, quality, substitutions, and confidence can be preserved as project data.
