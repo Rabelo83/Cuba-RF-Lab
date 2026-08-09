@@ -64,6 +64,12 @@ This track is useful only if measurement proves the passive coupler and antenna 
 
 <div class="grid cards" markdown>
 
+-   **Keep It Simple**
+
+    Plain-language bilingual build paths: what to use, how to assemble it, and what is not approved yet.
+
+    [Open Keep It Simple](keep-it-simple.md)
+
 -   **Field SOPs**
 
     Use the blackout, antenna, phone coupler, and NanoVNA test procedures before collecting results.
@@ -98,4 +104,3 @@ This track is useful only if measurement proves the passive coupler and antenna 
 - The first priority is source verification and field measurement.
 
 The recommended next engineering task is to verify current ETECSA band sources, then collect first field measurements using the blackout measurement CSV template.
-

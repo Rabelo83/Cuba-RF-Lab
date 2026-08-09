@@ -46,6 +46,7 @@ Possible ETECSA behavior during outages includes shutting down 4G or 3G while lo
 - Documentation baseline created.
 - Public GitHub Pages site configured with MkDocs.
 - Current live deployment path is branch-based Pages from `main`, using committed static MkDocs output at the repository root.
+- Public `Keep It Simple` section added for bilingual plain-language build paths.
 - Calculation scripts created for wavelength, coax loss, and simple received-signal delta.
 - Measurement CSV template created.
 - No simulation results yet.

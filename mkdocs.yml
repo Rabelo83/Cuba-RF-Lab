@@ -39,6 +39,10 @@ extra_css:
 
 nav:
   - Home: index.md
+  - Keep It Simple:
+      - Start Here: keep-it-simple.md
+      - Path A - Phone First: simple-path-a-phone.md
+      - Path B - Passive Antenna: simple-path-b-passive.md
   - Project:
       - Architecture: architecture.md
       - Methodology: project_methodology.md
@@ -56,4 +60,3 @@ nav:
       - Site Admin: site-admin.md
 
 copyright: Copyright 2026 Alfredo. Project documentation is public for collaboration; designs remain subject to safety, legal, and validation limits.
-

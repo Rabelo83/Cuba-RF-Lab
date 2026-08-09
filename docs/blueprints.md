@@ -24,6 +24,8 @@ The project is intentionally not jumping straight to final fabrication dimension
 | 900 MHz Yagi | CONCEPT | Depends on local low-band blackout measurements. |
 | Passive phone coupler | CONCEPT | Needs fixture design and repeatable position sweeps. |
 
+For plain-language build paths, use [Keep It Simple](keep-it-simple.md). That section avoids RF math and shows only the simple blueprint, materials, and build/test steps for each project path.
+
 ## Public Blueprint Rule
 
 Every public blueprint must include:
@@ -59,4 +61,3 @@ NOT FIELD VALIDATED
 - [Approved blueprints](https://github.com/Rabelo83/ETECSA-RF-Lab/tree/main/blueprints/approved)
 - [Antenna design folders](https://github.com/Rabelo83/ETECSA-RF-Lab/tree/main/antenna)
 - [Coupler design folders](https://github.com/Rabelo83/ETECSA-RF-Lab/tree/main/coupler)
-

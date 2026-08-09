@@ -25,6 +25,8 @@ Current repository state:
 - Expected public site URL: `https://rabelo83.github.io/ETECSA-RF-Lab/`.
 - GitHub Pages was observed serving branch/Jekyll output from `README.md`, which looked different from local MkDocs.
 - Current fix: commit generated MkDocs static output at repository root and use `.nojekyll`, so branch-based GitHub Pages from `main` matches local.
+- Public `Keep It Simple` section added in `docs/keep-it-simple.md`, `docs/simple-path-a-phone.md`, and `docs/simple-path-b-passive.md`.
+- `Keep It Simple` is bilingual and intentionally plain-language: blueprints, materials, and build/test steps only for each project path.
 - Starter scripts were run successfully.
 - Python compile check passed with `PYTHONPYCACHEPREFIX` set to `/private/tmp/etecsa_rf_lab_pycache` because the default macOS bytecode cache path was outside the writable workspace.
 
