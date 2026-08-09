@@ -20,7 +20,10 @@ theme:
     - content.code.copy
 
 plugins:
-  - search
+  - search:
+      lang:
+        - en
+        - es
 
 markdown_extensions:
   - admonition
