@@ -105,6 +105,7 @@ This track is useful only if measurement proves the passive coupler and antenna 
 - Local owner-side field measurement is temporarily unavailable, but expected later.
 - First public-source network, coax, and passive-coupler evidence has been added.
 - First desktop link-budget scenarios have been added.
-- The first priority now is official/regulatory source improvement, component/material desktop research, and antenna simulation.
+- First antenna pre-simulation geometry seeds and NEC queue have been added.
+- The first priority now is solver setup, first antenna simulations, official/regulatory source improvement, and component/material desktop research.
 
-The recommended next engineering task is to simulate candidate antennas and compare each passive path against the phone-at-best-RF-location baseline. Field validation remains required before any final public blueprint.
+The recommended next engineering task is to run the 900 MHz 5-element Yagi versus 1800 MHz 5-element Yagi simulation comparison and compare each passive path against the phone-at-best-RF-location baseline. Field validation remains required before any final public blueprint.

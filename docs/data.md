@@ -51,6 +51,14 @@ Current processed scenario table:
 
 This table compares the phone-at-RF-location architecture against passive antenna/coax/coupler paths using public-source coax benchmarks and conservative passive-coupler assumptions.
 
+## Antenna Candidate First-Pass Data
+
+Current processed candidate worksheet:
+
+[data/processed/antenna_candidate_first_pass.csv](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/data/processed/antenna_candidate_first_pass.csv)
+
+This table lists pre-simulation geometry scale, rough gain targets, construction risk, passive-chain notes, and simulation priority. It is not measured performance and not build approval.
+
 ## Production Cost Estimate Template
 
 Use this CSV template when a design starts becoming a public build package:

@@ -69,6 +69,28 @@ Current pre-measurement result:
 
 Engineering consequence: Architecture 2 remains the baseline to beat until the passive chain can prove enough margin after real losses.
 
+## First Pre-Simulation Candidate Worksheet
+
+The first geometry and simulation queue are recorded in:
+
+- `calculations/preliminary_antenna_geometry.md`
+- `data/processed/antenna_candidate_first_pass.csv`
+- `simulations/nec/first_pass_queue.md`
+
+Current simulation order:
+
+| Priority | Candidate | Purpose |
+| ---: | --- | --- |
+| 1 | Y900_5EL_SEED | Simplest primary lower-band Yagi comparison. |
+| 2 | Y1800_5EL_SEED | Small low-cost LTE Band 3 comparison. |
+| 3 | Y900_7EL_SEED | Tests whether extra lower-band gain margin is worth size and tolerance cost. |
+| 4 | Y1800_7EL_SEED | Tests whether extra high-band gain can overcome passive-chain losses. |
+| 5 | LPDA_800_2200_SEED | Band-uncertainty hedge; must justify feed and fabrication complexity. |
+| 6 | BIQUAD_1800_SEED | Simple compact high-band reference. |
+| 7 | BIQUAD_2100_SEED | Secondary high-band reference for broadband awareness. |
+
+Local solver status on 2026-08-09: `xnec2c`, `nec2c`, and `openEMS` were not found locally, so the current step is geometry preparation and solver selection.
+
 ## Required Candidate Set
 
 | ID | Candidate | Status |

@@ -40,7 +40,22 @@ No antenna topology is selected for final build. LPDA, 900 MHz Yagi, and 1800 MH
 
 The LPDA is not preferred by default. Use `antenna/candidate_comparison.md` before selecting any antenna topology for fabrication-ready blueprints.
 
+First pre-simulation geometry seeds now exist for:
+
+- 900 MHz 5-element Yagi
+- 900 MHz 7-element Yagi
+- 1800 MHz 5-element Yagi
+- 1800 MHz 7-element Yagi
+- 800-2200 MHz LPDA seed
+- 1800 MHz biquad seed
+- 2100 MHz biquad seed
+
+The first simulation priority is to compare the simplest 900 MHz and 1800 MHz Yagi seeds against the complete passive-chain loss budget, then test whether extra elements, LPDA bandwidth, or biquad simplicity justify their tradeoffs.
+
 Detailed comparison framework:
 
 - `antenna/candidate_comparison.md`
 - `data/templates/antenna_candidate_comparison.csv`
+- `calculations/preliminary_antenna_geometry.md`
+- `data/processed/antenna_candidate_first_pass.csv`
+- `simulations/nec/first_pass_queue.md`

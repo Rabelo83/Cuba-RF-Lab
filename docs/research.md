@@ -14,6 +14,7 @@ Current desktop baseline added on 2026-08-09:
 - 700 MHz and 2100 MHz remain secondary awareness bands until stronger local or official evidence exists.
 - Coax and passive-coupler losses are large enough that passive antenna gain must be evaluated as a complete system.
 - The phone-at-best-RF-location architecture remains the baseline to beat.
+- First antenna geometry seeds and a NEC simulation queue are ready, but no EM simulation has been run yet.
 
 ## Priority Research Areas
 
@@ -64,6 +65,16 @@ See:
 
 - [Desktop link-budget scenarios](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/calculations/desktop_link_budget_scenarios.md)
 - [Processed scenario CSV](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/data/processed/desktop_link_budget_scenarios.csv)
+
+## Current Antenna Simulation Prep
+
+The first pre-simulation pass compares 900 MHz Yagi, 1800 MHz Yagi, LPDA, and biquad seed geometries.
+
+See:
+
+- [Preliminary antenna geometry](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/calculations/preliminary_antenna_geometry.md)
+- [Antenna candidate first-pass CSV](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/data/processed/antenna_candidate_first_pass.csv)
+- [NEC first-pass queue](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/simulations/nec/first_pass_queue.md)
 
 ## Research Ledger
 

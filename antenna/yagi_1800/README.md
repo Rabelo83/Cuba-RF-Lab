@@ -15,3 +15,12 @@ Investigate a directional antenna optimized near 1800 MHz for LTE Band 3 perform
 - Include connector and coax loss in the system budget.
 - Label the design as not field validated until tested.
 - Compare lower material cost and smaller size against blackout availability risk.
+
+## Current Pre-Simulation Seeds
+
+See `../../calculations/preliminary_antenna_geometry.md` for:
+
+- `Y1800_5EL_SEED`
+- `Y1800_7EL_SEED`
+
+These are simulation inputs only. They are not approved dimensions.

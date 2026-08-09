@@ -69,6 +69,10 @@ Because local measurement is temporarily unavailable, frequency choices are now 
 - `research/sources.md` now records source-backed 900 MHz and 1800 MHz baseline evidence plus coax and passive-coupler loss references.
 - First desktop link-budget scenario set added in `calculations/desktop_link_budget_scenarios.md` and `data/processed/desktop_link_budget_scenarios.csv`.
 - Architecture 2, phone at best RF location, is now explicitly the baseline to beat until passive antenna/coax/coupler losses are proven low enough.
+- First pre-simulation antenna geometry seeds added in `calculations/preliminary_antenna_geometry.md` and `calculations/preliminary_antenna_geometry.py`.
+- First antenna candidate worksheet added in `data/processed/antenna_candidate_first_pass.csv`.
+- First NEC simulation queue added in `simulations/nec/first_pass_queue.md`.
+- Local solver check found no `xnec2c`, `nec2c`, or `openEMS` installed as of 2026-08-09.
 - Measurement CSV template created.
 - No simulation results yet.
 - No CAD files yet.
@@ -78,8 +82,8 @@ Because local measurement is temporarily unavailable, frequency choices are now 
 
 ## Immediate Next Work
 
-1. Search for current official ETECSA or Cuban regulatory source text to improve the band and import-rule evidence.
-2. Build a source-backed list of realistic phones, coax, connectors, routers, coupler materials, and antenna materials that may be obtainable by Cuban users.
-3. Prepare first antenna models for simulation using realistic materials and tolerance ranges.
+1. Choose or install an EM solver, then generate NEC/openEMS model files from the first-pass geometry seeds.
+2. Search for current official ETECSA or Cuban regulatory source text to improve the band and import-rule evidence.
+3. Build a source-backed list of realistic phones, coax, connectors, routers, coupler materials, and antenna materials that may be obtainable by Cuban users.
 4. Simulate 900 MHz Yagi, 1800 MHz Yagi, broadband LPDA, and dual-band/nested concepts before any blueprint dimensions are approved.
 5. Keep field measurement and local availability data as an external validation gate, not a prerequisite for desktop engineering progress.

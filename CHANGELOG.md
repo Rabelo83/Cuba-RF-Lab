@@ -33,3 +33,5 @@ Documented the current temporary no-local-data constraint: owner-side RF measure
 Added the first desktop public-source RF baseline: source-backed 900 MHz and 1800 MHz working bands, secondary 700/2100 MHz awareness, coax attenuation benchmarks, passive-coupler loss assumptions, and conservative link-budget scenarios comparing phone-at-RF-location against passive antenna/coax/coupler paths.
 
 Added a public `Sources / Fuentes` website page with direct links to the network, coax, passive-coupler, and project-decision sources used by the desktop research baseline.
+
+Added the first antenna pre-simulation pass: geometry seed generator, preliminary geometry worksheet, first-pass antenna candidate CSV, and NEC simulation queue for 900 MHz Yagi, 1800 MHz Yagi, LPDA, and biquad candidates.

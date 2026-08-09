@@ -18,6 +18,8 @@ An early conceptual LPDA discussion used approximate values around:
 
 These numbers are not approved blueprints. They are not build data and must not be fabricated without proper calculation, simulation, and review.
 
+The current pre-simulation seed is `LPDA_800_2200_SEED` in `../../calculations/preliminary_antenna_geometry.md`. It deliberately keeps the earlier tau/sigma idea as a test candidate, not as a preferred antenna.
+
 ## Evaluation Questions
 
 - Can local materials support the required element spacing and tolerances?

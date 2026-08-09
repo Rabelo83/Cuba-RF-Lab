@@ -62,6 +62,26 @@ Scenario details:
 
 [calculations/desktop_link_budget_scenarios.md](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/calculations/desktop_link_budget_scenarios.md)
 
+## First Simulation Queue
+
+The first pre-simulation worksheet is ready:
+
+- [preliminary antenna geometry](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/calculations/preliminary_antenna_geometry.md)
+- [antenna candidate first-pass CSV](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/data/processed/antenna_candidate_first_pass.csv)
+- [NEC first-pass queue](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/simulations/nec/first_pass_queue.md)
+
+Current order:
+
+1. 900 MHz 5-element Yagi seed
+2. 1800 MHz 5-element Yagi seed
+3. 900 MHz 7-element Yagi seed
+4. 1800 MHz 7-element Yagi seed
+5. 800-2200 MHz LPDA seed
+6. 1800 MHz biquad seed
+7. 2100 MHz biquad seed
+
+These are simulation inputs only. They are not approved build dimensions.
+
 ## Candidate Ranking
 
 This is a pre-measurement planning rank only.
