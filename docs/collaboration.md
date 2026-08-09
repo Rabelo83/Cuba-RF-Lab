@@ -57,6 +57,6 @@ Do not add RF math, unresolved engineering debate, or unapproved final dimension
 
 - Add official or reputable sources for current ETECSA band information.
 - Add exact Cuban import rule citations.
-- Add first field measurements from the target locations if a safe local collaborator becomes available.
+- Add first field measurements from the target locations when the owner or a safe local collaborator can collect them.
 - Identify the available Android phone model and supported bands.
 - Add manufacturer attenuation data for realistic coax options.

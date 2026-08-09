@@ -6,7 +6,7 @@ The project is Cuba RF Lab. The GitHub repository name remains `Cuba-RF-Lab`. It
 
 The broader goal is to offer a useful solution for Cuban people struggling with communication during blackouts. Future research and simulation work should lead toward the lowest practical production cost with useful real-world efficiency, not toward expensive lab-only performance.
 
-Current data constraint: the project owner cannot collect local RF measurements or material availability observations from Cuba at this time. The next phase must rely on public sources, manufacturer data, conservative calculations, simulations, and sensitivity analysis. Field validation remains required before any final public blueprint.
+Current data constraint: the project owner cannot collect local RF measurements or material availability observations from Cuba in the current phase, but expects to collect information later. The next phase must rely on public sources, manufacturer data, conservative calculations, simulations, and sensitivity analysis. Field validation remains required before any final public blueprint.
 
 Critical boundary: do not design active cellular repeaters, RF amplifiers, jammers, IMSI catchers, base station emulators, or anything intended to bypass ETECSA controls.
 
@@ -15,7 +15,7 @@ Current strategy has two tracks:
 1. Track A: place an ETECSA-compatible Android phone at the best RF location and bring data into the house.
 2. Track B: improve a local passive directional antenna plus phone-coupler concept through calculation, simulation, and later external measurement if available.
 
-Priority bands are currently assumed to be 900 MHz and 1800 MHz, with optional research from roughly 800 to 2200 MHz. This still needs current source verification, and later local measurements if a collaborator becomes available.
+Priority bands are currently assumed to be 900 MHz and 1800 MHz, with optional research from roughly 800 to 2200 MHz. This still needs current source verification now, and later local measurements when the owner or a collaborator can collect them.
 
 No buildable antenna blueprint exists yet. Do not create final fabrication dimensions until research, calculations, and simulation are ready.
 
@@ -38,7 +38,7 @@ Current repository state:
 - A project-wide documentation pass propagated the public mission into requirements, research, routerless, coupler, simulation, calculation, testing, material, legal, CAD, image, data, result, and website-collaboration notes.
 - Antenna candidate weighting now gives stronger explicit weight to low production cost and ability to fabricate or repair in Cuba while keeping blackout connectivity as the highest-weight criterion.
 - Owner-provided material availability in Cuba should be appended to `data/raw/material_availability_cuba.csv` using the columns in `data/templates/material_availability_cuba.csv`; keep dated rows rather than replacing old observations.
-- Owner-side local data collection is not currently possible, so new availability and measurement data should come from public sources or future external collaborators and must be labeled by source class and confidence.
+- Owner-side local data collection is temporarily unavailable, so near-term availability and measurement inputs should come from public sources. Later owner or collaborator observations must be labeled by source class and confidence.
 - Starter scripts were run successfully.
 - Python compile check passed with `PYTHONPYCACHEPREFIX` set to `/private/tmp/etecsa_rf_lab_pycache` because the default macOS bytecode cache path was outside the writable workspace.
 - Site search now indexes bilingual content correctly: `plugins.search.lang` in `mkdocs.yml` is set to `[en, es]` so Spanish terms get proper Lunr stemming (the Spanish and multi-language Lunr modules were already bundled with the theme but unused). Rebuilt and pushed as commit `a2361ac`.

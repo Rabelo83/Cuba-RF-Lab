@@ -18,7 +18,7 @@ Primary need: resilient basic communication during blackouts, especially when th
 
 Broader public objective: develop a practical solution that can help Cuban people struggling with communication during blackouts, with the lowest practical production cost and good real-world efficiency.
 
-Current data constraint: the project owner cannot collect local measurements or material availability observations from Cuba at this time. Until a local collaborator contributes data, the project must rely on public sources, manufacturer data, calculations, simulations, conservative assumptions, and sensitivity analysis.
+Current data constraint: local measurements and material availability observations from Cuba are temporarily unavailable from the project owner. The owner expects to collect information later, but until then the project must rely on public sources, manufacturer data, calculations, simulations, conservative assumptions, and sensitivity analysis.
 
 ## Current Engineering Direction
 
@@ -47,9 +47,9 @@ Current priority assumptions:
 - 1800 MHz second priority for LTE Band 3 performance
 - Optional broadband research from about 800 MHz to 2200 MHz
 
-Possible ETECSA behavior during outages includes shutting down 4G or 3G while lower-power or legacy service survives longer. This must eventually be measured locally by a collaborator before any final field-validated claim.
+Possible ETECSA behavior during outages includes shutting down 4G or 3G while lower-power or legacy service survives longer. This must eventually be measured locally by the owner or a collaborator before any final field-validated claim.
 
-Because local measurement is not currently available, frequency choices must be ranked by current public sources and simulated as scenarios. No band-specific design may be called field validated until local measurements are contributed.
+Because local measurement is temporarily unavailable, frequency choices must be ranked by current public sources and simulated as scenarios. No band-specific design may be called field validated until local measurements are contributed later.
 
 ## Current Repository Status
 
@@ -62,7 +62,7 @@ Because local measurement is not currently available, frequency choices must be 
 - Public-production guardrails propagated across requirements, research, routerless architecture, coupler work, simulations, calculations, tests, materials, legal notes, CAD placeholders, images, data, and results documentation.
 - Antenna comparison weights updated so low production cost and Cuban fabrication/repairability carry stronger decision weight while blackout connectivity remains the top priority.
 - Cuba material availability now has a raw CSV ledger and template so owner-provided local observations can be saved as dated project data.
-- Project roadmap shifted to desktop research and simulation first because owner-side local measurement/material collection is not currently possible.
+- Project roadmap shifted to desktop research and simulation first because owner-side local measurement/material collection is temporarily unavailable.
 - Calculation scripts created for wavelength, coax loss, and simple received-signal delta.
 - Measurement CSV template created.
 - No simulation results yet.

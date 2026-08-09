@@ -18,7 +18,7 @@ Research and simulations should therefore lead toward:
 
 ## Current Data Mode
 
-The project owner cannot currently collect local RF measurements or local material availability observations from Cuba. The active engineering mode is therefore desktop research and simulation first.
+The project owner cannot collect local RF measurements or local material availability observations from Cuba in the current phase. The owner expects to collect information later, so the active engineering mode is desktop research and simulation first.
 
 That means:
 
@@ -27,7 +27,7 @@ That means:
 - model conservative low, medium, and high loss scenarios
 - run sensitivity analysis instead of claiming certainty
 - keep all designs marked as not field validated
-- treat local field data as an external validation gate
+- treat later local field data as the validation gate
 
 ## Phase 0: Repository and Research Baseline
 
@@ -39,8 +39,8 @@ That means:
 
 - Gather current dated sources for ETECSA/Cubacel bands and blackout behavior.
 - Build conservative RF scenarios for indoor, outdoor, window, roof, and street-corner placements.
-- Record which questions still require external local measurements.
-- Do not claim field performance until collaborator measurements exist.
+- Record which questions still require later local measurements.
+- Do not claim field performance until owner or collaborator measurements exist.
 
 ## Phase 2: Model Antennas
 
@@ -66,8 +66,8 @@ That means:
 
 ## Phase 6: Blackout Field Testing
 
-- Hold this as a validation phase for future local collaborators.
-- Test real communication performance during outages only when safe local data becomes available.
+- Hold this as a later validation phase for the owner or a future local collaborator.
+- Test real communication performance during outages only when safe local data becomes available later.
 - Record app-level success, not just signal strength.
 
 ## Phase 7: Optimize

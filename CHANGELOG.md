@@ -28,4 +28,4 @@ Added a Cuba material availability raw ledger and CSV template so local observat
 
 Changed the public display name to Cuba RF Lab and updated documentation links to the `Cuba-RF-Lab` repository path.
 
-Documented the current no-local-data constraint: owner-side RF measurements and material observations are unavailable, so the project will proceed with public sources, manufacturer data, conservative assumptions, calculations, simulations, and sensitivity analysis until external field validation exists.
+Documented the current temporary no-local-data constraint: owner-side RF measurements and material observations are unavailable in the current phase, so the project will proceed with public sources, manufacturer data, conservative assumptions, calculations, simulations, and sensitivity analysis until later field validation exists.

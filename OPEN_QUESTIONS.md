@@ -4,12 +4,12 @@
 
 1. Which current public sources best document ETECSA/Cubacel bands and service behavior in Matanzas or nearby Cuban regions?
 2. Which low-cost Android phones are realistic reference devices for Cuba, and which 2G, 3G, and 4G bands do they support?
-3. What conservative signal scenarios should be simulated for indoor, high window, outdoor, roof, and street-corner placements when local measurements are unavailable?
+3. What conservative signal scenarios should be simulated for indoor, high window, outdoor, roof, and street-corner placements while local measurements are temporarily unavailable?
 4. What exact coax type is used in the observed Cuban passive antenna kit?
 5. What is the passive coupler loss and how sensitive is it to phone position?
 6. What is the lowest production cost for a system that still works well enough to help families?
 7. Which parts can be sourced, fabricated, repaired, or substituted inside Cuba?
-8. What assumptions must remain blocked until an external collaborator can provide field measurements?
+8. What assumptions must remain blocked until the owner or a collaborator can provide field measurements later?
 
 ## Network
 
@@ -17,7 +17,7 @@
 - Does the phone report LTE Band 3, UMTS Band 8, GSM 900, or another band?
 - Does SINR improve or worsen when moving to higher signal locations?
 - Are there seasonal, weather, or outage-duration effects?
-- Which public or third-party reports can be used as weak proxies when local measurements are unavailable?
+- Which public or third-party reports can be used as weak proxies while local measurements are temporarily unavailable?
 
 ## Antenna
 
