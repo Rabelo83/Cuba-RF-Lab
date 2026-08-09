@@ -30,5 +30,8 @@ Current repository state:
 - `AGENTS.md` and `docs/collaboration.md` now explain the website publishing workflow and `Keep It Simple` rules for future AI/human contributors.
 - Starter scripts were run successfully.
 - Python compile check passed with `PYTHONPYCACHEPREFIX` set to `/private/tmp/etecsa_rf_lab_pycache` because the default macOS bytecode cache path was outside the writable workspace.
+- Site search now indexes bilingual content correctly: `plugins.search.lang` in `mkdocs.yml` is set to `[en, es]` so Spanish terms get proper Lunr stemming (the Spanish and multi-language Lunr modules were already bundled with the theme but unused). Rebuilt and pushed as commit `a2361ac`.
+- A suspected mobile-layout overflow bug on the homepage architecture diagram was investigated and ruled out: initial headless-Chrome screenshots looked clipped, but that was a testing artifact (headless Chrome clamps its internal window below ~500px while still saving the screenshot at the requested smaller size). Verified with real Chrome DevTools Protocol mobile emulation (390x844, `mobile: true`) that `document.documentElement.scrollWidth` equals `window.innerWidth` with no overflow. No site change was needed or made for this.
+- Remaining known gap in bilingual handling: `<html lang="en">` is hardcoded site-wide even though `Keep It Simple` pages are roughly half Spanish, and no Spanish text is wrapped in `lang="es"`. Not fixed yet; affects screen-reader pronunciation and language-based SEO.
 
 Recommended next task: fill `research/sources.md` and `research/etecsa_network.md` with dated source citations for current ETECSA bands, then perform first local signal measurements using `data/templates/blackout_measurement.csv`.
