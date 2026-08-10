@@ -98,11 +98,22 @@ See the machine-readable table at:
 4. The first simulations should compare 900 MHz Yagi, 1800 MHz Yagi, broadband LPDA, and dual-band concepts with realistic feed and tolerance assumptions.
 5. No passive antenna blueprint should be approved until coupler loss is measured or bounded tightly enough to support the decision.
 
-## First Simulation Note (2026-08-09)
+## Simulation Update (2026-08-10): Working Candidates Found
 
-The 9 dBi / 12 dBi realized-gain assumptions above were placeholders pending simulation. The first NEC pass on the actual pre-simulation seeds (`Y900_5EL_SEED`, `Y1800_5EL_SEED`) simulated forward gain of -0.75 dBi and -0.13 dBi at their respective target frequencies -- far below the placeholder. See `simulations/results/first_pass_yagi_comparison.md`.
+The 9 dBi / 12 dBi realized-gain assumptions above were placeholders pending simulation. The first NEC pass (2026-08-09) on the original uniform wavelength-scaled seeds (`Y900_5EL_SEED`, `Y1800_5EL_SEED`) failed across their required bands. A follow-up NEC-driven local search (`simulations/nec/optimize_yagi_directors.py`) then found working replacement geometries, `Y900_5EL_OPT_V2_BW` and `Y1800_5EL_OPT_V2_BW`, with flat 11.1-11.5 dBi simulated gain across both required bands -- meeting or nearly meeting the original placeholder. See `simulations/results/y900_5el_opt_v2_bw_first_pass.md` and `simulations/results/y1800_5el_opt_v2_bw_first_pass.md` for full characterization.
 
-This does not mean 9/12 dBi is unreachable at these bands; the simulated failure is specific to this seed's director geometry (confirmed by an independently built textbook-ratio Yagi hitting about 9 dBi with the same solver). It does mean the B900/B1800 scenario rows above are not yet backed by a working design, and should be treated as an aspirational target, not a current estimate, until a redesigned candidate is simulated.
+The remaining gap is native impedance match, not gain: these candidates have not been fitted with a matching network yet, so feeding them directly from 50 ohm coax loses real power to reflection (2.6-13.5 dB depending on frequency and band). Two scenario rows are added below for each band: as simulated today with no matching network, and with an assumed future matching network achieving the same 1.0 dB matching-loss assumption used in the original placeholder scenarios (not yet designed or simulated -- an assumption, flagged as such).
+
+| Scenario | Antenna basis | Passive chain delta (good case, LMR-240/5m/6dB coupler) | Interpretation |
+| --- | --- | ---: | --- |
+| B900_SIM_UNMATCHED_WORST | Simulated, worst required check point (960 MHz), no match | -11.14 dB | The 960 MHz edge is unusable without a matching network. |
+| B900_SIM_UNMATCHED_BEST3 | Simulated, best of the other three check points (925 MHz), no match | +1.54 dB | Even fully unmatched, most of the required band already beats Track A in the good-case loss stack. |
+| B900_SIM_WITH_FUTURE_MATCH | Simulated raw gain (worst required check point, 11.11 dBi) + assumed 1.0 dB matching loss | +1.37 dB | Assumes a matching network not yet designed. |
+| B1800_SIM_UNMATCHED_WORST | Simulated, worst required check point (1880 MHz), no match | -7.56 dB | Weakest point, but still better than the 900 MHz worst case. |
+| B1800_SIM_UNMATCHED_BEST | Simulated, best required check point (1840 MHz), no match | -0.80 dB | Close to breakeven even fully unmatched. |
+| B1800_SIM_WITH_FUTURE_MATCH | Simulated raw gain (worst required check point, 11.08 dBi) + assumed 1.0 dB matching loss | +0.80 dB | Assumes a matching network not yet designed. |
+
+These deltas use the same good-case loss stack as `B900_GOOD`/`B1800_GOOD` above (LMR-240, 5 m, connector 0.5 dB, coupler 6 dB, misc 1 dB). The typical-risk loss stack (RG-58, 12 dB coupler) would push all of these solidly negative, same as the original placeholder scenarios -- coupler loss is still the dominant risk, simulated gain or not.
 
 ## Sources
 

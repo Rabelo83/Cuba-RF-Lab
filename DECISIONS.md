@@ -71,3 +71,15 @@ Reason: first desktop link-budget scenarios show that coax, connector, matching,
 Decision: `calculations/preliminary_antenna_geometry.py`'s `make_yagi` director length/spacing scaling (uniform position steps, shallow uniform length taper) must not be reused for further Yagi candidates until it is replaced with an actual director design method.
 
 Reason: the first NEC simulation pass showed both `Y900_5EL_SEED` and `Y1800_5EL_SEED` fail across their entire required bands (negative-to-marginal forward gain, VSWR above 11:1) using this director geometry, while the reflector-driven half of the same seeds behaves correctly and an independently chosen textbook-ratio Yagi built with the same solver produces expected results. See `simulations/results/first_pass_yagi_comparison.md`. Running `Y900_7EL_SEED`, `Y1800_7EL_SEED`, or other candidates that reuse the same director scaling logic would likely waste simulation effort reproducing the same failure.
+
+## 2026-08-10: Use NEC-Optimized Director Geometry, Not Hand-Derived Dimensions
+
+Decision: when a formula-based or memory-recalled antenna geometry fails simulation, the replacement should come from a local numerical search using the validated NEC solver as the objective function, not from a second hand-picked or recalled set of dimensions.
+
+Reason: this project's own rule against inventing performance figures applies equally to inventing geometry -- a "known good" set of published Yagi dimensions recalled from memory risks being subtly wrong and is not independently checkable the way a solver-verified search is. `simulations/nec/optimize_yagi_directors.py` used SciPy's Nelder-Mead optimizer with `necpp` itself as the objective function and found working geometry for both `Y900_5EL_OPT_V2_BW` and `Y1800_5EL_OPT_V2_BW`. This also caught a real bug during development (an early version silently rescaled the antenna's physical size per test frequency instead of holding one fixed structure) that a hand-derived design would not have surfaced the same way, since the bug was found by the optimizer's own output disagreeing with an independent re-simulation.
+
+## 2026-08-10: A Single-Frequency Gain Peak Is Not a Working Antenna
+
+Decision: any future antenna optimization or design work for this project must evaluate gain (and other acceptance criteria) across the full required check-point frequencies from `simulations/nec/first_pass_queue.md`, not at a single target frequency alone.
+
+Reason: `Y900_5EL_OPT_V1` and `Y1800_5EL_OPT_V1` (single-frequency-optimized) reached excellent gain and front-to-back ratio exactly at their target frequency, then collapsed to negative gain within 25-80 MHz -- a narrow, high-Q spike that fails the project's own required-band criteria despite looking excellent at one point. The bandwidth-aware replacement (`*_OPT_V2_BW`, optimizing worst-case gain across all required check points) produced a geometry that actually holds up across the band.

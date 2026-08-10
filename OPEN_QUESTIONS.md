@@ -25,8 +25,9 @@
 - Is a narrow 1800 MHz antenna worthwhile if LTE is often unavailable during blackout?
 - Is a dedicated 900 MHz antenna required for blackout resilience?
 - Does any passive antenna/coupler system beat simply placing the phone at the best RF location after all losses are counted?
-- Which candidate ranks highest after simulation: LPDA, 900 MHz Yagi, 1800 MHz Yagi, dual-band/nested antenna, biquad, panel/patch, or another passive design? Partial answer as of 2026-08-09: the seeded `Y900_5EL_SEED` and `Y1800_5EL_SEED` Yagis both fail as given (see `simulations/results/first_pass_yagi_comparison.md`); neither can be ranked against the others until re-simulated with a redesigned director geometry.
-- What director length taper and spacing pattern actually produces a working 900 MHz and 1800 MHz Yagi, given that the first-pass uniform wavelength-scaled seed did not? (New question raised by the first NEC pass, 2026-08-09.)
+- Which candidate ranks highest after simulation: LPDA, 900 MHz Yagi, 1800 MHz Yagi, dual-band/nested antenna, biquad, panel/patch, or another passive design? Updated 2026-08-10: both `Y900_5EL_OPT_V2_BW` and `Y1800_5EL_OPT_V2_BW` now work (11.1-11.5 dBi flat gain, see `simulations/results/first_pass_yagi_comparison.md`), so the Yagi topology itself is viable at both bands. Still unanswered: the LPDA and biquad have not been simulated yet, so Yagi cannot yet be called the winner, only a viable contender.
+- What matching network (gamma match, hairpin match, or other) brings `Y900_5EL_OPT_V2_BW` and `Y1800_5EL_OPT_V2_BW`'s native impedance (3-95 ohm resistive, highly frequency-dependent) close enough to 50 ohms to use with ordinary coax? (New question raised 2026-08-10; this is now the single highest-priority open antenna question.)
+- Does a 7-element extension of the working `Y900_5EL_OPT_V2_BW`/`Y1800_5EL_OPT_V2_BW` geometry (adding two more NEC-optimized directors) provide enough extra gain to justify the larger boom and tighter tolerance risk, versus just improving the match on the existing 5-element design?
 - What polarization is used by the reachable serving sites?
 - What antenna height is safe and useful?
 

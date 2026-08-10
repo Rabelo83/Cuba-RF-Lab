@@ -1263,7 +1263,8 @@
 <li>700 MHz and 2100 MHz remain secondary awareness bands until stronger local or official evidence exists.</li>
 <li>Coax and passive-coupler losses are large enough that passive antenna gain must be evaluated as a complete system.</li>
 <li>The phone-at-best-RF-location architecture remains the baseline to beat.</li>
-<li>The first two queued NEC simulations ran on 2026-08-09: both the 900 MHz and 1800 MHz five-element Yagi seed geometries failed across their required bands and do not yet beat the phone-at-best-RF-location baseline.</li>
+<li>The first two queued NEC simulations ran on 2026-08-09: both the 900 MHz and 1800 MHz five-element Yagi seed geometries failed across their required bands.</li>
+<li>An NEC-driven redesign on 2026-08-10 found working replacements for both bands: flat, strong simulated gain across the full required range. A matching network is the next step before either is usable with ordinary coax.</li>
 <li>Python <code>necpp</code> NEC2 solver is installed, smoke-tested, and now used for real candidate simulation.</li>
 </ul>
 <h2 id="priority-research-areas">Priority Research Areas<a class="headerlink" href="#priority-research-areas" title="Permanent link">&para;</a></h2>
@@ -1376,17 +1377,20 @@
 <li><a href="https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/data/processed/desktop_link_budget_scenarios.csv">Processed scenario CSV</a></li>
 </ul>
 <h2 id="current-antenna-simulation-result">Current Antenna Simulation Result<a class="headerlink" href="#current-antenna-simulation-result" title="Permanent link">&para;</a></h2>
-<p><span class="status-badge status-warning">First two candidates fail as seeded</span></p>
-<p>The first pre-simulation pass compares 900 MHz Yagi, 1800 MHz Yagi, LPDA, and biquad seed geometries. The two highest-priority candidates, a 900 MHz and an 1800 MHz five-element Yagi, have now been simulated in free space with NEC2. Both fail across their required bands: forward gain is negative-to-marginal and feed VSWR stays above 11:1 throughout. Neither beats the phone-at-best-RF-location baseline yet. The cause was isolated to the director element geometry (a naive uniform wavelength-scaling method), not the simulation approach itself, which was independently checked against known dipole and Yagi physics.</p>
-<p>The remaining queued candidates (larger 7-element Yagis, LPDA, biquads) are paused until the director geometry is redesigned, since they use the same generator and would likely reproduce the same failure.</p>
+<p><span class="status-badge status-concept">Working candidates found, both bands</span>
+<span class="status-badge status-warning">Matching network still needed</span></p>
+<p>The two highest-priority candidates, a 900 MHz and an 1800 MHz five-element Yagi, were first simulated using the original preliminary geometry seeds. Both failed across their required bands: forward gain was negative-to-marginal and feed VSWR stayed above 11:1 throughout. Rather than guess a second set of dimensions, the director geometry was redesigned using the NEC solver itself as the search objective (a local numerical optimization, not a formula or a recalled published table). The result: both bands now have a working candidate with flat, strong simulated gain (11.1-11.5 dBi) across their entire required range.</p>
+<p>The remaining gap is impedance matching, not gain. Neither candidate has a matching network yet, so native VSWR is poor at some frequencies (worst for the 900 MHz candidate, at the top of its band). Designing and simulating that match is the next concrete step. After that, the LPDA and biquad candidates still need their first simulation before any topology can be called a project recommendation.</p>
 <p>See:</p>
 <ul>
+<li><a href="https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/simulations/results/first_pass_yagi_comparison.md">Side-by-side comparison and full timeline</a> -- start here</li>
+<li><a href="https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/simulations/results/y900_5el_opt_v2_bw_first_pass.md">900 MHz Yagi working candidate</a></li>
+<li><a href="https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/simulations/results/y1800_5el_opt_v2_bw_first_pass.md">1800 MHz Yagi working candidate</a></li>
+<li><a href="https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/simulations/results/y900_5el_seed_first_pass.md">900 MHz Yagi original seed result (failed, superseded)</a></li>
+<li><a href="https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/simulations/results/y1800_5el_seed_first_pass.md">1800 MHz Yagi original seed result (failed, superseded)</a></li>
 <li><a href="https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/calculations/preliminary_antenna_geometry.md">Preliminary antenna geometry</a></li>
 <li><a href="https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/data/processed/antenna_candidate_first_pass.csv">Antenna candidate first-pass CSV</a></li>
 <li><a href="https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/simulations/nec/first_pass_queue.md">NEC first-pass queue</a></li>
-<li><a href="https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/simulations/results/y900_5el_seed_first_pass.md">900 MHz Yagi first-pass result</a></li>
-<li><a href="https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/simulations/results/y1800_5el_seed_first_pass.md">1800 MHz Yagi first-pass result</a></li>
-<li><a href="https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/simulations/results/first_pass_yagi_comparison.md">Side-by-side comparison</a></li>
 </ul>
 <h2 id="research-ledger">Research Ledger<a class="headerlink" href="#research-ledger" title="Permanent link">&para;</a></h2>
 <p>Public website source links:</p>

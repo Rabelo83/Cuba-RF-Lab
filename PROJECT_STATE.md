@@ -76,7 +76,8 @@ Because local measurement is temporarily unavailable, frequency choices are now 
 - Scientific Python support installed in `.venv`: `numpy`, `pandas`, `matplotlib`, and `scipy`; pinned in `requirements-engineering.txt`.
 - Standalone/GUI solvers `xnec2c`, `nec2c`, and `openEMS` were not found in Homebrew/local checks as of 2026-08-09.
 - Measurement CSV template created.
-- First NEC simulation results are in (2026-08-09): `Y900_5EL_SEED` and `Y1800_5EL_SEED` both fail as seeded across their required bands (negative-to-marginal forward gain, VSWR above 11:1). Solver independently validated as correct. See `simulations/results/first_pass_yagi_comparison.md`. The uniform wavelength-scaled director geometry in `calculations/preliminary_antenna_geometry.py` needs a redesign before further Yagi candidates are simulated.
+- First NEC simulation results are in (2026-08-09): `Y900_5EL_SEED` and `Y1800_5EL_SEED` both fail as seeded across their required bands (negative-to-marginal forward gain, VSWR above 11:1). Solver independently validated as correct.
+- First working Yagi candidates found (2026-08-10): an NEC-driven local search (`simulations/nec/optimize_yagi_directors.py`) replaced the failed director geometry and found `Y900_5EL_OPT_V2_BW` and `Y1800_5EL_OPT_V2_BW`, both showing flat 11.1-11.5 dBi gain across their full required bands. Neither has a matching network yet -- native VSWR ranges from about 2.4 to 87.6 depending on frequency and band. See `simulations/results/first_pass_yagi_comparison.md`.
 - No CAD files yet.
 - No final dimensions yet.
 - No approved blueprints yet.
@@ -84,8 +85,8 @@ Because local measurement is temporarily unavailable, frequency choices are now 
 
 ## Immediate Next Work
 
-1. Redesign the Yagi director length taper and spacing in `calculations/preliminary_antenna_geometry.py` using an actual director design method (not uniform wavelength scaling), then re-run `simulations/nec/run_first_pass_yagi.py` against the revised `Y900_5EL_SEED` and `Y1800_5EL_SEED` geometry.
-2. Search for current official ETECSA or Cuban regulatory source text to improve the band and import-rule evidence.
-3. Build a source-backed list of realistic phones, coax, connectors, routers, coupler materials, and antenna materials that may be obtainable by Cuban users.
-4. Once a 900/1800 MHz Yagi design actually works in simulation, continue to the LPDA and biquad candidates and dual-band/nested concepts before any blueprint dimensions are approved.
+1. Design a matching network (gamma or hairpin match) for `Y900_5EL_OPT_V2_BW` and `Y1800_5EL_OPT_V2_BW`, most urgently for the 900 MHz candidate's 960 MHz weak point (-2.40 dBi net today, unmatched), and re-simulate with it in place.
+2. Simulate the LPDA and biquad seed candidates (`simulations/nec/first_pass_queue.md` priorities 5-7) so the antenna comparison framework (`antenna/candidate_comparison.md`) has real data for more than one topology.
+3. Search for current official ETECSA or Cuban regulatory source text to improve the band and import-rule evidence.
+4. Build a source-backed list of realistic phones, coax, connectors, routers, coupler materials, and antenna materials that may be obtainable by Cuban users.
 5. Keep field measurement and local availability data as an external validation gate, not a prerequisite for desktop engineering progress.

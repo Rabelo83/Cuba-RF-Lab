@@ -154,6 +154,84 @@ def build_candidates() -> tuple[CandidateGeometry, ...]:
     )
 
 
+def build_optimized_candidates() -> tuple[CandidateGeometry, ...]:
+    """Yagi geometries found by `simulations/nec/optimize_yagi_directors.py`.
+
+    Unlike `build_candidates()`, these dimensions were not derived from a
+    formula. They are the output of a local NEC-driven numerical search
+    (SciPy Nelder-Mead, `necpp` as the objective function) that started
+    from a reasonable textbook-ratio guess and searched for a geometry
+    the solver confirms actually works, after the uniform wavelength-scaled
+    `*_5EL_SEED`/`*_7EL_SEED` candidates above failed NEC simulation. See
+    `simulations/results/y900_5el_opt_v1_first_pass.md` and
+    `simulations/results/y1800_5el_opt_v1_first_pass.md` for full
+    characterization. Reflector length/position matches the original seed
+    (0.500 wavelength, position 0); only the driven element and three
+    directors were searched.
+    """
+
+    return (
+        CandidateGeometry(
+            candidate_id="Y900_5EL_OPT_V1",
+            target_mhz=900,
+            notes="NEC-optimized (local search) 900 MHz class 5-element Yagi",
+            elements=(
+                WireElement("reflector", 0.00, 166.55),
+                WireElement("driven", 51.24, 163.39),
+                WireElement("director_1", 104.15, 146.20),
+                WireElement("director_2", 143.78, 135.88),
+                WireElement("director_3", 177.66, 136.43),
+            ),
+        ),
+        CandidateGeometry(
+            candidate_id="Y1800_5EL_OPT_V1",
+            target_mhz=1800,
+            notes="NEC-optimized (local search) 1800 MHz class 5-element Yagi",
+            elements=(
+                WireElement("reflector", 0.00, 83.28),
+                WireElement("driven", 25.88, 83.05),
+                WireElement("director_1", 50.60, 72.41),
+                WireElement("director_2", 70.26, 69.86),
+                WireElement("director_3", 88.01, 66.08),
+            ),
+        ),
+        CandidateGeometry(
+            candidate_id="Y900_5EL_OPT_V2_BW",
+            target_mhz=900,
+            notes=(
+                "NEC-optimized (bandwidth-aware local search, worst-case gain across "
+                "900/925/945/960 MHz) 900 MHz class 5-element Yagi. Supersedes "
+                "Y900_5EL_OPT_V1 for band coverage; needs a matching network (native "
+                "VSWR 20-33 against 50 ohm)."
+            ),
+            elements=(
+                WireElement("reflector", 0.00, 166.55),
+                WireElement("driven", 38.17, 166.55),
+                WireElement("director_1", 93.20, 133.98),
+                WireElement("director_2", 177.70, 131.20),
+                WireElement("director_3", 277.63, 132.31),
+            ),
+        ),
+        CandidateGeometry(
+            candidate_id="Y1800_5EL_OPT_V2_BW",
+            target_mhz=1800,
+            notes=(
+                "NEC-optimized (bandwidth-aware local search, worst-case gain across "
+                "1710/1800/1840/1880 MHz) 1800 MHz class 5-element Yagi. Supersedes "
+                "Y1800_5EL_OPT_V1 for band coverage; native VSWR 2.8-5.9 against 50 "
+                "ohm, close enough that a simple matching network should suffice."
+            ),
+            elements=(
+                WireElement("reflector", 0.00, 83.28),
+                WireElement("driven", 14.22, 82.41),
+                WireElement("director_1", 63.68, 65.26),
+                WireElement("director_2", 108.64, 63.60),
+                WireElement("director_3", 157.30, 64.62),
+            ),
+        ),
+    )
+
+
 def print_summary(candidates: tuple[CandidateGeometry, ...]) -> None:
     print("| Candidate | Target MHz | Elements | Longest element mm | Boom / width mm | Notes |")
     print("| --- | ---: | ---: | ---: | ---: | --- |")

@@ -1,16 +1,26 @@
 # NEC First-Pass Simulation Queue
 
-Status: priorities 1 and 2 simulated and failed as seeded; queue paused pending redesigned director geometry
+Status: working candidates found for priorities 1 and 2; matching network needed next; priorities 3-7 still pending
 
-Date: 2026-08-09
+Date: 2026-08-09, updated 2026-08-10
 
-## Priority 1 and 2 Result (2026-08-09)
+## Priority 1 and 2 Result
 
-`Y900_5EL_SEED` and `Y1800_5EL_SEED` were simulated with `simulations/nec/run_first_pass_yagi.py`. Both fail as seeded: negative or near-zero forward gain across nearly the entire required band, VSWR above 11:1 throughout, and weak or negative front-to-back ratio. The solver was independently validated (isolated dipole and a hand-built textbook-ratio Yagi both matched expected physics), so this is a real property of this seed's director geometry, not a simulation bug.
+`Y900_5EL_SEED` and `Y1800_5EL_SEED` (uniform wavelength-scaled directors) failed as seeded: negative or near-zero forward gain across nearly the entire required band, VSWR above 11:1 throughout. The solver was independently validated (isolated dipole and a hand-built textbook-ratio Yagi both matched expected physics), so this was a real property of the seed's director geometry, not a simulation bug.
 
-Full detail: `simulations/results/y900_5el_seed_first_pass.md`, `simulations/results/y1800_5el_seed_first_pass.md`, `simulations/results/first_pass_yagi_comparison.md`.
+An NEC-driven local search (`simulations/nec/optimize_yagi_directors.py`) then found working replacements, `Y900_5EL_OPT_V2_BW` and `Y1800_5EL_OPT_V2_BW`: flat 11.1-11.5 dBi forward gain across all four required check points in both bands. Both still need a matching network before their native impedance (VSWR 2.4-87.6 depending on frequency) is usable with ordinary 50 ohm coax.
 
-Do not run priorities 3-7 (`Y900_7EL_SEED`, `Y1800_7EL_SEED`, LPDA, biquads) yet where they reuse the same `make_yagi` uniform-scaling director logic in `calculations/preliminary_antenna_geometry.py` -- they would likely reproduce the same failure. `calculations/preliminary_antenna_geometry.py` needs a real director design pass (proper length taper, closer non-uniform spacing) before further Yagi candidates are worth simulating. The LPDA and biquad seeds use different geometry generators and are not automatically affected, but have not been simulated yet either.
+Full detail: `simulations/results/first_pass_yagi_comparison.md` (start here), `simulations/results/y900_5el_seed_first_pass.md`, `simulations/results/y1800_5el_seed_first_pass.md`, `simulations/results/y900_5el_opt_v2_bw_first_pass.md`, `simulations/results/y1800_5el_opt_v2_bw_first_pass.md`.
+
+## Immediate Next Step
+
+Design a matching network (gamma or hairpin match) for `Y900_5EL_OPT_V2_BW` and `Y1800_5EL_OPT_V2_BW` and re-simulate with it in place, most urgently for the 900 MHz candidate's 960 MHz weak point (currently -2.40 dBi net, unmatched).
+
+## Remaining Queue
+
+Do not run `Y900_7EL_SEED` / `Y1800_7EL_SEED` from the original uniform-scaling seed family -- they would likely reproduce the original failure the same way `Y900_5EL_SEED`/`Y1800_5EL_SEED` did. If a higher-gain 7-element candidate is wanted, it should extend the working `*_OPT_V2_BW` geometry (add two more optimized directors) rather than the failed uniform-scaling method.
+
+LPDA and biquad seeds (priorities 5-7) use different geometry generators, not the failed director-scaling method, and have not been simulated yet. These are next after the matching network work above.
 
 Local check on 2026-08-09:
 
