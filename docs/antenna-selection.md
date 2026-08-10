@@ -62,25 +62,23 @@ Scenario details:
 
 [calculations/desktop_link_budget_scenarios.md](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/calculations/desktop_link_budget_scenarios.md)
 
-## First Simulation Queue
+## Simulation Status
 
-The first pre-simulation worksheet is ready:
+<span class="status-badge status-concept">Working Yagi candidates found, both bands</span>
+<span class="status-badge status-warning">Matching network still needed</span>
 
+The 900 MHz and 1800 MHz five-element Yagi candidates have now been through NEC2 simulation. The original preliminary geometry seeds failed across their required bands (negative-to-marginal gain, poor match). Rather than guess a second set of dimensions, the director geometry was redesigned using the NEC solver itself as a numerical search objective. The result: both bands now have a working candidate with flat, strong simulated gain (11.1-11.5 dBi) across their full required range. Neither has a matching network yet -- that is the current blocker before either is field-ready, not gain.
+
+Full detail and the complete failed-to-working timeline:
+
+- [Side-by-side comparison and timeline](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/simulations/results/first_pass_yagi_comparison.md) -- start here
+- [900 MHz Yagi working candidate](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/simulations/results/y900_5el_opt_v2_bw_first_pass.md)
+- [1800 MHz Yagi working candidate](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/simulations/results/y1800_5el_opt_v2_bw_first_pass.md)
 - [preliminary antenna geometry](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/calculations/preliminary_antenna_geometry.md)
 - [antenna candidate first-pass CSV](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/data/processed/antenna_candidate_first_pass.csv)
 - [NEC first-pass queue](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/simulations/nec/first_pass_queue.md)
 
-Current order:
-
-1. 900 MHz 5-element Yagi seed
-2. 1800 MHz 5-element Yagi seed
-3. 900 MHz 7-element Yagi seed
-4. 1800 MHz 7-element Yagi seed
-5. 800-2200 MHz LPDA seed
-6. 1800 MHz biquad seed
-7. 2100 MHz biquad seed
-
-These are simulation inputs only. They are not approved build dimensions.
+These are simulated dimensions, not approved build dimensions -- no matching network, and no other topology has been compared yet.
 
 Current local solver:
 
@@ -90,19 +88,19 @@ Current local solver:
 
 ## Candidate Ranking
 
-This is a pre-measurement planning rank only.
+This is a pre-measurement planning rank, updated as simulation results come in.
 
 | Rank | Candidate | Status |
 | ---: | --- | --- |
-| 1 | 900 MHz high-gain Yagi | Candidate |
-| 2 | Broadband LPDA, about 800-2200 MHz | Candidate |
-| 3 | Dual-band or nested 900/1800 MHz directional antenna | Candidate |
-| 4 | 1800 MHz high-gain Yagi | Candidate |
-| 5 | Panel or patch-array concepts | Candidate |
-| 6 | Biquad or double-biquad | Candidate |
+| 1 | 1800 MHz 5-element Yagi (NEC-optimized) | Simulated, working, needs matching network -- every required check point stays net-positive even unmatched |
+| 2 | 900 MHz 5-element Yagi (NEC-optimized) | Simulated, working, needs matching network -- one required check point (960 MHz) is net-negative unmatched |
+| 3 | Broadband LPDA, about 800-2200 MHz | Not yet simulated |
+| 4 | Dual-band or nested 900/1800 MHz directional antenna | Not yet simulated |
+| 5 | Panel or patch-array concepts | Not yet simulated |
+| 6 | Biquad or double-biquad | Not yet simulated |
 | 7 | Other passive directional designs | Add only if simulation gives a reason |
 
-This ranking can change after source research, simulation, material review, passive-coupler testing, or blackout measurements.
+This ranking can change after the LPDA and biquad are simulated, matching networks are designed, material review, passive-coupler testing, or blackout measurements.
 
 ## Approval Rule
 
