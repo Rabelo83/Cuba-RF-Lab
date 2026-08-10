@@ -25,7 +25,8 @@
 - Is a narrow 1800 MHz antenna worthwhile if LTE is often unavailable during blackout?
 - Is a dedicated 900 MHz antenna required for blackout resilience?
 - Does any passive antenna/coupler system beat simply placing the phone at the best RF location after all losses are counted?
-- Which candidate ranks highest after simulation: LPDA, 900 MHz Yagi, 1800 MHz Yagi, dual-band/nested antenna, biquad, panel/patch, or another passive design?
+- Which candidate ranks highest after simulation: LPDA, 900 MHz Yagi, 1800 MHz Yagi, dual-band/nested antenna, biquad, panel/patch, or another passive design? Partial answer as of 2026-08-09: the seeded `Y900_5EL_SEED` and `Y1800_5EL_SEED` Yagis both fail as given (see `simulations/results/first_pass_yagi_comparison.md`); neither can be ranked against the others until re-simulated with a redesigned director geometry.
+- What director length taper and spacing pattern actually produces a working 900 MHz and 1800 MHz Yagi, given that the first-pass uniform wavelength-scaled seed did not? (New question raised by the first NEC pass, 2026-08-09.)
 - What polarization is used by the reachable serving sites?
 - What antenna height is safe and useful?
 

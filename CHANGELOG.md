@@ -37,3 +37,5 @@ Added a public `Sources / Fuentes` website page with direct links to the network
 Added the first antenna pre-simulation pass: geometry seed generator, preliminary geometry worksheet, first-pass antenna candidate CSV, and NEC simulation queue for 900 MHz Yagi, 1800 MHz Yagi, LPDA, and biquad candidates.
 
 Installed and documented the first local engineering solver toolchain: Python `necpp` NEC2 solver plus `numpy`, `pandas`, `matplotlib`, and `scipy`, with a reproducible NEC smoke-test script.
+
+Ran the first real NEC2 antenna simulation pass: `Y900_5EL_SEED` and `Y1800_5EL_SEED` were modeled in free space with `simulations/nec/run_first_pass_yagi.py`, sweeping frequency, conductor diameter, and dimensional tolerance. Both fail across their entire required bands (negative-to-marginal forward gain, VSWR above 11:1), which was independently validated as a real property of the seed's director geometry rather than a solver bug. Recorded a decision not to reuse the current uniform wavelength-scaled director generator for further Yagi candidates until it is redesigned.

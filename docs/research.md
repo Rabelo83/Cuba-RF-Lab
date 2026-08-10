@@ -14,8 +14,8 @@ Current desktop baseline added on 2026-08-09:
 - 700 MHz and 2100 MHz remain secondary awareness bands until stronger local or official evidence exists.
 - Coax and passive-coupler losses are large enough that passive antenna gain must be evaluated as a complete system.
 - The phone-at-best-RF-location architecture remains the baseline to beat.
-- First antenna geometry seeds and a NEC simulation queue are ready, but no EM simulation has been run yet.
-- Python `necpp` NEC2 solver is installed and smoke-tested for the first simulation pass.
+- The first two queued NEC simulations ran on 2026-08-09: both the 900 MHz and 1800 MHz five-element Yagi seed geometries failed across their required bands and do not yet beat the phone-at-best-RF-location baseline.
+- Python `necpp` NEC2 solver is installed, smoke-tested, and now used for real candidate simulation.
 
 ## Priority Research Areas
 
@@ -67,15 +67,22 @@ See:
 - [Desktop link-budget scenarios](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/calculations/desktop_link_budget_scenarios.md)
 - [Processed scenario CSV](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/data/processed/desktop_link_budget_scenarios.csv)
 
-## Current Antenna Simulation Prep
+## Current Antenna Simulation Result
 
-The first pre-simulation pass compares 900 MHz Yagi, 1800 MHz Yagi, LPDA, and biquad seed geometries.
+<span class="status-badge status-warning">First two candidates fail as seeded</span>
+
+The first pre-simulation pass compares 900 MHz Yagi, 1800 MHz Yagi, LPDA, and biquad seed geometries. The two highest-priority candidates, a 900 MHz and an 1800 MHz five-element Yagi, have now been simulated in free space with NEC2. Both fail across their required bands: forward gain is negative-to-marginal and feed VSWR stays above 11:1 throughout. Neither beats the phone-at-best-RF-location baseline yet. The cause was isolated to the director element geometry (a naive uniform wavelength-scaling method), not the simulation approach itself, which was independently checked against known dipole and Yagi physics.
+
+The remaining queued candidates (larger 7-element Yagis, LPDA, biquads) are paused until the director geometry is redesigned, since they use the same generator and would likely reproduce the same failure.
 
 See:
 
 - [Preliminary antenna geometry](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/calculations/preliminary_antenna_geometry.md)
 - [Antenna candidate first-pass CSV](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/data/processed/antenna_candidate_first_pass.csv)
 - [NEC first-pass queue](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/simulations/nec/first_pass_queue.md)
+- [900 MHz Yagi first-pass result](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/simulations/results/y900_5el_seed_first_pass.md)
+- [1800 MHz Yagi first-pass result](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/simulations/results/y1800_5el_seed_first_pass.md)
+- [Side-by-side comparison](https://github.com/Rabelo83/Cuba-RF-Lab/blob/main/simulations/results/first_pass_yagi_comparison.md)
 
 ## Research Ledger
 

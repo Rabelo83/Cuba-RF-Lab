@@ -76,7 +76,7 @@ Because local measurement is temporarily unavailable, frequency choices are now 
 - Scientific Python support installed in `.venv`: `numpy`, `pandas`, `matplotlib`, and `scipy`; pinned in `requirements-engineering.txt`.
 - Standalone/GUI solvers `xnec2c`, `nec2c`, and `openEMS` were not found in Homebrew/local checks as of 2026-08-09.
 - Measurement CSV template created.
-- No simulation results yet.
+- First NEC simulation results are in (2026-08-09): `Y900_5EL_SEED` and `Y1800_5EL_SEED` both fail as seeded across their required bands (negative-to-marginal forward gain, VSWR above 11:1). Solver independently validated as correct. See `simulations/results/first_pass_yagi_comparison.md`. The uniform wavelength-scaled director geometry in `calculations/preliminary_antenna_geometry.py` needs a redesign before further Yagi candidates are simulated.
 - No CAD files yet.
 - No final dimensions yet.
 - No approved blueprints yet.
@@ -84,8 +84,8 @@ Because local measurement is temporarily unavailable, frequency choices are now 
 
 ## Immediate Next Work
 
-1. Generate first NEC model/sweep scripts from the first-pass geometry seeds using Python `necpp`.
+1. Redesign the Yagi director length taper and spacing in `calculations/preliminary_antenna_geometry.py` using an actual director design method (not uniform wavelength scaling), then re-run `simulations/nec/run_first_pass_yagi.py` against the revised `Y900_5EL_SEED` and `Y1800_5EL_SEED` geometry.
 2. Search for current official ETECSA or Cuban regulatory source text to improve the band and import-rule evidence.
 3. Build a source-backed list of realistic phones, coax, connectors, routers, coupler materials, and antenna materials that may be obtainable by Cuban users.
-4. Simulate 900 MHz Yagi, 1800 MHz Yagi, broadband LPDA, and dual-band/nested concepts before any blueprint dimensions are approved.
+4. Once a 900/1800 MHz Yagi design actually works in simulation, continue to the LPDA and biquad candidates and dual-band/nested concepts before any blueprint dimensions are approved.
 5. Keep field measurement and local availability data as an external validation gate, not a prerequisite for desktop engineering progress.

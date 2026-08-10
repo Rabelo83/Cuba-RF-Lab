@@ -65,3 +65,9 @@ Reason: the purpose of the project is to help Cuban people struggling with black
 Decision: until measured or simulated passive-system losses prove otherwise, the phone-at-best-RF-location architecture is the baseline comparison for all passive antenna/coupler proposals.
 
 Reason: first desktop link-budget scenarios show that coax, connector, matching, passive-coupler, and implementation losses can erase the gain of a directional antenna. A passive antenna may still win if it improves SINR, uses low-loss short coax, and couples efficiently into an ordinary phone, but advertised antenna gain alone is not sufficient evidence.
+
+## 2026-08-09: Do Not Trust Uniform Wavelength-Scaled Director Geometry
+
+Decision: `calculations/preliminary_antenna_geometry.py`'s `make_yagi` director length/spacing scaling (uniform position steps, shallow uniform length taper) must not be reused for further Yagi candidates until it is replaced with an actual director design method.
+
+Reason: the first NEC simulation pass showed both `Y900_5EL_SEED` and `Y1800_5EL_SEED` fail across their entire required bands (negative-to-marginal forward gain, VSWR above 11:1) using this director geometry, while the reflector-driven half of the same seeds behaves correctly and an independently chosen textbook-ratio Yagi built with the same solver produces expected results. See `simulations/results/first_pass_yagi_comparison.md`. Running `Y900_7EL_SEED`, `Y1800_7EL_SEED`, or other candidates that reuse the same director scaling logic would likely waste simulation effort reproducing the same failure.

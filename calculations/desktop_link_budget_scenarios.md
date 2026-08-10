@@ -60,8 +60,8 @@ For Architecture 2, there is no passive antenna-chain delta. The improvement is 
 | Input | Good-case assumption | Typical-risk assumption | Notes |
 | --- | ---: | ---: | --- |
 | Phone-at-RF-location gain versus poor indoor location | 6 to 18 dB | 12 dB mid case | Must later be measured at the actual house. |
-| 900 MHz Yagi realized gain | 9 dBi | 9 dBi | Placeholder until simulated. |
-| 1800 MHz Yagi realized gain | 12 dBi | 12 dBi | Placeholder until simulated. |
+| 900 MHz Yagi realized gain | 9 dBi | 9 dBi | Placeholder, now known not to match the first simulated seed (see note below). |
+| 1800 MHz Yagi realized gain | 12 dBi | 12 dBi | Placeholder, now known not to match the first simulated seed (see note below). |
 | High-gain 1800 MHz sensitivity case | 14 dBi | not baseline | Shows what would be needed for a strong passive win. |
 | RG-58 5 m loss at 900 MHz | 2.56 dB | 2.56 dB | Based on 51.2 dB/100 m benchmark. |
 | RG-58 5 m loss at 1800 MHz | 3.68 dB | 3.68 dB | Based on 73.5 dB/100 m benchmark. |
@@ -97,6 +97,12 @@ See the machine-readable table at:
 3. A passive antenna may still win if it provides useful directivity and stable SINR, not only higher RSRP.
 4. The first simulations should compare 900 MHz Yagi, 1800 MHz Yagi, broadband LPDA, and dual-band concepts with realistic feed and tolerance assumptions.
 5. No passive antenna blueprint should be approved until coupler loss is measured or bounded tightly enough to support the decision.
+
+## First Simulation Note (2026-08-09)
+
+The 9 dBi / 12 dBi realized-gain assumptions above were placeholders pending simulation. The first NEC pass on the actual pre-simulation seeds (`Y900_5EL_SEED`, `Y1800_5EL_SEED`) simulated forward gain of -0.75 dBi and -0.13 dBi at their respective target frequencies -- far below the placeholder. See `simulations/results/first_pass_yagi_comparison.md`.
+
+This does not mean 9/12 dBi is unreachable at these bands; the simulated failure is specific to this seed's director geometry (confirmed by an independently built textbook-ratio Yagi hitting about 9 dBi with the same solver). It does mean the B900/B1800 scenario rows above are not yet backed by a working design, and should be treated as an aspirational target, not a current estimate, until a redesigned candidate is simulated.
 
 ## Sources
 

@@ -1,8 +1,16 @@
 # NEC First-Pass Simulation Queue
 
-Status: queue ready, Python NEC solver installed
+Status: priorities 1 and 2 simulated and failed as seeded; queue paused pending redesigned director geometry
 
 Date: 2026-08-09
+
+## Priority 1 and 2 Result (2026-08-09)
+
+`Y900_5EL_SEED` and `Y1800_5EL_SEED` were simulated with `simulations/nec/run_first_pass_yagi.py`. Both fail as seeded: negative or near-zero forward gain across nearly the entire required band, VSWR above 11:1 throughout, and weak or negative front-to-back ratio. The solver was independently validated (isolated dipole and a hand-built textbook-ratio Yagi both matched expected physics), so this is a real property of this seed's director geometry, not a simulation bug.
+
+Full detail: `simulations/results/y900_5el_seed_first_pass.md`, `simulations/results/y1800_5el_seed_first_pass.md`, `simulations/results/first_pass_yagi_comparison.md`.
+
+Do not run priorities 3-7 (`Y900_7EL_SEED`, `Y1800_7EL_SEED`, LPDA, biquads) yet where they reuse the same `make_yagi` uniform-scaling director logic in `calculations/preliminary_antenna_geometry.py` -- they would likely reproduce the same failure. `calculations/preliminary_antenna_geometry.py` needs a real director design pass (proper length taper, closer non-uniform spacing) before further Yagi candidates are worth simulating. The LPDA and biquad seeds use different geometry generators and are not automatically affected, but have not been simulated yet either.
 
 Local check on 2026-08-09:
 
